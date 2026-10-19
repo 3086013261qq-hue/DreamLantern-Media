@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "dream-lantern-music-source-1.0",
+  "version": "1.0.0",
+  "provider": "netease_cloud_music",
+  "album": {
+    "title": "狐妖小红娘",
+    "artist": "Lethe",
+    "shareUrl": "https://163cn.tv/bi16o77e",
+    "role": "primary_album_source",
+    "trackIdsVerified": false,
+    "trackList": [],
+    "note": "该专辑由用户明确指定为《梦灯笼》缘音主音乐源。禁止跨专辑拼接同名曲替代版，禁止猜Track ID。"
+  },
+  "runtimePolicy": {
+    "outchainTemplate": "https://music.163.com/outchain/player?type=2&id={track_id}&auto=0&height=66",
+    "autoPlay": false,
+    "singleInstance": true,
+    "appDeepLinkTemplate": "orpheus://song/{track_id}",
+    "httpsFallbackTemplate": "https://music.163.com/#/song?id={track_id}",
+    "albumOpenUrl": "https://163cn.tv/bi16o77e",
+    "credentialsStored": false
+  },
+  "verificationRules": [
+    "曲目必须来自该Lethe《狐妖小红娘》专辑",
+    "Track ID必须逐曲真实核验，不得猜测",
+    "正式Catalog只收当前实际可播放版本",
+    "优先非VIP可直接点播版本",
+    "曲名、歌手/版本、专辑至少两项元数据吻合",
+    "音乐失败不得影响MVU、Opening、世界书切换"
+  ]
+}
