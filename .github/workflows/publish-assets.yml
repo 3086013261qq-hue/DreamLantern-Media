@@ -1,0 +1,22 @@
+name: Publish DreamLantern asset tag
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'manifest/opening.manifest.json'
+      - '.github/workflows/publish-assets.yml'
+permissions:
+  contents: write
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish immutable v1.0.1 asset ref
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${GITHUB_REPOSITORY}/git/ref/tags/v1.0.1" >/dev/null 2>&1; then
+            echo "v1.0.1 already exists; keep immutable tag"
+          else
+            gh api --method POST "repos/${GITHUB_REPOSITORY}/git/refs" -f ref=refs/tags/v1.0.1 -f sha="$GITHUB_SHA"
+          fi

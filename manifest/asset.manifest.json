@@ -1,0 +1,759 @@
+{
+  "version": "1.0.1",
+  "repo_creation_pending_user_action": false,
+  "repository": "3086013261qq-hue/DreamLantern-Media",
+  "assetBase": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@v1.0.1/",
+  "assets": [
+    {
+      "path": ".github/workflows/publish-assets.yml",
+      "bytes": 664,
+      "sha256": "f15da71cdfd1e2c3b8b1cc82bde5ddffe12d11e7c580ec47b4ba5f2422e01ad3",
+      "type": "original-resource"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1466,
+      "sha256": "6602bd25be2e010fb23620ed9c68a05864121cd50b608c38d6d82af0e33f25b2",
+      "type": "original-resource"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1167,
+      "sha256": "33ae257602857739b862a9d133584eeae9722cf0165d2837e1d48b29cd0dbbe6",
+      "type": "original-resource"
+    },
+    {
+      "path": "docs/media-policy.md",
+      "bytes": 655,
+      "sha256": "937ecb68b82816c68044267cde3343b62c43cb36d17126b0cbb54b1f10009cae",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/A01.svg",
+      "bytes": 6775,
+      "sha256": "0afe793027a6bcbd439c075e0da5399f78bd89b1725e4e81ca181872d9dfbeec",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/A02.svg",
+      "bytes": 6775,
+      "sha256": "28e28272ce8a94be83550523077ca24143466dc3cd6bc45903560dc2c11fbae1",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/A03.svg",
+      "bytes": 6773,
+      "sha256": "7b0ff18b0fbe716dcfc566460639afee61ce0aa4bfcab5fe689489c04da63f15",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/A04.svg",
+      "bytes": 6776,
+      "sha256": "0066df3026f1c3bcfe2998346a17a5db8f5e1f195742c27b2f5bdd03d66c91b7",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/A05.svg",
+      "bytes": 6776,
+      "sha256": "48eed5bc7bffa9087bab32173a556c19722ba15269e95e4ecb6db7d882c7e6a3",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/A06.svg",
+      "bytes": 6774,
+      "sha256": "d31b0aa0460ab65c906e4f59907af5625d19ed680eac92e5f0d9417181456ec2",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/A07.svg",
+      "bytes": 6776,
+      "sha256": "655f1fe1220727217d18019b871d7de2c4d5bd1b52c89ce138a234c07ee244f7",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/A08.svg",
+      "bytes": 6776,
+      "sha256": "f526170c0a73805ff6cc31f7ec6108b2cceadeed89a1df476ea6add13081e90c",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M01.svg",
+      "bytes": 6773,
+      "sha256": "bb202d6ffe55a35f3cbbb0f2863c05c38f10d06ca7f808bd173cc33f54f4abcf",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M02.svg",
+      "bytes": 6775,
+      "sha256": "a968922cbd8d2bdce77a6856bca83d5a9e2394571c38b1644e8a96c74948a59a",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M03.svg",
+      "bytes": 4944,
+      "sha256": "ec869834c4f3a1d31c2246ff90c43cc1ddefdd7363a276a4432167fcb9095bba",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M04.svg",
+      "bytes": 6774,
+      "sha256": "74a32347f6887951d731a94f6d165b7300d88031f96f9a61486929d8fd104fc2",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M05.svg",
+      "bytes": 6771,
+      "sha256": "826935cc72f37b86a977bfa7d0a9db1f622c615e62a67b4d9ed459bd77845507",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M06.svg",
+      "bytes": 6775,
+      "sha256": "3dcb8aae6ab7a42e0087b7d9748eca3c78abe63b75017b69182b1b7cd15dbdea",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M07.svg",
+      "bytes": 6774,
+      "sha256": "70463d013d7969f8d09d5779c450ed968e86c8d2c075ada80129e1aa7e26a2de",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M08.svg",
+      "bytes": 6772,
+      "sha256": "4d5d6fb8b82f5c5af2f25c3edda92d73839bf338a5b3d321745a7f6fa05e8c9f",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M09.svg",
+      "bytes": 6775,
+      "sha256": "743b8e6b7a906635c17650640c332b00d9e8dbb4a4796f262762bcf5d8c1dd78",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M10.svg",
+      "bytes": 6775,
+      "sha256": "ea38413bc52df875088352d36185e8bc93d3d9a681123bbd7037f1272d675cd1",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M11.svg",
+      "bytes": 6774,
+      "sha256": "acfc9c23d6ba1d17c991b01691d8276156eb9010db38f49891ec902a65967f32",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M12.svg",
+      "bytes": 6775,
+      "sha256": "be7b9c98340541f63b9cb5cd4a5bf6b7ee5ca35cfeeac9da27f3c5103359d075",
+      "type": "original-resource"
+    },
+    {
+      "path": "fallback/M13.svg",
+      "bytes": 6775,
+      "sha256": "263e95664f1bcb6f9b7f9282047febb68fdbcebb508fd0cd8cc5ddfb13a0001a",
+      "type": "original-resource"
+    },
+    {
+      "path": "fx/foxfire/flame.svg",
+      "bytes": 452,
+      "sha256": "35ef8a8f3c3df85431db9b84f49d0f9f223969333ad8907fa51c965526c474a9",
+      "type": "original-resource"
+    },
+    {
+      "path": "fx/particles/mote.svg",
+      "bytes": 290,
+      "sha256": "bffb2ffc814877a2405b84abe47219faa9ff7486e9ffbc2ebc456ccc2b8d20dc",
+      "type": "original-resource"
+    },
+    {
+      "path": "fx/petals/petal.svg",
+      "bytes": 329,
+      "sha256": "5882cdea9fa960df6c50114f6f3a2c77b480817903d287c3d38f7a933f4b1b93",
+      "type": "original-resource"
+    },
+    {
+      "path": "fx/red-thread/thread.svg",
+      "bytes": 375,
+      "sha256": "916bd7eaeac4a687a1dd9eb121521ca97706bce6e871ce089ec8316ada4a7d1a",
+      "type": "original-resource"
+    },
+    {
+      "path": "fx/textures/mist.svg",
+      "bytes": 281,
+      "sha256": "bd73fda2cbc3b2725878a470d2289d71b28c13346dd757c2bde4ecd30be0c20b",
+      "type": "original-resource"
+    },
+    {
+      "path": "manifest/opening.manifest.json",
+      "bytes": 58832,
+      "sha256": "59b6b5d2e6cfcc470a66ff21bd918f765a24605ae0771f7c9b57fcb0dc3a7057",
+      "type": "original-resource"
+    },
+    {
+      "path": "manifest/source-registry.json",
+      "bytes": 17514,
+      "sha256": "4f3673a3e80b427f427e70c4b21e9f8d9bad3d54281e27d9dc6dbf6ce0e09df5",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A01/landscape.webp",
+      "bytes": 275588,
+      "sha256": "95a2f4aadb25c2181dddffec5891723c2474f15da86994446f49352fc2c1b3f7",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A01/portrait.webp",
+      "bytes": 167110,
+      "sha256": "3180239850436a1950cff5a0ffa1a7e86ebcc9bbd36a30891764747eed8378d1",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A02/landscape.webp",
+      "bytes": 197392,
+      "sha256": "d89f3034536361d72a28fe9a4ef1dfad25cc7824e4962f4a1967d63cbdda2414",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A02/portrait.webp",
+      "bytes": 115446,
+      "sha256": "177d98d6dbd6e3c9e616bb1395ab2322ac40d09b862caa7f01ff5182a249e267",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A03/landscape.webp",
+      "bytes": 356054,
+      "sha256": "4d04be87dfbdf7ff2d6fb56f5b88e9082df0fb0d34d8aade76bc9e5951e450ae",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A03/portrait.webp",
+      "bytes": 191828,
+      "sha256": "509667608ee3945ff2084db438dcd00c59dc81a142d6e5a38cc3376ab549ca98",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A04/landscape.webp",
+      "bytes": 323406,
+      "sha256": "57bcf96aa1ac38f554645c7db4ae4b541af0c877cf9134446ecb162cbf36506a",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A04/portrait.webp",
+      "bytes": 216326,
+      "sha256": "962799726cc6a052332588af24ed1b441396622e3ea6c1564773d6b4199c3ab6",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A05/landscape.webp",
+      "bytes": 222104,
+      "sha256": "4d8b5cd347fae6d4e7cd609fac4dddb548dd17d8debb22dcc3a50286630713bd",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A05/portrait.webp",
+      "bytes": 123852,
+      "sha256": "650efb0dbd12c535e34b0d716c2b37c82c56a68fb6cceabea8d96d78b97c113b",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A06/landscape.webp",
+      "bytes": 323406,
+      "sha256": "57bcf96aa1ac38f554645c7db4ae4b541af0c877cf9134446ecb162cbf36506a",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A06/portrait.webp",
+      "bytes": 216326,
+      "sha256": "962799726cc6a052332588af24ed1b441396622e3ea6c1564773d6b4199c3ab6",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A07/landscape.webp",
+      "bytes": 283416,
+      "sha256": "924cdd751279be8f9fc584cfe1ef473a171ce2bc8ab93dddfd82092a02a3e4b3",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A07/portrait.webp",
+      "bytes": 161832,
+      "sha256": "8ac0c2c548c23e14fcc9cdf568f933ef043e133abb7b193c0e209ec1e160e74d",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A08/landscape.webp",
+      "bytes": 386614,
+      "sha256": "739b80273c016e4188e304d158e56e78d8643532059836ce2e70f1fb57486eeb",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/A08/portrait.webp",
+      "bytes": 226164,
+      "sha256": "e213b44a96b132f29136303573bc36eb6d7fc3da727f9942a4393cbd8ed49f0f",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M01/landscape.webp",
+      "bytes": 197392,
+      "sha256": "d89f3034536361d72a28fe9a4ef1dfad25cc7824e4962f4a1967d63cbdda2414",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M01/portrait.webp",
+      "bytes": 115446,
+      "sha256": "177d98d6dbd6e3c9e616bb1395ab2322ac40d09b862caa7f01ff5182a249e267",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M02/landscape.webp",
+      "bytes": 386614,
+      "sha256": "739b80273c016e4188e304d158e56e78d8643532059836ce2e70f1fb57486eeb",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M02/portrait.webp",
+      "bytes": 226164,
+      "sha256": "e213b44a96b132f29136303573bc36eb6d7fc3da727f9942a4393cbd8ed49f0f",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M03/landscape.webp",
+      "bytes": 356054,
+      "sha256": "4d04be87dfbdf7ff2d6fb56f5b88e9082df0fb0d34d8aade76bc9e5951e450ae",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M03/portrait.webp",
+      "bytes": 191828,
+      "sha256": "509667608ee3945ff2084db438dcd00c59dc81a142d6e5a38cc3376ab549ca98",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M04/landscape.webp",
+      "bytes": 323406,
+      "sha256": "57bcf96aa1ac38f554645c7db4ae4b541af0c877cf9134446ecb162cbf36506a",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M04/portrait.webp",
+      "bytes": 216326,
+      "sha256": "962799726cc6a052332588af24ed1b441396622e3ea6c1564773d6b4199c3ab6",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M05/landscape.webp",
+      "bytes": 386614,
+      "sha256": "739b80273c016e4188e304d158e56e78d8643532059836ce2e70f1fb57486eeb",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M05/portrait.webp",
+      "bytes": 226164,
+      "sha256": "e213b44a96b132f29136303573bc36eb6d7fc3da727f9942a4393cbd8ed49f0f",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M06/landscape.webp",
+      "bytes": 283416,
+      "sha256": "924cdd751279be8f9fc584cfe1ef473a171ce2bc8ab93dddfd82092a02a3e4b3",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M06/portrait.webp",
+      "bytes": 161832,
+      "sha256": "8ac0c2c548c23e14fcc9cdf568f933ef043e133abb7b193c0e209ec1e160e74d",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M07/landscape.webp",
+      "bytes": 222104,
+      "sha256": "4d8b5cd347fae6d4e7cd609fac4dddb548dd17d8debb22dcc3a50286630713bd",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M07/portrait.webp",
+      "bytes": 123852,
+      "sha256": "650efb0dbd12c535e34b0d716c2b37c82c56a68fb6cceabea8d96d78b97c113b",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M08/landscape.webp",
+      "bytes": 197392,
+      "sha256": "d89f3034536361d72a28fe9a4ef1dfad25cc7824e4962f4a1967d63cbdda2414",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M08/portrait.webp",
+      "bytes": 115446,
+      "sha256": "177d98d6dbd6e3c9e616bb1395ab2322ac40d09b862caa7f01ff5182a249e267",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M09/landscape.webp",
+      "bytes": 323406,
+      "sha256": "57bcf96aa1ac38f554645c7db4ae4b541af0c877cf9134446ecb162cbf36506a",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M09/portrait.webp",
+      "bytes": 216326,
+      "sha256": "962799726cc6a052332588af24ed1b441396622e3ea6c1564773d6b4199c3ab6",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M10/landscape.webp",
+      "bytes": 330666,
+      "sha256": "bb852b972af59fcaf953b27a5127f225f3a86a56000cf23a8f2c57d5ffb4e9e5",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M10/portrait.webp",
+      "bytes": 186628,
+      "sha256": "8605846093a53895e75fcd20047cccbe319595942dd83e8d7135badc997fd99b",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M11/landscape.webp",
+      "bytes": 275588,
+      "sha256": "95a2f4aadb25c2181dddffec5891723c2474f15da86994446f49352fc2c1b3f7",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M11/portrait.webp",
+      "bytes": 167110,
+      "sha256": "3180239850436a1950cff5a0ffa1a7e86ebcc9bbd36a30891764747eed8378d1",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M12/landscape.webp",
+      "bytes": 283416,
+      "sha256": "924cdd751279be8f9fc584cfe1ef473a171ce2bc8ab93dddfd82092a02a3e4b3",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M12/portrait.webp",
+      "bytes": 161832,
+      "sha256": "8ac0c2c548c23e14fcc9cdf568f933ef043e133abb7b193c0e209ec1e160e74d",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M13/landscape.webp",
+      "bytes": 289402,
+      "sha256": "7da87ded993adba14d488aa0f757d3c09a69d5febeade3f6fa2b305e82048a77",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/M13/portrait.webp",
+      "bytes": 150944,
+      "sha256": "d9ae07038ee895196029bf919862fcf3e8c367c0a0901123550e77549d365f36",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/bamboo-landscape.webp",
+      "bytes": 356054,
+      "sha256": "4d04be87dfbdf7ff2d6fb56f5b88e9082df0fb0d34d8aade76bc9e5951e450ae",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/bamboo-portrait.webp",
+      "bytes": 191828,
+      "sha256": "509667608ee3945ff2084db438dcd00c59dc81a142d6e5a38cc3376ab549ca98",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/bamboo-thumb.webp",
+      "bytes": 62534,
+      "sha256": "35779e6739bd7796d500d2439648c0a185f83c24f60a770811eda1aa520b08ce",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/bay-landscape.webp",
+      "bytes": 330666,
+      "sha256": "bb852b972af59fcaf953b27a5127f225f3a86a56000cf23a8f2c57d5ffb4e9e5",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/bay-portrait.webp",
+      "bytes": 186628,
+      "sha256": "8605846093a53895e75fcd20047cccbe319595942dd83e8d7135badc997fd99b",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/bay-thumb.webp",
+      "bytes": 61178,
+      "sha256": "8eb6afa5bd4f5f3f889b50836f5894a9e814208b64bbd3e7c04f2037a5b65fde",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/blossom-landscape.webp",
+      "bytes": 323406,
+      "sha256": "57bcf96aa1ac38f554645c7db4ae4b541af0c877cf9134446ecb162cbf36506a",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/blossom-portrait.webp",
+      "bytes": 216326,
+      "sha256": "962799726cc6a052332588af24ed1b441396622e3ea6c1564773d6b4199c3ab6",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/blossom-thumb.webp",
+      "bytes": 57950,
+      "sha256": "fa1daed35f4674c76616cddf1927ba0952d54df3295f9420d66c6f1a5182fdde",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/desert-landscape.webp",
+      "bytes": 197392,
+      "sha256": "d89f3034536361d72a28fe9a4ef1dfad25cc7824e4962f4a1967d63cbdda2414",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/desert-portrait.webp",
+      "bytes": 115446,
+      "sha256": "177d98d6dbd6e3c9e616bb1395ab2322ac40d09b862caa7f01ff5182a249e267",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/desert-thumb.webp",
+      "bytes": 36094,
+      "sha256": "0d73a834dcecc9ada92ca93307a263960cbef0d71d802584f4e0d136f7532d42",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/golden-landscape.webp",
+      "bytes": 222104,
+      "sha256": "4d8b5cd347fae6d4e7cd609fac4dddb548dd17d8debb22dcc3a50286630713bd",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/golden-portrait.webp",
+      "bytes": 123852,
+      "sha256": "650efb0dbd12c535e34b0d716c2b37c82c56a68fb6cceabea8d96d78b97c113b",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/golden-thumb.webp",
+      "bytes": 45004,
+      "sha256": "fe68e6932d1849f2d74d7104651d109391cce24d6c235109cb80a31a504ccb81",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/portal-landscape.webp",
+      "bytes": 275588,
+      "sha256": "95a2f4aadb25c2181dddffec5891723c2474f15da86994446f49352fc2c1b3f7",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/portal-portrait.webp",
+      "bytes": 167110,
+      "sha256": "3180239850436a1950cff5a0ffa1a7e86ebcc9bbd36a30891764747eed8378d1",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/portal-thumb.webp",
+      "bytes": 50986,
+      "sha256": "8e5efef5581d848de8e3102370bf9ead5ae026d4b0ea05b6af9467c37c984aa1",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/purple-landscape.webp",
+      "bytes": 283416,
+      "sha256": "924cdd751279be8f9fc584cfe1ef473a171ce2bc8ab93dddfd82092a02a3e4b3",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/purple-portrait.webp",
+      "bytes": 161832,
+      "sha256": "8ac0c2c548c23e14fcc9cdf568f933ef043e133abb7b193c0e209ec1e160e74d",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/purple-thumb.webp",
+      "bytes": 52924,
+      "sha256": "3b4feddbca414d16dcca0b0f863d4814a6409fda2a34568993ff1a619db1ec7c",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/river-landscape.webp",
+      "bytes": 386614,
+      "sha256": "739b80273c016e4188e304d158e56e78d8643532059836ce2e70f1fb57486eeb",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/river-portrait.webp",
+      "bytes": 226164,
+      "sha256": "e213b44a96b132f29136303573bc36eb6d7fc3da727f9942a4393cbd8ed49f0f",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/river-thumb.webp",
+      "bytes": 67628,
+      "sha256": "c46fa49d949cb1e506bc72b707cabc612d6158487ff82472bdc1c22b659e7e29",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/snow-landscape.webp",
+      "bytes": 289402,
+      "sha256": "7da87ded993adba14d488aa0f757d3c09a69d5febeade3f6fa2b305e82048a77",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/snow-portrait.webp",
+      "bytes": 150944,
+      "sha256": "d9ae07038ee895196029bf919862fcf3e8c367c0a0901123550e77549d365f36",
+      "type": "original-resource"
+    },
+    {
+      "path": "poster/art/snow-thumb.webp",
+      "bytes": 53742,
+      "sha256": "6bacb821f9a96deb9471b49b3e0d546dff6ec237071970c009c51a0021e3cec8",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/A01.webp",
+      "bytes": 50986,
+      "sha256": "8e5efef5581d848de8e3102370bf9ead5ae026d4b0ea05b6af9467c37c984aa1",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/A02.webp",
+      "bytes": 36094,
+      "sha256": "0d73a834dcecc9ada92ca93307a263960cbef0d71d802584f4e0d136f7532d42",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/A03.webp",
+      "bytes": 62534,
+      "sha256": "35779e6739bd7796d500d2439648c0a185f83c24f60a770811eda1aa520b08ce",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/A04.webp",
+      "bytes": 57950,
+      "sha256": "fa1daed35f4674c76616cddf1927ba0952d54df3295f9420d66c6f1a5182fdde",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/A05.webp",
+      "bytes": 45004,
+      "sha256": "fe68e6932d1849f2d74d7104651d109391cce24d6c235109cb80a31a504ccb81",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/A06.webp",
+      "bytes": 57950,
+      "sha256": "fa1daed35f4674c76616cddf1927ba0952d54df3295f9420d66c6f1a5182fdde",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/A07.webp",
+      "bytes": 52924,
+      "sha256": "3b4feddbca414d16dcca0b0f863d4814a6409fda2a34568993ff1a619db1ec7c",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/A08.webp",
+      "bytes": 67628,
+      "sha256": "c46fa49d949cb1e506bc72b707cabc612d6158487ff82472bdc1c22b659e7e29",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M01.webp",
+      "bytes": 36094,
+      "sha256": "0d73a834dcecc9ada92ca93307a263960cbef0d71d802584f4e0d136f7532d42",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M02.webp",
+      "bytes": 67628,
+      "sha256": "c46fa49d949cb1e506bc72b707cabc612d6158487ff82472bdc1c22b659e7e29",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M03.webp",
+      "bytes": 62534,
+      "sha256": "35779e6739bd7796d500d2439648c0a185f83c24f60a770811eda1aa520b08ce",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M04.webp",
+      "bytes": 57950,
+      "sha256": "fa1daed35f4674c76616cddf1927ba0952d54df3295f9420d66c6f1a5182fdde",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M05.webp",
+      "bytes": 67628,
+      "sha256": "c46fa49d949cb1e506bc72b707cabc612d6158487ff82472bdc1c22b659e7e29",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M06.webp",
+      "bytes": 52924,
+      "sha256": "3b4feddbca414d16dcca0b0f863d4814a6409fda2a34568993ff1a619db1ec7c",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M07.webp",
+      "bytes": 45004,
+      "sha256": "fe68e6932d1849f2d74d7104651d109391cce24d6c235109cb80a31a504ccb81",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M08.webp",
+      "bytes": 36094,
+      "sha256": "0d73a834dcecc9ada92ca93307a263960cbef0d71d802584f4e0d136f7532d42",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M09.webp",
+      "bytes": 57950,
+      "sha256": "fa1daed35f4674c76616cddf1927ba0952d54df3295f9420d66c6f1a5182fdde",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M10.webp",
+      "bytes": 61178,
+      "sha256": "8eb6afa5bd4f5f3f889b50836f5894a9e814208b64bbd3e7c04f2037a5b65fde",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M11.webp",
+      "bytes": 50986,
+      "sha256": "8e5efef5581d848de8e3102370bf9ead5ae026d4b0ea05b6af9467c37c984aa1",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M12.webp",
+      "bytes": 52924,
+      "sha256": "3b4feddbca414d16dcca0b0f863d4814a6409fda2a34568993ff1a619db1ec7c",
+      "type": "original-resource"
+    },
+    {
+      "path": "thumb/M13.webp",
+      "bytes": 53742,
+      "sha256": "6bacb821f9a96deb9471b49b3e0d546dff6ec237071970c009c51a0021e3cec8",
+      "type": "original-resource"
+    },
+    {
+      "path": "ui/dreamlantern-assets/README.md",
+      "bytes": 97,
+      "sha256": "0a174afd2482258affb71ddbbca56d7f017eecd60726d9aa891580376ed3ea2f",
+      "type": "original-resource"
+    },
+    {
+      "path": "ui/dreamlantern.css",
+      "bytes": 12517,
+      "sha256": "59c63cb12855cb31328b2fccb7270c9d60daa67e638d573823a815914233d64e",
+      "type": "original-resource"
+    },
+    {
+      "path": "ui/texture-paper.svg",
+      "bytes": 495,
+      "sha256": "e8c1d00ed99cbf1e4047d13313232e7958cf1f386800e10a35e7231169bf62bf",
+      "type": "original-resource"
+    }
+  ],
+  "release": "v1.0.1"
+}

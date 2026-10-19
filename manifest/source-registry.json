@@ -1,0 +1,514 @@
+{
+  "version": "1.0.1",
+  "sources": {
+    "garden_culture": {
+      "type": "official_production_page",
+      "url": "https://www.garden-culture.net/services.html",
+      "verified_at": "2026-10-20"
+    },
+    "animation_weibo": {
+      "type": "official_social",
+      "url": "https://weibo.com/huyaoxhn"
+    },
+    "jinghuayuan_concept_pv": {
+      "type": "official_pv",
+      "url": "https://weibo.com/5616549369/4961092583032595"
+    },
+    "dongfang_yuechu_pv": {
+      "type": "official_pv",
+      "url": "https://weibo.com/5616549369/5038597844241834"
+    },
+    "tushan_yaya_pv": {
+      "type": "official_pv",
+      "url": "https://weibo.com/5616549369/5045120822939971"
+    },
+    "wumu_wangquan_jingxing": {
+      "type": "official_character_pv",
+      "url": "https://weibo.com/5616549369/4905948790129250"
+    },
+    "tencent_video_zhuye_full": {
+      "type": "official_stream",
+      "url": "https://www.youtube.com/watch?v=jMGFPBP-Cd4"
+    },
+    "tencent_video_weisheng_ep07": {
+      "type": "official_stream",
+      "url": "https://www.youtube.com/watch?v=vrgHZPAllg4"
+    },
+    "huangfengling_s13": {
+      "type": "official_stream_global_only",
+      "url": "https://www.youtube.com/watch?v=nE8hy8t-T_k",
+      "bind_to": "global_or_M09_only",
+      "forbidden_for": [
+        "M13"
+      ]
+    },
+    "garden_art_hy_jcx": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_jcx.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 75431,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "ca25d7494fbb4d86e6a2f48de5564092d28e8b3c76a21ae6d80985aa5cf9c978",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_mtc": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_mtc.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 79568,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "a6246033b6e5dcc041f9069937fa6435a04f70130ef20bf34a8ea5baa2b1d4ad",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_ng": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 72190,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "0a87f515a88ba19f6f5bc31b2558fffd687758d797a0bbbb9a62205ab24610db",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_qy": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 52920,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "ef39cd9437f22994358a80a65bc42585294be88037daca3709a1802d61675a1e",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_wm": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_wm.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 66414,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "463d862c1e43dccd32b47ef03062c3c07f76135df2e122d9ab3266d49ddaae51",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_wq": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_wq.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 87178,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "757ddd1d4011f43dda3aa2369d99340c914cc182f542d251246c6d8f19a1a35c",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_ws": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_ws.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 58428,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "c8c05512b27ab1103e9c8bdb304b36275af61bcf48674d946f07d9b0d9a886a6",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_xs": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 75781,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "2db5c0e58fa901b0971894ed5e6116be47242ecf873770416f1920e053b20b3a",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_yh": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 80932,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "0d4253072aaf2164a1760fa63391a4b63d88a56cdd7e2e0abeb08b09dda8efd2",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "garden_art_hy_zy": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_zy.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 72695,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "1cf73c584d7b759f6bba0b09a313dc405f6ebf62adbe22d6cbdf918bbdb65765",
+      "type": "official_promotional_image",
+      "page": "https://www.garden-culture.net/services.html",
+      "rights_mode": "public-link",
+      "redistribution": "not included in repository"
+    },
+    "tencent_animation_product": {
+      "type": "official_platform_product",
+      "url": "https://www.tencent.com/zh-cn/products/tencent-animation-and-comics/",
+      "rights_mode": "public-link"
+    },
+    "original_fallback_A01": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/A01.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_A02": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/A02.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_A03": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/A03.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_A04": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/A04.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_A05": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/A05.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_A06": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/A06.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_A07": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/A07.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_A08": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/A08.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M01": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M01.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M02": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M02.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M03": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M03.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M04": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M04.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M05": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M05.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M06": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M06.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M07": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M07.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M08": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M08.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M09": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M09.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M10": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M10.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M11": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M11.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M12": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M12.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "original_fallback_M13": {
+      "type": "original_program_svg",
+      "local_asset": "fallback/M13.svg",
+      "rights_mode": "original",
+      "verified": true
+    },
+    "dreamlantern_original_bay": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/bay-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_original_snow": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/snow-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_original_desert": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/desert-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_original_golden": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/golden-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_original_purple": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/purple-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_original_blossom": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/blossom-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_original_bamboo": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/bamboo-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_original_portal": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/portal-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_original_river": {
+      "type": "original-generated-environment-concept",
+      "rights_mode": "project-original",
+      "local_asset": "poster/art/river-landscape.webp",
+      "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
+      "generator": "built-in image_gen",
+      "redistribution": "project asset publication authorized by project owner"
+    }
+  },
+  "policy": "optimized-project-original-art-and-official-links",
+  "dynamic_media_embedded": 0,
+  "remote_art_checks": {
+    "hy_jcx": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_jcx.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 75431,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "ca25d7494fbb4d86e6a2f48de5564092d28e8b3c76a21ae6d80985aa5cf9c978"
+    },
+    "hy_mtc": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_mtc.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 79568,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "a6246033b6e5dcc041f9069937fa6435a04f70130ef20bf34a8ea5baa2b1d4ad"
+    },
+    "hy_ng": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 72190,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "0a87f515a88ba19f6f5bc31b2558fffd687758d797a0bbbb9a62205ab24610db"
+    },
+    "hy_qy": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 52920,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "ef39cd9437f22994358a80a65bc42585294be88037daca3709a1802d61675a1e"
+    },
+    "hy_wm": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_wm.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 66414,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "463d862c1e43dccd32b47ef03062c3c07f76135df2e122d9ab3266d49ddaae51"
+    },
+    "hy_wq": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_wq.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 87178,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "757ddd1d4011f43dda3aa2369d99340c914cc182f542d251246c6d8f19a1a35c"
+    },
+    "hy_ws": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_ws.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 58428,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "c8c05512b27ab1103e9c8bdb304b36275af61bcf48674d946f07d9b0d9a886a6"
+    },
+    "hy_xs": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 75781,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "2db5c0e58fa901b0971894ed5e6116be47242ecf873770416f1920e053b20b3a"
+    },
+    "hy_yh": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 80932,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "0d4253072aaf2164a1760fa63391a4b63d88a56cdd7e2e0abeb08b09dda8efd2"
+    },
+    "hy_zy": {
+      "url": "https://www.garden-culture.net/assets/images/works/hy_zy.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 72695,
+      "size": [
+        640,
+        440
+      ],
+      "sha256": "1cf73c584d7b759f6bba0b09a313dc405f6ebf62adbe22d6cbdf918bbdb65765"
+    }
+  },
+  "unresolved_candidate_policy": "候选别名若无可核验媒体，仅保留历史索引，不用于运行时媒体装载。"
+}
