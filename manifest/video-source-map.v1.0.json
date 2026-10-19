@@ -65,6 +65,15 @@
       "bindings": ["M09"],
       "rule": "作为动态候选与镜花缘人物视觉来源，不伪造MP4"
     },
+    "official_pv_jinghuayuan_yaya": {
+      "title": "镜花缘/第12季 涂山雅雅个人PV",
+      "sourceType": "official_animation_weibo",
+      "page": "https://weibo.com/5616549369/5045120822939971",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["M09"],
+      "rule": "官博明确说明画面剪辑自正片并以雅雅为主视角；可作M09动态候选/缘忆素材，但不从页面内部提取临时媒体"
+    },
     "official_pv_wumu_wangquanjingxing": {
       "title": "无暮篇 王权景行角色亮相",
       "sourceType": "official_animation_weibo",
