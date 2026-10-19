@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "dream-lantern-resource-status-1.0",
+  "version": "1.0.0",
+  "visualPolicy": "official-first",
+  "chapters": {
+    "A01": {"visual":"pending_official","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "A02": {"visual":"official_verified_multi","video":"official_page_only","fallback":"generated+svg","allowAutoSubstitute":false},
+    "A03": {"visual":"official_verified","video":"official_page_only","fallback":"generated+svg","allowAutoSubstitute":false},
+    "A04": {"visual":"official_verified","video":"official_page_candidate","fallback":"generated+svg","allowAutoSubstitute":false},
+    "A05": {"visual":"official_verified_multi","video":"official_page_only","fallback":"generated+svg","allowAutoSubstitute":false},
+    "A06": {"visual":"official_verified","video":"official_page_candidate","fallback":"generated+svg","allowAutoSubstitute":false},
+    "A07": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "A08": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M01": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M02": {"visual":"official_verified","video":"official_page_only","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M03": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M04": {"visual":"official_verified","video":"official_page_candidate","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M05": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M06": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M07": {"visual":"official_verified","video":"official_page_candidates","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M08": {"visual":"official_verified","video":"official_page_candidates","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M09": {"visual":"official_pv_verified_still_pending","video":"official_page_candidates","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M10": {"visual":"pending_official_manga","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M11": {"visual":"pending_official_manga","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M12": {"visual":"pending_official_manga","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
+    "M13": {"visual":"pending_official_manga","video":"none","fallback":"generated+svg","allowAutoSubstitute":false}
+  },
+  "music": {
+    "source":"Lethe《狐妖小红娘》",
+    "shareUrl":"https://163cn.tv/bi16o77e",
+    "trackIds":"pending_user-visible_album_resolution",
+    "allowCrossAlbumSubstitute":false
+  },
+  "assemblerRules": {
+    "mayChangeMediaSelection":false,
+    "mayGenerateReplacementPoster":false,
+    "mayUseThirdPartyScreenshot":false,
+    "mayUseFanVideo":false,
+    "mayTouchMvuCore":false,
+    "mayBeautifyUiAfterMediaFreeze":true
+  }
+}
