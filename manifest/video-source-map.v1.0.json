@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "dream-lantern-video-source-1.0",
+  "policy": "official-page-first-no-ripping",
+  "sources": {
+    "official_pv_weisheng": {
+      "title": "尾生篇定档PV",
+      "sourceType": "official_production_page",
+      "page": "https://www.garden-culture.net/hyws.html",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["M02", "A06-memory"],
+      "rule": "不得从平台抓临时MP4；无稳定直链时使用官方静态视觉+FX"
+    },
+    "official_pv_zhuye": {
+      "title": "竹业篇定档PV",
+      "sourceType": "official_production_page",
+      "page": "https://www.garden-culture.net/hyzy.html",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["A03"],
+      "rule": "不得从平台抓临时MP4；无稳定直链时使用官方静态视觉+FX"
+    },
+    "official_pv_mutiancheng": {
+      "title": "沐天城篇定档PV",
+      "sourceType": "official_production_page",
+      "page": "https://www.garden-culture.net/hymtc.html",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["A05", "M07-memory"],
+      "rule": "不得从平台抓临时MP4；无稳定直链时使用官方静态视觉+FX"
+    },
+    "official_pv_liangshenghua": {
+      "title": "两生花篇定档PV",
+      "sourceType": "official_production_page",
+      "page": "https://www.garden-culture.net/hylsh.html",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["M07-memory"],
+      "rule": "不得从平台抓临时MP4；无稳定直链时使用官方静态视觉+FX"
+    },
+    "official_pv_wumu": {
+      "title": "无暮篇官方动态宣传入口",
+      "sourceType": "official_production_page",
+      "page": "https://www.garden-culture.net/hywm.html",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["A02", "M08"],
+      "rule": "真龙/无暮对应已确认；不得从腾讯/第三方抓带token媒体"
+    },
+    "official_pv_jinghuayuan_concept": {
+      "title": "镜花缘篇概念PV",
+      "sourceType": "official_animation_weibo",
+      "page": "https://weibo.com/5616549369/4961092583032595",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["M09"],
+      "rule": "保持来源登记；若无稳定可嵌入媒体则运行官方静态视觉+镜面FX"
+    },
+    "official_pv_jinghuayuan_dongfang": {
+      "title": "镜花缘/第12季 东方月初个人PV",
+      "sourceType": "official_animation_weibo",
+      "page": "https://weibo.com/5616549369/5038597844241834",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["M09"],
+      "rule": "作为动态候选与镜花缘人物视觉来源，不伪造MP4"
+    },
+    "official_pv_wumu_wangquanjingxing": {
+      "title": "无暮篇 王权景行角色亮相",
+      "sourceType": "official_animation_weibo",
+      "page": "https://weibo.com/5616549369/4905948790129250",
+      "stableDirectMp4": null,
+      "runtimeStatus": "page_verified_no_direct_mp4",
+      "bindings": ["M08"],
+      "rule": "可作为无暮篇动态候选，不从页面内部提取临时媒体"
+    }
+  },
+  "runtimeDecision": {
+    "ifStableOfficialDirectMedia": "official_video",
+    "ifOnlyOfficialPage": "official_still_fx",
+    "ifOfficialStillUnavailable": "fallback_generated",
+    "never": ["drm_bypass", "temporary_signed_mp4", "third_party_pirated_source", "full_episode_redistribution"]
+  }
+}
