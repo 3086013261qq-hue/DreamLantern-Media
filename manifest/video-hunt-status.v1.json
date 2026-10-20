@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "dream-lantern-video-hunt-1.0",
+  "startedAt": "2026-10-20",
+  "policy": {
+    "stableDirectMp4": "only a verified long-lived direct media URL suitable for public runtime",
+    "officialPageOnly": "official PV/video page exists but no stable direct media URL has been verified",
+    "officialEmbedOnly": "official hosted/embed stream exists; do not download or convert it into MP4",
+    "reject": ["temporary_signed_media", "drm_media", "third_party_reupload", "commentary_video", "pirate_source", "guessed_url"]
+  },
+  "firstPass": {
+    "M09": {
+      "title": "镜花缘篇",
+      "priority": 1,
+      "status": "official_page_only",
+      "officialPages": [
+        "https://weibo.com/5616549369/4961092583032595",
+        "https://weibo.com/5616549369/5038597844241834",
+        "https://weibo.com/5616549369/5045120822939971"
+      ],
+      "stableDirectMp4": [],
+      "note": "概念PV、东方月初个人PV、涂山雅雅PV均为动画官博正式发布；尚无已核实稳定裸MP4。"
+    },
+    "M08": {
+      "title": "真龙篇 / 无暮对应",
+      "priority": 2,
+      "status": "official_page_and_embed_only",
+      "officialPages": [
+        "https://www.garden-culture.net/hywm.html",
+        "https://weibo.com/5616549369/4905948790129250"
+      ],
+      "officialEmbedReferences": [
+        "https://www.youtube.com/watch?v=zS7JdSyZC2I"
+      ],
+      "stableDirectMp4": [],
+      "note": "Tencent Video-ANIMATION 官方频道存在无暮季正式流媒体页面，但它是官方流媒体/嵌入参考，不转换为MP4。"
+    },
+    "M02": {
+      "title": "尾生篇",
+      "priority": 3,
+      "status": "official_page_only",
+      "officialPages": ["https://www.garden-culture.net/hyws.html"],
+      "stableDirectMp4": []
+    },
+    "A03": {
+      "title": "涂山道盟 / 竹业视觉",
+      "priority": 4,
+      "status": "official_page_only",
+      "officialPages": ["https://www.garden-culture.net/hyzy.html"],
+      "stableDirectMp4": []
+    },
+    "A05": {
+      "title": "道盟变局 / 沐天城",
+      "priority": 5,
+      "status": "official_page_only",
+      "officialPages": ["https://www.garden-culture.net/hymtc.html"],
+      "stableDirectMp4": []
+    },
+    "M07": {
+      "title": "金晨曦篇",
+      "priority": 6,
+      "status": "official_page_only_memory_candidates",
+      "officialPages": [
+        "https://www.garden-culture.net/hymtc.html",
+        "https://www.garden-culture.net/hylsh.html"
+      ],
+      "stableDirectMp4": [],
+      "note": "沐天城/两生花PV只作M07缘忆/辅助候选，不冒充M07主Opening。"
+    }
+  },
+  "searchFindings": {
+    "gardenCulture": "官方作品页确认尾生、竹业、沐天城、两生花存在定档PV入口；无暮存在正式动画作品入口。",
+    "officialWeibo": "镜花缘概念PV、东方月初个人PV、涂山雅雅PV已确认来自狐妖小红娘动画官博。",
+    "officialTencentYoutube": "找到Tencent Video-ANIMATION官方Fox Spirit Matchmaker Season11流媒体页；仅登记为官方嵌入/参考，不下载、不转存。",
+    "bilibiliSearch": "搜索到的无暮/镜花缘相关多为非官方UP主转载或整理，全部不进入正式资源。"
+  },
+  "stableDirectMp4Count": 0,
+  "next": ["continue_official_source_search", "inspect_official_embed_destinations_without_extracting_temporary_media", "only_register_direct_media_if_long_lived_and_publicly_usable"]
+}
