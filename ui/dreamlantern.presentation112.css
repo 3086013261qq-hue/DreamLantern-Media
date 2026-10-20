@@ -21,8 +21,15 @@
 @keyframes dl-112-thread{50%{transform:rotate(-7deg) translateY(16px)}}@keyframes dl-112-float{50%{transform:translate(8px,-23px);opacity:.3}}@keyframes dl-112-petal{50%{transform:translate(24px,85px) rotate(110deg);opacity:.35}}@keyframes dl-112-shimmer{50%{opacity:.35;transform:translateX(8px)}}@keyframes dl-112-reveal{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
 .dl-root.dl-low-motion .dl-112-fx i{animation:none!important}.dl-root.dl-suspended .dl-112-fx i{animation-play-state:paused!important}
 @media(max-width:560px){.dl-root .dl-paper{border:0}.dl-root .dl-head{padding:16px}.dl-root .dl-body{padding:15px}.dl-root .dl-door{padding:18px!important;aspect-ratio:16/9}.dl-root .dl-door span{font-size:10px}.dl-root .dl-cover-action{height:285px}.dl-root .dl-opening{min-height:510px}.dl-root .dl-opening-copy{padding-top:230px}.dl-root .dl-memory-grid{grid-template-columns:1fr 1fr;gap:18px 12px}.dl-root .dl-memory{padding-left:6px}.dl-root .dl-memory img{height:175px}.dl-root .dl-memory>div{padding:10px 6px}.dl-root .dl-memory h3{font-size:17px}.dl-root .dl-memory .dl-controls{gap:5px;flex-wrap:wrap}.dl-root .dl-memory .dl-controls>*{min-width:50px;min-height:44px}.dl-root .dl-brand{font-size:22px}.dl-root .dl-head small{font-size:8px;letter-spacing:.1em}}
-@media(prefers-reduced-motion:reduce){.dl-root .dl-112-fx i{animation:none!important}.dl-112-era-video{display:none}.dl-root [data-view]{animation:none!important}}
+@media(prefers-reduced-motion:reduce){.dl-root .dl-112-fx i{animation:none!important}.dl-root [data-view]{animation:none!important}}
 /* Contain the blurred backdrop inside narrow WebView scroll bounds. */
 .dl-root .dl-paper:before{inset:0;transform:none}.dl-root .dl-paper{max-width:100vw;contain:paint}.dl-root .dl-head>div{min-width:0}
 /* Video paints above its persistent poster; the veil and text stay above both. */
 .dl-112-era-video{z-index:1}.dl-root .dl-door:after{z-index:2}.dl-root .dl-door b,.dl-root .dl-door span{z-index:3}
+
+/* 115: autoplay background sits above fallback, below veil/title/controls. */
+.dl-intro .dl-115-intro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;pointer-events:none;opacity:0}
+.dl-intro[data-intro-video=playing] .dl-115-intro-video{opacity:1}
+.dl-112-era-video{display:block!important}
+.dl-root.dl-fx-off .dl-112-fx{display:none!important}
+.dl-root .dl-115-review{font-size:12px;padding:8px!important;white-space:nowrap}

@@ -1,0 +1,10 @@
+{
+  "baseline": "112候选1",
+  "cardVersion": "1.2.0",
+  "intro": {"video":"incoming/mp4_raw/rukou.mp4","autoplay":true,"loop":true,"muted":true,"playsInline":true},
+  "fxPreferenceMigration": 1,
+  "fxDefaultEnabled": true,
+  "opening": {"playInCoverClick":true,"preferSound":true,"onSoundDenied":"immediate_muted_play","soundButtonBlocksVideo":false},
+  "eraReplay": {"availableFromAllPhonePages":true,"writesBusinessState":false},
+  "mappingAuthority": "unchanged candidate1 embedded MEDIA112 and final 113/114 remap"
+}
