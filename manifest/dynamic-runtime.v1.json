@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "dream-lantern-dynamic-runtime-1.0",
+  "authority": {
+    "chapterResources": "manifest/chapter-runtime.v2.json",
+    "fxProfiles": "manifest/fx-profiles.v1.json",
+    "videoHunt": "manifest/video-hunt-status.v1.json"
+  },
+  "openingResolutionOrder": [
+    "stable_official_mp4",
+    "official_primary_still_plus_fx",
+    "brand_background_plus_fx",
+    "generated_failure_fallback",
+    "svg_failure_fallback"
+  ],
+  "officialEmbedPolicy": {
+    "openingInline": false,
+    "memoryReferenceAllowed": true,
+    "openOfficialDynamicActionAllowed": true,
+    "reason": "避免多iframe、平台策略、移动端兼容与加载抖动；官方嵌入页保留为缘忆/外部动态参考，不冒充MP4。"
+  },
+  "globalRules": {
+    "autoplayVideo": false,
+    "autoplayAudio": false,
+    "onlyOneActiveVideo": true,
+    "generatedNormalRuntimeAllowed": false,
+    "wrongArcBorrowingAllowed": false,
+    "temporarySignedMediaAllowed": false,
+    "downloadOrTranscodeOfficialStreamsAllowed": false,
+    "reducedMotionFallsBackToStatic": true
+  },
+  "chapters": {
+    "A01": {"title":"上古源流","openingMode":"brand_background_plus_fx","fxProfile":"ancient_origin_brand","stableMp4":null,"officialDynamicForMemory":[],"artSource":"brand"},
+    "A02": {"title":"西域北山","openingMode":"official_primary_still_plus_fx","fxProfile":"desert_oath","stableMp4":null,"officialDynamicForMemory":["chapters/A02_西域北山/video/manifest.json"],"artSource":"official"},
+    "A03": {"title":"涂山道盟","openingMode":"official_primary_still_plus_fx","fxProfile":"bamboo_memory","stableMp4":null,"officialDynamicForMemory":["chapters/A03_涂山道盟/video/manifest.json"],"artSource":"official"},
+    "A04": {"title":"月红初世","openingMode":"official_primary_still_plus_fx","fxProfile":"blossom_redthread","stableMp4":null,"officialDynamicForMemory":[],"artSource":"official"},
+    "A05": {"title":"道盟变局","openingMode":"official_primary_still_plus_fx","fxProfile":"golden_city","stableMp4":null,"officialDynamicForMemory":["chapters/A05_道盟变局/video/manifest.json"],"artSource":"official"},
+    "A06": {"title":"月红终局","openingMode":"official_primary_still_plus_fx","fxProfile":"blossom_redthread","stableMp4":null,"officialDynamicForMemory":["chapters/A06_月红终局/video/manifest.json"],"artSource":"official"},
+    "A07": {"title":"南国旧缘","openingMode":"official_primary_still_plus_fx","fxProfile":"southern_mist","stableMp4":null,"officialDynamicForMemory":[],"artSource":"official"},
+    "A08": {"title":"千颜旧缘","openingMode":"official_primary_still_plus_fx","fxProfile":"river_memory","stableMp4":null,"officialDynamicForMemory":[],"artSource":"official"},
+    "M01": {"title":"下沙篇","openingMode":"official_primary_still_plus_fx","fxProfile":"desert_oath","stableMp4":null,"officialDynamicForMemory":[],"artSource":"official","note":"本轮未找到足够干净的下沙篇视觉型官方动态；保持伪动态。"},
+    "M02": {"title":"尾生篇","openingMode":"official_primary_still_plus_fx","fxProfile":"river_memory","stableMp4":null,"officialDynamicForMemory":["chapters/M02_尾生篇/video/manifest.json"],"artSource":"official"},
+    "M03": {"title":"王权篇","openingMode":"official_primary_still_plus_fx","fxProfile":"sword_gold","stableMp4":null,"officialDynamicForMemory":["chapters/M03_王权篇/video/manifest.json"],"artSource":"official","qualityReference":true},
+    "M04": {"title":"月红篇","openingMode":"official_primary_still_plus_fx","fxProfile":"blossom_redthread","stableMp4":null,"officialDynamicForMemory":["chapters/M04_月红篇/video/manifest.json"],"artSource":"official"},
+    "M05": {"title":"千颜篇","openingMode":"official_primary_still_plus_fx","fxProfile":"river_memory","stableMp4":null,"officialDynamicForMemory":["chapters/M05_千颜篇/video/manifest.json"],"artSource":"official"},
+    "M06": {"title":"南国篇","openingMode":"official_primary_still_plus_fx","fxProfile":"southern_mist","stableMp4":null,"officialDynamicForMemory":["chapters/M06_南国篇/video/manifest.json"],"artSource":"official"},
+    "M07": {"title":"金晨曦篇","openingMode":"official_primary_still_plus_fx","fxProfile":"golden_city","stableMp4":null,"officialDynamicForMemory":["chapters/M07_金晨曦篇/video/manifest.json"],"artSource":"official"},
+    "M08": {"title":"真龙篇","openingMode":"official_primary_still_plus_fx","fxProfile":"dragon_mirror","stableMp4":null,"officialDynamicForMemory":["chapters/M08_真龙篇/video/manifest.json"],"artSource":"official"},
+    "M09": {"title":"镜花缘篇","openingMode":"brand_background_plus_fx","fxProfile":"mirror_redthread","stableMp4":null,"officialDynamicForMemory":["chapters/M09_镜花缘篇/video/manifest.json"],"artSource":"brand_pending_official_still","note":"已有官博PV，但无核实官方静态主图与稳定MP4；Opening用品牌景+镜面FX。"},
+    "M10": {"title":"龙湾篇","openingMode":"brand_background_plus_fx","fxProfile":"bay_water","stableMp4":null,"officialDynamicForMemory":[],"artSource":"brand_pending_official"},
+    "M11": {"title":"东方灵族篇","openingMode":"brand_background_plus_fx","fxProfile":"eastern_spirit","stableMp4":null,"officialDynamicForMemory":[],"artSource":"brand_pending_official"},
+    "M12": {"title":"再入南国篇","openingMode":"brand_background_plus_fx","fxProfile":"southern_mist_dark","stableMp4":null,"officialDynamicForMemory":[],"artSource":"brand_pending_official"},
+    "M13": {"title":"新北山篇","openingMode":"brand_background_plus_fx","fxProfile":"snow_north","stableMp4":null,"officialDynamicForMemory":[],"artSource":"brand_pending_official"}
+  },
+  "upgradeRule": "未来如某卷取得经核实、可长期公开运行的稳定官方MP4，只更新该卷stableMp4并将openingMode切为stable_official_mp4；不得改变MVU/世界书业务逻辑。"
+}
