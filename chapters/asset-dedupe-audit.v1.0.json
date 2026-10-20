@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "dream-lantern-asset-dedupe-1.0",
+  "chapterCount": 21,
+  "uniqueGeneratedThemeCount": 9,
+  "policy": "Generated environment concepts are compatibility/failure fallback only. File-path count must never be treated as unique visual count.",
+  "groups": [
+    {"theme":"portal","chapters":["A01","M11"],"landscapeBlob":"91831f6eef37b3b95a9edc090994bd05e66f1c4b","portraitBlob":"b14205a848a7fdd3b8ccd0c674bdbf24ecb51f06","thumbBlob":"d6146bad4cc6f9fffff254801bd69551d5e5d094"},
+    {"theme":"desert","chapters":["A02","M01","M08"],"landscapeBlob":"0e17a679c945518928c65945112876ddf2059971","portraitBlob":"738671e52e6d750df40ba2317138e3723a8269f7","thumbBlob":"4a85eb37643290a405fd7f858eb40d0fd863c594"},
+    {"theme":"bamboo","chapters":["A03","M03"],"landscapeBlob":"a2b742a82f20c5d57035bd226d155f9acfb0fa62","portraitBlob":"b38a65cd9052f78880a33a382395c7ca5f8f74b3","thumbBlob":"6a5e41ac0d81425f7c8ced891dea9f3497877970"},
+    {"theme":"blossom","chapters":["A04","A06","M04","M09"],"landscapeBlob":"50d8aa0fb2f8492da3553587c8cd93b56e161efb","portraitBlob":"6c99f66ec3ef0ecce597b492541572de7ce20347","thumbBlob":"a7e0a06f532cf28cb6a4fb7063360384777b63d9"},
+    {"theme":"golden","chapters":["A05","M07"],"landscapeBlob":"7199e1313c0dac23a8273a41efc1dcd6c54e88c7","portraitBlob":"47cf88d945c5fdf1af20d408226d5211d4792bd0","thumbBlob":"d27945cc1977690550bd2ae2ea230332d68ff4c8"},
+    {"theme":"purple","chapters":["A07","M06","M12"],"landscapeBlob":"8aa49524294b450ef2f060e0e482ce71bfc4a84e","portraitBlob":"ef27f73f83801557168ac7956af271bbec37be19","thumbBlob":"f3187690eb1144d77cf7ff5720decb6b45a3f293"},
+    {"theme":"river","chapters":["A08","M02","M05"],"landscapeBlob":"fe11e52886af57233e2752f0a872895aa094f85b","portraitBlob":"bf796600748a1cc656e186bed1a2c1f845caebed","thumbBlob":"6f2efd4452b190d992168327b77628188e477e45"},
+    {"theme":"bay","chapters":["M10"],"landscapeBlob":"118a7f903101f68e303a4937a338747cea3c9570","portraitBlob":"74910092a07d9e7aa196761fb5e65659cf2f9c13","thumbBlob":"8aa167795cff257a057f537eba8d9b0e52d85f73"},
+    {"theme":"snow","chapters":["M13"],"landscapeBlob":"6c5bdcf624afffe3df19fe815b575bf3851b5c38","portraitBlob":"69712392feedb358e59b889617d3dbd76e38d54c","thumbBlob":"6645f9b5045605fe35eea659eca5b163d958efec"}
+  ],
+  "runtimeRule": "No generated theme may be selected as a normal primary visual. It may appear only after official/brand fallbacks fail according to the per-chapter manifest."
+}
