@@ -1,7 +1,9 @@
 {
-  "schemaVersion":"dream-lantern-chapter-catalog-1.0",
-  "authority":"chapters/*/resource.json",
-  "chapters":[
+  "schemaVersion": "dream-lantern-chapter-catalog-2.0",
+  "runtimeAuthority": "manifest/chapter-runtime.v2.json",
+  "chapterLocalAuthority": "chapters/*/resource.json",
+  "legacyDirectBrowsing": false,
+  "chapters": [
     ["A01","上古源流"],["A02","西域北山"],["A03","涂山道盟"],["A04","月红初世"],["A05","道盟变局"],["A06","月红终局"],["A07","南国旧缘"],["A08","千颜旧缘"],
     ["M01","下沙篇"],["M02","尾生篇"],["M03","王权篇"],["M04","月红篇"],["M05","千颜篇"],["M06","南国篇"],["M07","金晨曦篇"],["M08","真龙篇"],["M09","镜花缘篇"],["M10","龙湾篇"],["M11","东方灵族篇"],["M12","再入南国篇"],["M13","新北山篇"]
   ]
