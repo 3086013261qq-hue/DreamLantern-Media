@@ -1,7 +1,7 @@
 {
-  "schemaVersion": "dream-lantern-anime-to-manga-remap-1.1",
+  "schemaVersion": "dream-lantern-anime-to-manga-remap-1.2",
   "generatedAt": "2026-10-20",
-  "rule": "The user's numeric suffixes follow anime arc/broadcast order. M/A are source-type labels only and MUST NOT be interpreted as DreamLantern ancient/modern IDs. Remap by anime arc order -> arc name -> canonical manga slot; do not inspect every clip frame-by-frame just to identify order.",
+  "rule": "The user's numeric suffixes follow anime arc/broadcast order. M/A are source-type labels only: M=OP source, A=EP source. They MUST NOT be interpreted as DreamLantern modern/ancient IDs. Remap by anime arc order -> arc name -> DreamLantern canonical manga slot; do not identify clips by equal numeric suffix.",
   "mappingPipeline": [
     "raw_numeric_order",
     "anime_arc_order_lookup",
@@ -24,6 +24,20 @@
     {"animeIndex":12,"title":"镜花缘篇"},
     {"animeIndex":13,"title":"黄风岭篇"}
   ],
+  "sourceTypeRule": {
+    "M": "OP source material; numeric suffix is anime arc index, not DreamLantern modern volume number",
+    "A": "EP source material; numeric suffix is anime arc index, not DreamLantern ancient volume number"
+  },
+  "epRawFileByAnimeIndex": {
+    "1": "incoming/mp4_raw/SVID_20261020_194425_1.mp4",
+    "2": "incoming/mp4_raw/SVID_20261020_195926_1.mp4",
+    "3": "incoming/mp4_raw/A03.mp4",
+    "4": "incoming/mp4_raw/A04.mp4",
+    "5": "incoming/mp4_raw/A05.mp4",
+    "6": "incoming/mp4_raw/A06.mp4",
+    "7": "incoming/mp4_raw/A07.mp4",
+    "8": "incoming/mp4_raw/A08.mp4"
+  },
   "canonicalMangaOrder": [
     {"id":"A01","title":"上古源流"},
     {"id":"A02","title":"西域北山"},
@@ -47,6 +61,85 @@
     {"id":"M12","title":"再入南国篇"},
     {"id":"M13","title":"新北山篇"}
   ],
+  "ancientOrderCrosswalk": {
+    "A01": {
+      "targetTitle": "上古源流",
+      "sourceType": "EP",
+      "sourceAnimeIndex": 6,
+      "sourceArc": "竹业篇",
+      "rawVideo": "incoming/mp4_raw/A06.mp4",
+      "bindingType": "curated_semantic",
+      "reason": "上古源流包含东方灵族受传、纯质阳炎传承与东方秘境源流；在用户上传的01-08 EP素材中，竹业篇最能承接东方灵族与神火传承视觉。"
+    },
+    "A02": {
+      "targetTitle": "西域北山",
+      "sourceType": "EP",
+      "sourceAnimeIndex": 1,
+      "sourceArc": "下沙篇",
+      "rawVideo": "incoming/mp4_raw/SVID_20261020_194425_1.mp4",
+      "bindingType": "direct_semantic",
+      "reason": "该卷主线包含梵云飞与厉雪扬的西西域旧缘，下沙篇为最直接对应。"
+    },
+    "A03": {
+      "targetTitle": "涂山道盟",
+      "sourceType": "EP",
+      "sourceAnimeIndex": 2,
+      "sourceArc": "王权篇",
+      "rawVideo": "incoming/mp4_raw/SVID_20261020_195926_1.mp4",
+      "bindingType": "curated_semantic",
+      "reason": "该卷覆盖王权霸业、道盟、兵人计划、王权富贵出生等道盟/王权核心历史；王权篇EP作为主视频，竹业相关氛围继续由本卷FX与静态视觉承担。"
+    },
+    "A04": {
+      "targetTitle": "月红初世",
+      "sourceType": "EP",
+      "sourceAnimeIndex": 3,
+      "sourceArc": "月红篇",
+      "rawVideo": "incoming/mp4_raw/A03.mp4",
+      "bindingType": "direct_semantic",
+      "reason": "东方月初入涂山、与涂山红红关系建立及七夕表白均属于月红核心。"
+    },
+    "A05": {
+      "targetTitle": "道盟变局",
+      "sourceType": "EP",
+      "sourceAnimeIndex": 8,
+      "sourceArc": "金晨曦篇",
+      "rawVideo": "incoming/mp4_raw/A08.mp4",
+      "bindingType": "direct_semantic",
+      "reason": "木蔑、翠玉鸣鸾、金晨曦与沐天城危机是本卷的重要主体，金晨曦篇EP最贴合。"
+    },
+    "A06": {
+      "targetTitle": "月红终局",
+      "sourceType": "EP",
+      "sourceAnimeIndex": 7,
+      "sourceArc": "尾生篇",
+      "rawVideo": "incoming/mp4_raw/A07.mp4",
+      "bindingType": "direct_semantic_secondary_half",
+      "reason": "该卷前半为月红终局，后半完整承载胡尾生与月啼暇前世悲剧；为避免与A04重复使用月红EP，主视频使用尾生篇EP，月红终局氛围由卷级红月/断线/虚空之泪FX与静态视觉补足。"
+    },
+    "A07": {
+      "targetTitle": "南国旧缘",
+      "sourceType": "EP",
+      "sourceAnimeIndex": 5,
+      "sourceArc": "南国篇",
+      "rawVideo": "incoming/mp4_raw/A05.mp4",
+      "bindingType": "direct_semantic",
+      "reason": "平丘月初、欢都落兰及南国政变与南国篇直接对应。"
+    },
+    "A08": {
+      "targetTitle": "千颜旧缘",
+      "sourceType": "EP",
+      "sourceAnimeIndex": 4,
+      "sourceArc": "千颜篇",
+      "rawVideo": "incoming/mp4_raw/A04.mp4",
+      "bindingType": "direct_semantic",
+      "reason": "颜如玉与律笺文旧缘、追捕与续缘对应千颜篇。"
+    }
+  },
+  "ancientMappingPolicy": {
+    "status": "FINAL_CURATED_EP_MAPPING",
+    "usesEachUploadedEpOnce": true,
+    "note": "The eight ancient DreamLantern volumes are chronological project volumes, not anime arc IDs. The eight uploaded EP clips are therefore reordered by story semantics. Equal-number binding is forbidden."
+  },
   "modernOrderCrosswalk": {
     "M01": {"sourceAnimeIndex":1,"sourceArc":"下沙篇"},
     "M02": {"sourceAnimeIndex":7,"sourceArc":"尾生篇"},
@@ -58,6 +151,7 @@
     "M08": {"sourceAnimeIndex":11,"sourceArc":"无暮篇","note":"对应梦灯笼真龙/无暮阶段"},
     "M09": {"sourceAnimeIndex":12,"sourceArc":"镜花缘篇"}
   },
+  "modernMappingStatus": "M01_M09_VERIFIED_LATE_SLOTS_PENDING",
   "historyOnlyAnimeArcs": {
     "6": "竹业篇为历史/回看，不占现代卷位"
   },
@@ -66,6 +160,6 @@
   },
   "lateMangaSlots": ["M10","M11","M12","M13"],
   "lateMangaRule": "These manga slots do not have a one-to-one anime broadcast arc in the above sequence. Keep the user's separately chosen matching media for them if provided; never fill them merely by equal numeric suffix.",
-  "ancientRule": "For the user's A-source set, use the same principle: numeric order means source anime order, while target A01-A08 are DreamLantern chronological ancient slots. Use the user's selected episode-to-ancient correspondence when assigning; do not treat A01 filename as canonical A01 by name alone.",
-  "status": "ORDER_BASED_REMAP_NOT_FRAME_IDENTIFICATION"
+  "ancientRule": "For the user's A-source set, numeric order means anime arc order and A means EP. The final ancient mapping is ancientOrderCrosswalk; do not treat raw A01-A08 filenames as DreamLantern ancient volume IDs.",
+  "status": "ANCIENT_FINAL_MODERN_PARTIAL_ORDER_REMAP"
 }
