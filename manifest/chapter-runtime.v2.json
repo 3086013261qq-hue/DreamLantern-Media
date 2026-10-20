@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "dream-lantern-chapter-runtime-2.0",
+  "authority": "chapters/",
+  "legacy": {
+    "posterAndThumb": "compatibility_fallback_only",
+    "visualOverrideV12": "migration_reference_only",
+    "directLegacyBrowsingForbidden": true
+  },
+  "resolutionOrder": [
+    "chapter.video.stableDirectMp4",
+    "chapter.images.primaryOfficial",
+    "chapter.images.brandBackgroundForPending",
+    "chapter.images.generatedFailureFallback",
+    "chapter.images.svgFailureFallback"
+  ],
+  "rules": {
+    "generatedNormalRuntimeAllowed": false,
+    "guessedMp4Allowed": false,
+    "crossChapterBorrowingAllowed": false,
+    "externalOfficialHttpsUsedDirectly": true,
+    "relativeRepoPathUsesAssetBase": true
+  },
+  "chapters": {
+    "A01":{"title":"上古源流","folder":"chapters/A01_上古源流","resource":"chapters/A01_上古源流/resource.json","images":"chapters/A01_上古源流/images/manifest.json","video":"chapters/A01_上古源流/video/manifest.json","render":"brand_fx_pending_official"},
+    "A02":{"title":"西域北山","folder":"chapters/A02_西域北山","resource":"chapters/A02_西域北山/resource.json","images":"chapters/A02_西域北山/images/manifest.json","video":"chapters/A02_西域北山/video/manifest.json","render":"official_multi_still_fx"},
+    "A03":{"title":"涂山道盟","folder":"chapters/A03_涂山道盟","resource":"chapters/A03_涂山道盟/resource.json","images":"chapters/A03_涂山道盟/images/manifest.json","video":"chapters/A03_涂山道盟/video/manifest.json","render":"official_still_fx"},
+    "A04":{"title":"月红初世","folder":"chapters/A04_月红初世","resource":"chapters/A04_月红初世/resource.json","images":"chapters/A04_月红初世/images/manifest.json","video":"chapters/A04_月红初世/video/manifest.json","render":"official_still_fx"},
+    "A05":{"title":"道盟变局","folder":"chapters/A05_道盟变局","resource":"chapters/A05_道盟变局/resource.json","images":"chapters/A05_道盟变局/images/manifest.json","video":"chapters/A05_道盟变局/video/manifest.json","render":"official_multi_still_fx"},
+    "A06":{"title":"月红终局","folder":"chapters/A06_月红终局","resource":"chapters/A06_月红终局/resource.json","images":"chapters/A06_月红终局/images/manifest.json","video":"chapters/A06_月红终局/video/manifest.json","render":"official_multi_still_fx"},
+    "A07":{"title":"南国旧缘","folder":"chapters/A07_南国旧缘","resource":"chapters/A07_南国旧缘/resource.json","images":"chapters/A07_南国旧缘/images/manifest.json","video":"chapters/A07_南国旧缘/video/manifest.json","render":"official_still_fx"},
+    "A08":{"title":"千颜旧缘","folder":"chapters/A08_千颜旧缘","resource":"chapters/A08_千颜旧缘/resource.json","images":"chapters/A08_千颜旧缘/images/manifest.json","video":"chapters/A08_千颜旧缘/video/manifest.json","render":"official_still_fx"},
+    "M01":{"title":"下沙篇","folder":"chapters/M01_下沙篇","resource":"chapters/M01_下沙篇/resource.json","images":"chapters/M01_下沙篇/images/manifest.json","video":"chapters/M01_下沙篇/video/manifest.json","render":"official_still_fx"},
+    "M02":{"title":"尾生篇","folder":"chapters/M02_尾生篇","resource":"chapters/M02_尾生篇/resource.json","images":"chapters/M02_尾生篇/images/manifest.json","video":"chapters/M02_尾生篇/video/manifest.json","render":"official_still_fx"},
+    "M03":{"title":"王权篇","folder":"chapters/M03_王权篇","resource":"chapters/M03_王权篇/resource.json","images":"chapters/M03_王权篇/images/manifest.json","video":"chapters/M03_王权篇/video/manifest.json","render":"official_flagship_still_fx"},
+    "M04":{"title":"月红篇","folder":"chapters/M04_月红篇","resource":"chapters/M04_月红篇/resource.json","images":"chapters/M04_月红篇/images/manifest.json","video":"chapters/M04_月红篇/video/manifest.json","render":"official_still_fx"},
+    "M05":{"title":"千颜篇","folder":"chapters/M05_千颜篇","resource":"chapters/M05_千颜篇/resource.json","images":"chapters/M05_千颜篇/images/manifest.json","video":"chapters/M05_千颜篇/video/manifest.json","render":"official_still_fx"},
+    "M06":{"title":"南国篇","folder":"chapters/M06_南国篇","resource":"chapters/M06_南国篇/resource.json","images":"chapters/M06_南国篇/images/manifest.json","video":"chapters/M06_南国篇/video/manifest.json","render":"official_still_fx"},
+    "M07":{"title":"金晨曦篇","folder":"chapters/M07_金晨曦篇","resource":"chapters/M07_金晨曦篇/resource.json","images":"chapters/M07_金晨曦篇/images/manifest.json","video":"chapters/M07_金晨曦篇/video/manifest.json","render":"official_multi_still_fx"},
+    "M08":{"title":"真龙篇","folder":"chapters/M08_真龙篇","resource":"chapters/M08_真龙篇/resource.json","images":"chapters/M08_真龙篇/images/manifest.json","video":"chapters/M08_真龙篇/video/manifest.json","render":"official_still_fx"},
+    "M09":{"title":"镜花缘篇","folder":"chapters/M09_镜花缘篇","resource":"chapters/M09_镜花缘篇/resource.json","images":"chapters/M09_镜花缘篇/images/manifest.json","video":"chapters/M09_镜花缘篇/video/manifest.json","render":"official_pv_pages_brand_mirror_fx"},
+    "M10":{"title":"龙湾篇","folder":"chapters/M10_龙湾篇","resource":"chapters/M10_龙湾篇/resource.json","images":"chapters/M10_龙湾篇/images/manifest.json","video":"chapters/M10_龙湾篇/video/manifest.json","render":"brand_fx_pending_official"},
+    "M11":{"title":"东方灵族篇","folder":"chapters/M11_东方灵族篇","resource":"chapters/M11_东方灵族篇/resource.json","images":"chapters/M11_东方灵族篇/images/manifest.json","video":"chapters/M11_东方灵族篇/video/manifest.json","render":"brand_fx_pending_official"},
+    "M12":{"title":"再入南国篇","folder":"chapters/M12_再入南国篇","resource":"chapters/M12_再入南国篇/resource.json","images":"chapters/M12_再入南国篇/images/manifest.json","video":"chapters/M12_再入南国篇/video/manifest.json","render":"brand_fx_pending_official"},
+    "M13":{"title":"新北山篇","folder":"chapters/M13_新北山篇","resource":"chapters/M13_新北山篇/resource.json","images":"chapters/M13_新北山篇/images/manifest.json","video":"chapters/M13_新北山篇/video/manifest.json","render":"brand_fx_pending_official"}
+  }
+}
