@@ -1,8 +1,20 @@
 {
-  "schemaVersion": "dream-lantern-video-2.1",
+  "schemaVersion": "dream-lantern-video-2.2",
   "chapterId": "M07",
   "title": "金晨曦篇",
   "sources": [
+    {
+      "key": "official_tencent_anime_bilibili_jinchengxi_clip",
+      "title": "《狐妖小红娘》五年白苏，一集收割",
+      "page": "https://www.bilibili.com/video/BV1q54y1S74y/",
+      "publisher": "腾讯动漫",
+      "publisherVerifiedByPage": true,
+      "published": "2020-07-31",
+      "status": "official_page_only_arc_content_verified",
+      "arcContext": "金晨曦篇白月初/涂山苏苏官方片段",
+      "uses": ["memory_reference", "official_dynamic_reference"],
+      "rules": ["不是金晨曦篇正式PV，不作为主Opening", "保持官方平台页，不抓取或转存媒体文件"]
+    },
     {
       "key": "official_pv_mutiancheng",
       "title": "沐天城篇定档PV",
@@ -23,11 +35,10 @@
       "page": "https://weibo.com/tv/show/1034:4616419246276683?from=old_pc_videoshow",
       "officialPostReference": "https://weibo.com/5616549369/K6T3pc3ox",
       "status": "official_video_object_page_secondary_provenance_confirmed",
-      "provenance": "二手动画资讯归档同时标注@狐妖小红娘并给出官方账号微博；可登记为官方视频对象页参考，但仍不是稳定裸MP4。",
       "uses": ["memory", "official_dynamic_reference"]
     }
   ],
   "stableDirectMp4": [],
   "runtime": "official_still_fx",
-  "rule": "现有PV/视频对象只作缘忆与官方动态参考，不冒充M07正式MP4 Opening；不得从微博对象页提取临时签名媒体。"
+  "rule": "M07已有腾讯动漫官方篇章片段可作动态/缘忆参考；沐天城和两生花PV仍只作辅助，不冒充M07主Opening；没有稳定裸MP4时继续使用金晨曦官方静态视觉+FX。"
 }
