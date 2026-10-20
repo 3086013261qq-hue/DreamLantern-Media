@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "dream-lantern-fx-profiles-1.0",
+  "theme": "夜漆·红线·灯金",
+  "performance": {
+    "mobileAnimatedNodeCap": 14,
+    "desktopAnimatedNodeCap": 20,
+    "respectReducedMotion": true,
+    "noCanvasRequired": true,
+    "noAutoplayAudio": true,
+    "singleActiveOpening": true
+  },
+  "base": {
+    "cycleSeconds": 12,
+    "zoomFrom": 1.00,
+    "zoomTo": 1.035,
+    "panPercent": 1.2,
+    "crossfadeMs": 700,
+    "titleFadeMs": 650,
+    "overlay": "night_lacquer_wine",
+    "text": "ivory_gold"
+  },
+  "profiles": {
+    "ancient_origin_brand": {
+      "grade": "C",
+      "redLines": 1,
+      "foxfire": 3,
+      "dust": 5,
+      "petals": 0,
+      "extra": ["tree_silhouette", "gold_dust"],
+      "note": "无准确官方主图时使用梦灯笼品牌景，禁止旧AI图正常出镜。"
+    },
+    "desert_oath": {
+      "grade": "B",
+      "redLines": 1,
+      "foxfire": 2,
+      "dust": 6,
+      "petals": 0,
+      "extra": ["warm_sand_motes", "heat_haze_very_light"],
+      "note": "沙尘必须轻，不做黄沙风暴。"
+    },
+    "bamboo_memory": {
+      "grade": "B",
+      "redLines": 1,
+      "foxfire": 3,
+      "dust": 4,
+      "petals": 2,
+      "extra": ["bamboo_leaf_drift"],
+      "note": "竹叶慢落，整体偏静。"
+    },
+    "blossom_redthread": {
+      "grade": "A",
+      "redLines": 2,
+      "foxfire": 3,
+      "dust": 4,
+      "petals": 3,
+      "extra": ["soft_backlight", "foreground_bokeh"],
+      "note": "月红系主力Profile，花瓣少而慢。"
+    },
+    "golden_city": {
+      "grade": "A",
+      "redLines": 1,
+      "foxfire": 3,
+      "dust": 5,
+      "petals": 0,
+      "extra": ["gold_glints", "slow_light_sweep"],
+      "note": "暖金，不做廉价高亮闪烁。"
+    },
+    "southern_mist": {
+      "grade": "A",
+      "redLines": 1,
+      "foxfire": 4,
+      "dust": 3,
+      "petals": 0,
+      "extra": ["purple_mist_low_opacity", "firefly_drift"],
+      "note": "南国用紫雾与萤火，禁止大面积绿色毒雾。"
+    },
+    "river_memory": {
+      "grade": "B",
+      "redLines": 1,
+      "foxfire": 2,
+      "dust": 4,
+      "petals": 2,
+      "extra": ["water_shimmer", "memory_vignette"],
+      "note": "适合尾生/千颜旧缘类回忆感。"
+    },
+    "sword_gold": {
+      "grade": "A",
+      "redLines": 1,
+      "foxfire": 2,
+      "dust": 4,
+      "petals": 2,
+      "extra": ["thin_gold_slash", "soft_backlight"],
+      "note": "王权篇为质量标杆；剑光只能一闪而过，不做战斗HUD。"
+    },
+    "dragon_mirror": {
+      "grade": "A",
+      "redLines": 1,
+      "foxfire": 3,
+      "dust": 4,
+      "petals": 0,
+      "extra": ["mirror_shimmer", "gold_scale_glint"],
+      "note": "真龙/无暮使用镜光与金鳞感，避免赛博。"
+    },
+    "mirror_redthread": {
+      "grade": "A",
+      "redLines": 2,
+      "foxfire": 3,
+      "dust": 3,
+      "petals": 2,
+      "extra": ["mirror_refraction", "soft_double_exposure"],
+      "note": "镜花缘无官方静态主图时用品牌景+镜面FX，官方PV只进缘忆参考。"
+    },
+    "bay_water": {
+      "grade": "C",
+      "redLines": 1,
+      "foxfire": 2,
+      "dust": 3,
+      "petals": 0,
+      "extra": ["water_light", "mist_low"],
+      "note": "龙湾pending时保持品牌感，不使用旧AI海湾作正常主视觉。"
+    },
+    "eastern_spirit": {
+      "grade": "C",
+      "redLines": 1,
+      "foxfire": 4,
+      "dust": 4,
+      "petals": 0,
+      "extra": ["ember_motes", "tree_silhouette"],
+      "note": "东方灵族pending品牌景；火种只做微弱余烬。"
+    },
+    "southern_mist_dark": {
+      "grade": "C",
+      "redLines": 1,
+      "foxfire": 3,
+      "dust": 3,
+      "petals": 0,
+      "extra": ["purple_mist_low_opacity", "dark_vignette"],
+      "note": "再入南国不能借M06旧动画海报，使用更暗品牌南国气氛。"
+    },
+    "snow_north": {
+      "grade": "C",
+      "redLines": 1,
+      "foxfire": 2,
+      "dust": 2,
+      "petals": 0,
+      "extra": ["slow_snow", "cold_breath_haze"],
+      "note": "新北山只用品牌雪景语义；黄风岭素材禁入。"
+    }
+  }
+}
