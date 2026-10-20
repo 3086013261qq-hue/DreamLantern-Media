@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "dream-lantern-video-2.1",
+  "schemaVersion": "dream-lantern-video-2.2",
   "chapterId": "M08",
   "title": "真龙篇",
   "sources": [
@@ -21,9 +21,22 @@
       "key": "official_stream_tencent_youtube_season11_ep01",
       "title": "Fox Spirit Matchmaker Season11 EP01 · Tencent Video-ANIMATION",
       "page": "https://www.youtube.com/watch?v=zS7JdSyZC2I",
+      "publisher": "Tencent Video-ANIMATION",
+      "publisherVerified": true,
       "status": "official_embed_only",
       "uses": ["official_stream_reference"],
       "rules": ["不得下载转码为MP4", "不得当作短PV Opening", "仅证明官方动态流媒体来源存在"]
+    },
+    {
+      "key": "official_stream_tencent_wumu_verified",
+      "title": "无暮篇官方腾讯动漫视频参考",
+      "page": "https://www.youtube.com/watch?v=E2urmrSjxcA",
+      "publisher": "Tencent Video-ANIMATION",
+      "publisherVerified": true,
+      "status": "official_embed_only_arc_context_verified",
+      "evidence": "官方频道页面描述/标签包含狐妖小红娘无暮篇",
+      "uses": ["official_stream_reference", "memory_reference"],
+      "rules": ["不得下载转码为MP4", "不替代短PV Opening"]
     }
   ],
   "stableDirectMp4": [],
