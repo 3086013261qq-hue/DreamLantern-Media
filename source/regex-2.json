@@ -1,0 +1,17 @@
+{
+  "id": "dream-opening-display",
+  "scriptName": "梦灯笼_0楼轻量开场壳",
+  "findRegex": "/\\[DREAM_LANTERN_OPENING_FLOW\\][\\s\\S]*/g",
+  "replaceString": "<div class=\"dl-opening-seed\">✧ 梦灯笼 · 狐火将亮。<br>请等待角色脚本展开前尘与今世。</div>",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": 0,
+  "maxDepth": null
+}

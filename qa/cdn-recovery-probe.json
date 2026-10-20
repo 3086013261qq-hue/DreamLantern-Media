@@ -1,0 +1,282 @@
+{
+  "testedAt": "2026-10-20T15:11:08.882684+00:00",
+  "method": "Direct HTTPS range GET of all era videos, chapter videos and chapter covers; no interception; not full playback",
+  "probes": [
+    {
+      "path": "incoming/mp4_raw/fengmian.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/xiandaifengmian.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/A06.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/SVID_20261020_194425_1.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/SVID_20261020_195926_1.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/A03.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/A08.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/A07.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/A05.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/A04.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/M01.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/M07.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/M02.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/M03.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/M04.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/M05.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/M08.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/M11.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/M12.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/M06.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/M09.mp4",
+      "status": 206,
+      "contentType": "video/mp4",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/mp4_raw/M10.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/mp4_raw/M13.mp4",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/covers_raw/bf5181d27c834499e0aa86e13b5475dd0875d3b5_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/944e55364f8ad5a038e6f355b45101fa89c6f82d_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/47406029d4a8ede312d5a66f349168d833d2ad07_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/58fa64f2b0c5bca46a26ace3d5e0c2465641df8d_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/761896819297b13a20c4b215056970d82ba58287_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/6f89ea6967c663746526e5c77b61b46da1bc6cb1_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/2fab678d8fc1d5098374c2f907518e804bd3a46c_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/8235823b81e71c14cf54620f430a5553483cd225_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/95a90bfafbb32bbc13b1d88dc3550619cbffd053_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/dde3502be9bde957b2712dbd91b700fbcafa5c3c_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/4b196b410d4f793e695ba4d40f9e6e08bcb576ea_raw.jpg",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/covers_raw/cffdc4b172cf22852fa6d474f3b7c34ce04156b4_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/074efd43c3d07666b63805e748df8719993fd546_raw.jpg",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/covers_raw/8822346f08f89b0ab71245f27322b71f61346bc5_raw.jpg",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/covers_raw/9e167d093cdd8ad69dcdb68abb1b2af746ae2a32_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/8f9fcff2b71a1495df5abce982ee0972402fe0e6_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/ebeb74b0aaf1c6362388de11235752efaa010fd5_raw.jpg",
+      "ok": false,
+      "error": "The read operation timed out"
+    },
+    {
+      "path": "incoming/covers_raw/13385c1f1290c820d65760c904cc0bd8e7e760e8_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/24c2ecac86e18a3464d5f6823cf136d0b1a5a905_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/6638cb9b6b2143fe6d6845b008aab71e77a43cf5_raw.jpg",
+      "status": 206,
+      "contentType": "image/jpeg",
+      "bytesRead": 1024,
+      "ok": true
+    },
+    {
+      "path": "incoming/covers_raw/7147171d0c8716a9cf986a10154748a52e0b98f1_raw.jpg",
+      "ok": false,
+      "error": "The read operation timed out"
+    }
+  ],
+  "passed": 27,
+  "total": 44
+}

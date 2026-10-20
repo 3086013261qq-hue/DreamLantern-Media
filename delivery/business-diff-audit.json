@@ -1,0 +1,19 @@
+{
+  "baseline": "狐妖小红娘_梦灯笼_正式版_v1.2.0.json",
+  "baselineVersion": "1.2.0",
+  "resourceInputCommit": "a76debe5f5d61ea0967fa0dd843eee60c2316f59",
+  "mappingInputCommit": "a76debe5f5d61ea0967fa0dd843eee60c2316f59",
+  "cardVersionUnchanged": true,
+  "changedJsonPaths": [
+    "/data/extensions/tavern_helper/scripts/4/content"
+  ],
+  "worldbookExactEquality": true,
+  "mvuZodStatusMusicExactEquality": true,
+  "regexExactEquality": true,
+  "controllerExactEquality": true,
+  "noRuntimeBitmapBytes": true,
+  "baseJsonSha256": "c4b4e7224a748c9874052e5fd18cd4ca609c53d7d7a1657678e816fb185a94dc",
+  "outputJsonSha256": "b2f9e371012a15696e75038a85618f6e6ae27d13a927b4c279341862f3542fec",
+  "androidStatus": "NOT_EXECUTED_DEVICE_UNAVAILABLE",
+  "formalTagCreated": false
+}

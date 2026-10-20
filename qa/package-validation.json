@@ -1,0 +1,11 @@
+{
+  "PNG_data_matches_JSON": true,
+  "cardKeys": [
+    "chara",
+    "ccv3"
+  ],
+  "original_noncard_chunks_unchanged": true,
+  "json_bytes": 890747,
+  "png_bytes": 3231041,
+  "character_version": "1.2.0"
+}

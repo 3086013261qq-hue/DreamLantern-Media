@@ -1,0 +1,57 @@
+[
+  {
+    "path": "qa/browser-M04-390.png",
+    "sha256": "4131e8996b32c2c1d2d8f662f4da087bebb2eb7e33f067f571c14a959ca0e91b",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-M06-390.png",
+    "sha256": "2f3f8b2ced3bdade9213b6417c22b1f48b3466c6df86c50ae8d63a9ab45db8c3",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-M09-390.png",
+    "sha256": "86de2c7ecbce3c879f2896319c4fb2a3ec4c062e8f5f650993541820a6803d40",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-era-360.png",
+    "sha256": "f2755870dc52309c169f240de49e99f3326fb1afc7811230e75b1bff17a71468",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-era-390.png",
+    "sha256": "a703628af9a3de862b42cd31140a69bacfda71959e0b1e00412ea2a7b649c6e9",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-era-412.png",
+    "sha256": "5d12ffab4e92d9a26b9746410ad35d3e66f9dacc5deabb9299f6fbfd7c4e3259",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-era-430.png",
+    "sha256": "d51f22882099040523de9d5ab9f46dc3859c21831043655dd7b59cda409a26e7",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-memory-390.png",
+    "sha256": "85a3210c9214d44669c4763862ac2bcee2b0135d33cdc4605415a532b3cb831c",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-music-390.png",
+    "sha256": "d614aefe271f9a23e64ea63f411bcab8988e643fd328bdc3424c9269e19e8273",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-offline-390.png",
+    "sha256": "db6378664928d9bd71909040bc4d3943a71d09c6729418c99f6059803be11a84",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  },
+  {
+    "path": "qa/browser-sword-390.png",
+    "sha256": "aab9e7edd73f80c9e51fac10785168cc2ea87a019330f9d22b32af41e36b8af8",
+    "environment": "Chromium mobile viewport, not Android/SillyTavern"
+  }
+]

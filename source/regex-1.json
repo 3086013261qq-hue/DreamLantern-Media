@@ -1,0 +1,18 @@
+{
+  "id": "mvu-hide-placeholder",
+  "scriptName": "[MVU]去除正文底部占位符",
+  "findRegex": "/<StatusPlaceHolderImpl\\s*\\/?>/gi",
+  "replaceString": "",
+  "trimStrings": [],
+  "placement": [
+    1,
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": true,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+}

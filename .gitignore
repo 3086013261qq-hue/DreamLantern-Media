@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+qa/harness.html
+qa/test-run.log

@@ -1,0 +1,508 @@
+[
+  {
+    "path": "incoming/mp4_raw/A04.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "9.301292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/A08.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "8.801292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M12.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "12.501333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M02.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "10.501292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M03.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "11.101292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M04.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "13.163800"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M09.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "11.121292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M10.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "12.181292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/fengmian.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "26.741333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/A05.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "10.121292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/xiandaifengmian.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "26.681333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M01.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "9.533333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/SVID_20261020_194425_1.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "6.901333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M08.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "11.503256"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M11.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "10.341333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/A07.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "7.061292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M13.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "13.001292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M06.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "13.081333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/A03.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "9.641292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M05.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "9.633333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/SVID_20261020_195926_1.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "7.301333"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/M07.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "9.441292"
+      }
+    },
+    "ok": true
+  },
+  {
+    "path": "incoming/mp4_raw/A06.mp4",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio"
+        },
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 580
+        }
+      ],
+      "format": {
+        "duration": "12.921333"
+      }
+    },
+    "ok": true
+  }
+]
