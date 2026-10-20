@@ -1,11 +1,12 @@
 {
-  "schemaVersion": "dream-lantern-video-hunt-1.0",
+  "schemaVersion": "dream-lantern-video-hunt-1.1",
   "startedAt": "2026-10-20",
   "policy": {
     "stableDirectMp4": "only a verified long-lived direct media URL suitable for public runtime",
     "officialPageOnly": "official PV/video page exists but no stable direct media URL has been verified",
     "officialEmbedOnly": "official hosted/embed stream exists; do not download or convert it into MP4",
-    "reject": ["temporary_signed_media", "drm_media", "third_party_reupload", "commentary_video", "pirate_source", "guessed_url"]
+    "noReliablePvHostFound": "official animation existence is confirmed, but no reliable official PV host was verified in this search pass",
+    "reject": ["temporary_signed_media", "drm_media", "third_party_reupload", "commentary_video", "pirate_source", "guessed_url", "live_action_name_collision"]
   },
   "firstPass": {
     "M09": {
@@ -67,12 +68,56 @@
       "note": "沐天城/两生花PV只作M07缘忆/辅助候选，不冒充M07主Opening。"
     }
   },
+  "secondPass": {
+    "M01": {
+      "title": "下沙篇",
+      "status": "no_reliable_official_pv_host_found_first_pass",
+      "officialAnimationConfirmed": true,
+      "stableDirectMp4": [],
+      "runtimeUntilFound": "official_still_fx"
+    },
+    "M03": {
+      "title": "王权篇",
+      "status": "no_reliable_official_pv_host_found_first_pass",
+      "officialAnimationConfirmed": true,
+      "stableDirectMp4": [],
+      "runtimeUntilFound": "official_flagship_still_fx"
+    },
+    "M04": {
+      "title": "月红篇（动画）",
+      "status": "no_reliable_official_pv_host_found_first_pass",
+      "officialAnimationConfirmed": true,
+      "stableDirectMp4": [],
+      "runtimeUntilFound": "official_still_fx",
+      "collisionRule": "搜索中的2024真人剧《狐妖小红娘月红篇》不是本项目动画M04动态素材，必须排除。"
+    },
+    "M05": {
+      "title": "千颜篇",
+      "status": "no_reliable_official_pv_host_found_first_pass",
+      "officialAnimationConfirmed": true,
+      "stableDirectMp4": [],
+      "runtimeUntilFound": "official_still_fx"
+    },
+    "M06": {
+      "title": "南国篇",
+      "status": "no_reliable_official_pv_host_found_first_pass",
+      "officialAnimationConfirmed": true,
+      "stableDirectMp4": [],
+      "runtimeUntilFound": "official_still_fx"
+    }
+  },
   "searchFindings": {
-    "gardenCulture": "官方作品页确认尾生、竹业、沐天城、两生花存在定档PV入口；无暮存在正式动画作品入口。",
+    "gardenCulture": "官方作品页确认尾生、竹业、沐天城、两生花存在定档PV入口；并确认下沙、王权、月红、千颜、南国等动画篇制作/播出信息。",
     "officialWeibo": "镜花缘概念PV、东方月初个人PV、涂山雅雅PV已确认来自狐妖小红娘动画官博。",
     "officialTencentYoutube": "找到Tencent Video-ANIMATION官方Fox Spirit Matchmaker Season11流媒体页；仅登记为官方嵌入/参考，不下载、不转存。",
+    "searchPollution": "早期篇章搜索容易混入2024真人剧《狐妖小红娘月红篇》、普通UP主转载和二次整理；均不进入动画正式动态池。",
     "bilibiliSearch": "搜索到的无暮/镜花缘相关多为非官方UP主转载或整理，全部不进入正式资源。"
   },
   "stableDirectMp4Count": 0,
-  "next": ["continue_official_source_search", "inspect_official_embed_destinations_without_extracting_temporary_media", "only_register_direct_media_if_long_lived_and_publicly_usable"]
+  "next": [
+    "search_more_official_animation_weibo_posts",
+    "search_official_tencent_or_wetv_animation_hosts",
+    "inspect_official_embed_destinations_without_extracting_temporary_media",
+    "only_register_direct_media_if_long_lived_and_publicly_usable"
+  ]
 }
