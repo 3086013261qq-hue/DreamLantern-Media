@@ -1,1 +1,21 @@
-{"schemaVersion":"dream-lantern-video-2.0","chapterId":"M05","title":"千颜篇","sources":[],"stableDirectMp4":[],"runtime":"official_still_fx","rule":"当前无稳定直连动态源"}
+{
+  "schemaVersion": "dream-lantern-video-2.1",
+  "chapterId": "M05",
+  "title": "千颜篇",
+  "sources": [
+    {
+      "key": "official_tencent_anime_bilibili_qianyan_op",
+      "title": "狐妖小红娘千颜篇OP《铭记》首曝！",
+      "page": "https://www.bilibili.com/video/BV1Tx411y7E9/",
+      "publisher": "腾讯动漫",
+      "publisherVerifiedByPage": true,
+      "published": "2017-02-17",
+      "status": "official_page_only_arc_title_verified",
+      "uses": ["opening_reference", "memory_reference", "official_dynamic_reference"],
+      "rules": ["保持平台官方播放页，不抓取或转存平台媒体文件"]
+    }
+  ],
+  "stableDirectMp4": [],
+  "runtime": "official_still_fx",
+  "rule": "千颜篇已找到腾讯动漫官方OP视频页，可作Opening/缘忆动态参考；仍无稳定裸MP4时继续使用官方千颜静态视觉+FX。"
+}
