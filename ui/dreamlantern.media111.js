@@ -25,7 +25,12 @@
     const opening=q(root,'.dl-opening'); if(!opening||!chapterId)return {ok:false,reason:'missing_opening_or_chapter'};
     opening.querySelector('.dl-111-opening-video')?.remove();
     try{
-      const m=await manifest(); const spec=m.chapterVideos?.[chapterId]; if(!spec?.video)return {ok:false,reason:'no_video'};
+      const m=await manifest();
+      if(m.mappingStatus!=='VERIFIED_MANGA_ORDER'){
+        opening.dataset.dlVideoMounted='mapping-pending';
+        return {ok:false,reason:'manga_order_mapping_not_verified'};
+      }
+      const spec=m.chapterVideos?.[chapterId]; if(!spec?.video||spec.verified!==true)return {ok:false,reason:'no_verified_video'};
       const v=document.createElement('video'); v.className='dl-111-opening-video'; v.src=full(spec.video); v.playsInline=true; v.loop=true; v.preload='metadata'; v.autoplay=true; v.muted=false; v.controls=false;
       opening.prepend(v); opening.dataset.dlVideoMounted='1';
       v.play().catch(()=>{v.controls=true; opening.dataset.dlVideoMounted='tap-to-play';});
