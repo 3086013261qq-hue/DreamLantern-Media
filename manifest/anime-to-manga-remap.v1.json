@@ -1,7 +1,7 @@
 {
-  "schemaVersion": "dream-lantern-anime-to-manga-remap-1.3",
+  "schemaVersion": "dream-lantern-anime-to-manga-remap-1.4",
   "generatedAt": "2026-10-20",
-  "rule": "The user's numeric suffixes follow anime arc/broadcast order. M/A are source-type labels only: M=OP source, A=EP source. They MUST NOT be interpreted as DreamLantern modern/ancient IDs. Remap by anime arc order -> arc name -> DreamLantern canonical manga slot; never bind by equal numeric suffix alone.",
+  "rule": "The user's numeric suffixes follow anime arc/broadcast order. M/A are source-type labels only: M=OP source, A=EP source. They MUST NOT be interpreted as DreamLantern modern/ancient IDs. All 8 EPs cover the 8 ancient volumes and all 13 OPs cover the 13 modern volumes. Media-slot binding is presentation-only and does not by itself assert canon adaptation equivalence.",
   "mappingPipeline": [
     "raw_numeric_order",
     "anime_arc_order_lookup",
@@ -44,14 +44,14 @@
     "13":"incoming/mp4_raw/M13.mp4"
   },
   "epRawFileByAnimeIndex": {
-    "1": "incoming/mp4_raw/SVID_20261020_194425_1.mp4",
-    "2": "incoming/mp4_raw/SVID_20261020_195926_1.mp4",
-    "3": "incoming/mp4_raw/A03.mp4",
-    "4": "incoming/mp4_raw/A04.mp4",
-    "5": "incoming/mp4_raw/A05.mp4",
-    "6": "incoming/mp4_raw/A06.mp4",
-    "7": "incoming/mp4_raw/A07.mp4",
-    "8": "incoming/mp4_raw/A08.mp4"
+    "1":"incoming/mp4_raw/SVID_20261020_194425_1.mp4",
+    "2":"incoming/mp4_raw/SVID_20261020_195926_1.mp4",
+    "3":"incoming/mp4_raw/A03.mp4",
+    "4":"incoming/mp4_raw/A04.mp4",
+    "5":"incoming/mp4_raw/A05.mp4",
+    "6":"incoming/mp4_raw/A06.mp4",
+    "7":"incoming/mp4_raw/A07.mp4",
+    "8":"incoming/mp4_raw/A08.mp4"
   },
   "canonicalMangaOrder": [
     {"id":"A01","title":"上古源流"},
@@ -89,6 +89,7 @@
   "ancientMappingPolicy": {
     "status":"FINAL_CURATED_EP_MAPPING",
     "usesEachUploadedEpOnce":true,
+    "coverage":"8/8",
     "note":"The eight ancient DreamLantern volumes are chronological project volumes, not anime arc IDs. Uploaded EP clips are reordered by story semantics; equal-number binding is forbidden."
   },
   "modernOrderCrosswalk": {
@@ -98,29 +99,29 @@
     "M04":{"targetTitle":"月红篇","sourceType":"OP","sourceAnimeIndex":3,"sourceArc":"月红篇","rawVideo":"incoming/mp4_raw/M03.mp4","bindingType":"direct_semantic"},
     "M05":{"targetTitle":"千颜篇","sourceType":"OP","sourceAnimeIndex":4,"sourceArc":"千颜篇","rawVideo":"incoming/mp4_raw/M04.mp4","bindingType":"direct_semantic"},
     "M06":{"targetTitle":"南国篇","sourceType":"OP","sourceAnimeIndex":5,"sourceArc":"南国篇","rawVideo":"incoming/mp4_raw/M05.mp4","bindingType":"direct_semantic"},
-    "M07":{"targetTitle":"金晨曦篇","sourceType":"OP","sourceAnimeIndex":8,"sourceArc":"金晨曦篇","rawVideo":"incoming/mp4_raw/M08.mp4","bindingType":"direct_semantic","relatedVideos":[{"sourceAnimeIndex":9,"sourceArc":"沐天城篇","rawVideo":"incoming/mp4_raw/M09.mp4"},{"sourceAnimeIndex":10,"sourceArc":"两生花篇","rawVideo":"incoming/mp4_raw/M10.mp4"}]},
+    "M07":{"targetTitle":"金晨曦篇","sourceType":"OP","sourceAnimeIndex":8,"sourceArc":"金晨曦篇","rawVideo":"incoming/mp4_raw/M08.mp4","bindingType":"direct_semantic"},
     "M08":{"targetTitle":"真龙篇","sourceType":"OP","sourceAnimeIndex":11,"sourceArc":"无暮篇","rawVideo":"incoming/mp4_raw/M11.mp4","bindingType":"curated_semantic","note":"对应梦灯笼真龙/无暮阶段"},
     "M09":{"targetTitle":"镜花缘篇","sourceType":"OP","sourceAnimeIndex":12,"sourceArc":"镜花缘篇","rawVideo":"incoming/mp4_raw/M12.mp4","bindingType":"direct_semantic"},
-    "M10":{"targetTitle":"龙湾篇","sourceType":"OP","bindingType":"unbound_no_one_to_one_anime_arc","rawVideo":null},
-    "M11":{"targetTitle":"东方灵族篇","sourceType":"OP","bindingType":"unbound_no_one_to_one_anime_arc","rawVideo":null},
-    "M12":{"targetTitle":"再入南国篇","sourceType":"OP","bindingType":"unbound_no_one_to_one_anime_arc","rawVideo":null},
-    "M13":{"targetTitle":"新北山篇","sourceType":"OP","bindingType":"unbound_no_one_to_one_anime_arc","rawVideo":null,"forbiddenRawVideo":"incoming/mp4_raw/M13.mp4","note":"M13.mp4 is anime arc 13 黄风岭篇 and must not be bound to DreamLantern M13 新北山篇"}
+    "M10":{"targetTitle":"龙湾篇","sourceType":"OP","sourceAnimeIndex":6,"sourceArc":"竹业篇","rawVideo":"incoming/mp4_raw/M06.mp4","bindingType":"visual_only_residual_order","canonEquivalent":false},
+    "M11":{"targetTitle":"东方灵族篇","sourceType":"OP","sourceAnimeIndex":9,"sourceArc":"沐天城篇","rawVideo":"incoming/mp4_raw/M09.mp4","bindingType":"visual_only_residual_order","canonEquivalent":false},
+    "M12":{"targetTitle":"再入南国篇","sourceType":"OP","sourceAnimeIndex":10,"sourceArc":"两生花篇","rawVideo":"incoming/mp4_raw/M10.mp4","bindingType":"visual_only_residual_order","canonEquivalent":false},
+    "M13":{"targetTitle":"新北山篇","sourceType":"OP","sourceAnimeIndex":13,"sourceArc":"黄风岭篇","rawVideo":"incoming/mp4_raw/M13.mp4","bindingType":"visual_only_residual_order","canonEquivalent":false}
   },
   "modernMappingPolicy": {
-    "status":"M01_M09_FINAL_M10_M13_EXPLICITLY_UNBOUND",
-    "note":"M01-M09 are final semantic OP mappings. M10-M13 are explicit no-direct-anime matches and remain playable via cover/static/FX fallback rather than a false OP binding."
+    "status":"FINAL_FULL_13_OF_13_OP_MAPPING",
+    "coverage":"13/13",
+    "usesEachUploadedOpOnce":true,
+    "residualRule":"After direct/curated semantic matches are assigned, the four remaining OPs preserve their original anime relative order and fill the four remaining DreamLantern modern media slots. These are visual Opening bindings only, not canon-equivalence claims.",
+    "note":"No modern slot may remain rawVideo=null. Old M10-M13 unbound rules are superseded for the presentation/media layer."
   },
-  "historyOnlyAnimeArcs": {
-    "6":{"title":"竹业篇","rawVideo":"incoming/mp4_raw/M06.mp4","use":"history_or_replay","note":"不占现代卷位"}
+  "canonBoundary": {
+    "M10":"竹业篇OP可作为M10 Opening视觉，不宣称竹业正史=龙湾篇",
+    "M11":"沐天城篇OP可作为M11 Opening视觉，不宣称沐天城正史=东方灵族篇",
+    "M12":"两生花篇OP可作为M12 Opening视觉，不宣称两生花正史=再入南国篇",
+    "M13":"黄风岭篇OP可作为M13 Opening视觉，不宣称黄风岭正史=新北山篇"
   },
-  "relatedOnlyAnimeArcs": {
-    "9":{"title":"沐天城篇","rawVideo":"incoming/mp4_raw/M09.mp4","use":"M07_related"},
-    "10":{"title":"两生花篇","rawVideo":"incoming/mp4_raw/M10.mp4","use":"M07_related"},
-    "13":{"title":"黄风岭篇","rawVideo":"incoming/mp4_raw/M13.mp4","use":"global_or_latest_anime_display_only","forbiddenTarget":"M13"}
-  },
-  "lateMangaSlots":["M10","M11","M12","M13"],
-  "lateMangaRule":"These manga slots do not have a one-to-one anime broadcast arc in the uploaded OP sequence. Never fill them merely by equal numeric suffix.",
   "ancientRule":"For A-source files, numeric order means anime arc order and A means EP. Use ancientOrderCrosswalk.",
-  "modernRule":"For M-source files, numeric order means anime arc order and M means OP. Use modernOrderCrosswalk; do not infer target volume from filename suffix.",
-  "status":"ANCIENT_FINAL_MODERN_EXPLICIT"
+  "modernRule":"For M-source files, numeric order means anime arc order and M means OP. Use all 13 entries in modernOrderCrosswalk; media binding does not alter story canon.",
+  "totalVideoCoverage":"21/21",
+  "status":"FULL_21_VOLUME_REMOTE_VIDEO_MAPPING_FINAL"
 }
