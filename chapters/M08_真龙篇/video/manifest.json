@@ -1,1 +1,32 @@
-{"schemaVersion":"dream-lantern-video-2.0","chapterId":"M08","title":"真龙篇","sources":[{"key":"official_pv_wumu","title":"无暮篇官方动态宣传入口","page":"https://www.garden-culture.net/hywm.html","status":"page_verified_no_direct_mp4","uses":["opening_candidate","memory"]},{"key":"official_pv_wumu_wangquanjingxing","title":"无暮篇·王权景行官方动态","page":"https://weibo.com/5616549369/4905948790129250","status":"page_verified_no_direct_mp4","uses":["memory","opening_candidate"]}],"stableDirectMp4":[],"runtime":"official_still_fx","rule":"页面有官方动态不等于已有可播MP4；禁止提取临时签名媒体"}
+{
+  "schemaVersion": "dream-lantern-video-2.1",
+  "chapterId": "M08",
+  "title": "真龙篇",
+  "sources": [
+    {
+      "key": "official_pv_wumu",
+      "title": "无暮篇官方动态宣传入口",
+      "page": "https://www.garden-culture.net/hywm.html",
+      "status": "official_page_only",
+      "uses": ["opening_candidate", "memory"]
+    },
+    {
+      "key": "official_pv_wumu_wangquanjingxing",
+      "title": "无暮篇·王权景行官方动态",
+      "page": "https://weibo.com/5616549369/4905948790129250",
+      "status": "official_page_only",
+      "uses": ["memory", "opening_candidate"]
+    },
+    {
+      "key": "official_stream_tencent_youtube_season11_ep01",
+      "title": "Fox Spirit Matchmaker Season11 EP01 · Tencent Video-ANIMATION",
+      "page": "https://www.youtube.com/watch?v=zS7JdSyZC2I",
+      "status": "official_embed_only",
+      "uses": ["official_stream_reference"],
+      "rules": ["不得下载转码为MP4", "不得当作短PV Opening", "仅证明官方动态流媒体来源存在"]
+    }
+  ],
+  "stableDirectMp4": [],
+  "runtime": "official_still_fx",
+  "rule": "官方页面/嵌入流不等于裸MP4；禁止提取临时签名媒体、下载转码或抓取受保护流。"
+}
