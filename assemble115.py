@@ -68,7 +68,7 @@ if __name__=='__main__':
  if args.stage=='source':
   (R/'source/script-4.js').write_text(s);dump(R/'qa/115-business-audit.json',a)
  elif args.stage=='json':
-  assert (R/'source/script-4.js').read_text()==s;dump(OUT.with_suffix('.json'),c)
+  assert (R/'source/script-4.js').read_text()==s;dump(Path(str(OUT)+'.json'),c)
  elif args.stage=='png':
-  assert json.loads(OUT.with_suffix('.json').read_text())==c;raw,result=png(c);OUT.with_suffix('.png').write_bytes(raw);dump(R/'qa/115-package-validation.json',result)
+  assert json.loads(Path(str(OUT)+'.json').read_text())==c;raw,result=png(c);Path(str(OUT)+'.png').write_bytes(raw);dump(R/'qa/115-package-validation.json',result)
  print(json.dumps(a,ensure_ascii=False))
