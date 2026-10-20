@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "dream-lantern-video-2.1",
+  "schemaVersion": "dream-lantern-video-2.2",
   "chapterId": "M02",
   "title": "尾生篇",
   "sources": [
@@ -11,17 +11,25 @@
       "uses": ["opening_candidate", "memory"]
     },
     {
+      "key": "official_stream_tencent_weisheng_ep07",
+      "title": "狐妖小红娘·尾生篇 EP07 · 胡尾生与月啼暇",
+      "page": "https://www.youtube.com/watch?v=vrgHZPAllg4",
+      "publisher": "Tencent Video-ANIMATION",
+      "publisherVerified": true,
+      "status": "official_embed_only_arc_title_verified",
+      "uses": ["official_stream_reference", "memory_reference"],
+      "rules": ["不得下载转码为MP4", "不得替代尾生篇定档PV作为短Opening"]
+    },
+    {
       "key": "official_stream_tencent_youtube_s7_ep01",
       "title": "Fox Spirit Matchmaker Season 7 EP01 · Tencent Video-ANIMATION",
       "page": "https://www.youtube.com/watch?v=1N7TrGhemnc",
-      "status": "official_embed_only",
-      "arcMapping": "Season 7 = 尾生篇",
-      "arcMappingEvidence": "historical season mapping cross-check; YouTube title itself only exposes season number",
-      "uses": ["official_stream_reference", "memory_reference"],
-      "rules": ["不得下载转码为MP4", "不得替代尾生篇定档PV作为Opening"]
+      "status": "official_embed_only_secondary_reference",
+      "uses": ["series_archive_reference"],
+      "rule": "仅作官方系列存档参考；篇章绑定优先使用标题直接写明尾生篇的官方视频。"
     }
   ],
   "stableDirectMp4": [],
   "runtime": "official_still_fx",
-  "rule": "有官方PV页与官方整季流媒体参考，但仍无稳定裸MP4；禁止抓临时媒体或下载转码。"
+  "rule": "篇章名已由腾讯官方视频标题直接确认；有官方PV页和官方流媒体，但仍无稳定裸MP4，禁止抓临时媒体或下载转码。"
 }
