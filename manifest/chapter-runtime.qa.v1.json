@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "dream-lantern-runtime-qa-1.0",
+  "checkedAt": "2026-10-20",
+  "scope": "repository_structure_and_resource_authority",
+  "overall": "PASS_REPOSITORY_STRUCTURE",
+  "notClaimed": ["android_real_device_pass", "live_jsdelivr_reachability_pass", "stable_mp4_playback_pass"],
+  "counts": {
+    "chapterCount": 21,
+    "ancientCount": 8,
+    "modernPlayableCount": 13,
+    "officialStaticMapped": 15,
+    "officialStaticPending": 6,
+    "officialVideoPageMapped": 8,
+    "stableDirectMp4": 0,
+    "uniqueLegacyGeneratedThemes": 9
+  },
+  "checks": {
+    "runtimeCatalogExists": "pass",
+    "runtimeCatalogContainsA01ToA08AndM01ToM13": "pass",
+    "chapterFoldersHaveResourceImageVideoAuthority": "pass",
+    "chapterIndexPointsToRuntimeV2": "pass",
+    "legacyPosterAndThumbCompatibilityOnly": "pass",
+    "legacyVisualOverrideMigrationReferenceOnly": "pass",
+    "generatedNormalRuntimeAllowed": "pass_false",
+    "crossChapterBorrowingAllowed": "pass_false",
+    "guessedMp4Allowed": "pass_false",
+    "externalOfficialHttpsDirect": "pass_policy",
+    "relativeRepoAssetUsesAssetBase": "pass_policy",
+    "stableDirectMp4CurrentlyEmpty": "pass",
+    "m09ThreeOfficialPvPagesRegisteredWithoutFakeMp4": "pass",
+    "m08WumuAlignmentPreserved": "pass",
+    "m12OldNanguoMainVisualBorrowForbidden": "pass",
+    "m13HuangfenglingBindingForbidden": "pass",
+    "generatedAssetShaDedupeAuditExists": "pass",
+    "liveJsdelivrReachability": "blocked_by_execution_environment_dns",
+    "gardenStaticLiveReachabilitySample": "blocked_by_execution_environment_dns",
+    "androidRealDevice": "pending_future_final_qa"
+  },
+  "authorities": {
+    "runtime": "manifest/chapter-runtime.v2.json",
+    "chapterIndex": "chapters/index.json",
+    "thirdLayerStatus": "chapters/third-layer-status.json",
+    "dedupeAudit": "chapters/asset-dedupe-audit.v1.0.json",
+    "runtimeRules": "docs/runtime-chapter-catalog-v2.md"
+  },
+  "nextStage": "official_mp4_source_collection_and_verification",
+  "tagPolicy": "do_not_create_new_formal_tag_until_mp4_stage_and_android_real_device_qa_are_complete"
+}
