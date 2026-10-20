@@ -1,1 +1,21 @@
-{"schemaVersion":"dream-lantern-video-2.0","chapterId":"M03","title":"王权篇","sources":[],"stableDirectMp4":[],"runtime":"official_still_fx","rule":"暂不借其他王权相关PV冒充本篇正式动态Opening"}
+{
+  "schemaVersion": "dream-lantern-video-2.1",
+  "chapterId": "M03",
+  "title": "王权篇",
+  "sources": [
+    {
+      "key": "official_stream_tencent_wangquan_fugui_qingtong",
+      "title": "看完想哭！《狐妖小红娘》王权富贵、清瞳再现前世今生爱情",
+      "page": "https://www.youtube.com/watch?v=qKE3IS_QXkw",
+      "publisher": "Tencent Video",
+      "publisherVerified": true,
+      "published": "2017-07-12",
+      "status": "official_embed_only_arc_content_verified",
+      "uses": ["memory_reference", "official_dynamic_reference"],
+      "rules": ["不是短PV，不作为默认Opening", "不得下载转码为MP4"]
+    }
+  ],
+  "stableDirectMp4": [],
+  "runtime": "official_flagship_still_fx",
+  "rule": "王权篇已有腾讯官方动态参考，但目前仍未核实可作为短Opening的稳定裸MP4；主Opening继续使用官方王权静态视觉+FX。"
+}
