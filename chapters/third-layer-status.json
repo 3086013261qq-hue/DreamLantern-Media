@@ -1,1 +1,19 @@
-{"schemaVersion":"dream-lantern-third-layer-status-1.1","phase":"classification_complete_enrichment_pending","completedChapters":["A01","A02","A03","A04","A05","A06","A07","A08","M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12","M13"],"verifiedRichChapters":["A02","A03","A04","A05","A06","M02","M04","M07","M08"],"sparseButClassified":["A01","A07","A08","M01","M03","M05","M06","M09","M10","M11","M12","M13"],"rules":{"countByUniqueAsset":true,"duplicateCropDoesNotIncreaseAssetCount":true,"generatedImagesFallbackOnly":true,"officialAnimationOnlyForAnimatedArcs":true,"stableDirectMp4RequiredForVideoFile":true,"emptySlotPreferredOverWrongAsset":true}}
+{
+  "schemaVersion": "dream-lantern-third-layer-status-1.2",
+  "phase": "complete_ready_for_runtime_adapter",
+  "completedChapters": ["A01","A02","A03","A04","A05","A06","A07","A08","M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12","M13"],
+  "officialStaticMapped": ["A02","A03","A04","A05","A06","A07","A08","M01","M02","M03","M04","M05","M06","M07","M08"],
+  "officialStaticPending": ["A01","M09","M10","M11","M12","M13"],
+  "officialVideoPageMapped": ["A02","A03","A05","A06","M02","M07","M08","M09"],
+  "stableDirectMp4": [],
+  "generatedThemeAudit": "chapters/asset-dedupe-audit.v1.0.json",
+  "rules": {
+    "countByUniqueAsset": true,
+    "duplicateCropDoesNotIncreaseAssetCount": true,
+    "generatedImagesFallbackOnly": true,
+    "officialAnimationOnlyForAnimatedArcs": true,
+    "stableDirectMp4RequiredForVideoFile": true,
+    "emptySlotPreferredOverWrongAsset": true,
+    "thirdPartyScreenshotsForbidden": true
+  }
+}
