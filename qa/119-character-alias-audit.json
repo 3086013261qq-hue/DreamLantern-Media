@@ -1,0 +1,3016 @@
+{
+  "baseline": "狐妖小红娘_梦灯笼_正式版_v1.2.0_118候选5.json",
+  "characterBodyCount": 90,
+  "characterBodyStorySceneRegexCount": 90,
+  "scannedCharacterAndAssociatedEntryCount": 155,
+  "storySceneRegexCount": 155,
+  "changedEntryCount": 155,
+  "changedEntryIndices": [
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203
+  ],
+  "singleLongAliasExceptions": [
+    {
+      "character": "环毛粉软怪",
+      "reason": "角色正文及现有关键词未提供独立简称；保留既有专名，不机械截断或使用泛称。"
+    },
+    {
+      "character": "小狐狸红线仙",
+      "reason": "角色正文及现有关键词未提供独立简称；保留既有专名，不机械截断或使用泛称。"
+    }
+  ],
+  "suspiciousSingleLongWithoutExceptionCount": 0,
+  "broadAliasCount": 0,
+  "sameCharacterConsistency": true,
+  "characters": [
+    {
+      "character": "蛇发火姬",
+      "aliasCount": 2,
+      "aliases": [
+        "蛇发火姬",
+        "火姬"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "沙狐国王",
+      "aliasCount": 2,
+      "aliases": [
+        "沙狐国王",
+        "西西域狐皇"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "月映丽城",
+      "aliasCount": 3,
+      "aliases": [
+        "月映丽城",
+        "秘书小丽",
+        "小丽"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "东方殿良",
+      "aliasCount": 1,
+      "aliases": [
+        "东方殿良"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "东方彤",
+      "aliasCount": 1,
+      "aliases": [
+        "东方彤"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "欢都星珍",
+      "aliasCount": 2,
+      "aliases": [
+        "欢都星珍",
+        "星珍"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "东方孤月",
+      "aliasCount": 1,
+      "aliases": [
+        "东方孤月"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "傲来国三少爷",
+      "aliasCount": 6,
+      "aliases": [
+        "傲来国三少爷",
+        "毒童子",
+        "高大强",
+        "阿来",
+        "三少爷",
+        "三少"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "六耳猕猴",
+      "aliasCount": 3,
+      "aliases": [
+        "六耳猕猴",
+        "傲来国二小姐",
+        "六耳"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "空青",
+      "aliasCount": 1,
+      "aliases": [
+        "空青"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "凤牺",
+      "aliasCount": 2,
+      "aliases": [
+        "凤牺",
+        "凤栖"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "卓雷",
+      "aliasCount": 2,
+      "aliases": [
+        "卓雷",
+        "小雷"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "卓闪",
+      "aliasCount": 1,
+      "aliases": [
+        "卓闪"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "张风",
+      "aliasCount": 2,
+      "aliases": [
+        "张风",
+        "胖风"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "王权景行",
+      "aliasCount": 2,
+      "aliases": [
+        "王权景行",
+        "景行"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "王权无暮",
+      "aliasCount": 3,
+      "aliases": [
+        "王权无暮",
+        "司徒无暮",
+        "无暮"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "翠玉小昙",
+      "aliasCount": 2,
+      "aliases": [
+        "翠玉小昙",
+        "小昙"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "杨雁",
+      "aliasCount": 1,
+      "aliases": [
+        "杨雁"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "李慕尘",
+      "aliasCount": 2,
+      "aliases": [
+        "李慕尘",
+        "沐天城主"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "翠玉灵",
+      "aliasCount": 3,
+      "aliases": [
+        "翠玉灵",
+        "水灵",
+        "翠姐姐"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "翠玉鸣鸾",
+      "aliasCount": 3,
+      "aliases": [
+        "翠玉鸣鸾",
+        "鸣鸾",
+        "金晨曦小姐"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "杨蔑",
+      "aliasCount": 1,
+      "aliases": [
+        "杨蔑"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "木蔑",
+      "aliasCount": 1,
+      "aliases": [
+        "木蔑"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "邓七岳",
+      "aliasCount": 2,
+      "aliases": [
+        "邓七岳",
+        "不动地藏"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "张正",
+      "aliasCount": 2,
+      "aliases": [
+        "张正",
+        "黑剑"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "牧神气",
+      "aliasCount": 2,
+      "aliases": [
+        "牧神气",
+        "天吼星"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "姬无忌",
+      "aliasCount": 2,
+      "aliases": [
+        "姬无忌",
+        "风雷双翼"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "青木媛",
+      "aliasCount": 2,
+      "aliases": [
+        "青木媛",
+        "妙玉仙子"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "李去浊",
+      "aliasCount": 3,
+      "aliases": [
+        "李去浊",
+        "天机童子",
+        "千机童子"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "李自在",
+      "aliasCount": 2,
+      "aliases": [
+        "李自在",
+        "无定刀君"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "杨一叹",
+      "aliasCount": 2,
+      "aliases": [
+        "杨一叹",
+        "三识神君"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "王权醉",
+      "aliasCount": 2,
+      "aliases": [
+        "王权醉",
+        "幻梦剑客"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "金人凤",
+      "aliasCount": 2,
+      "aliases": [
+        "金人凤",
+        "金面火神"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "东方秦兰",
+      "aliasCount": 2,
+      "aliases": [
+        "东方秦兰",
+        "秦兰"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "东方淮竹",
+      "aliasCount": 2,
+      "aliases": [
+        "东方淮竹",
+        "淮竹"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "王权霸业",
+      "aliasCount": 3,
+      "aliases": [
+        "王权霸业",
+        "霸业",
+        "剑先生"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "黑狐左使",
+      "aliasCount": 2,
+      "aliases": [
+        "黑狐左使",
+        "左使"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "欢都擎天",
+      "aliasCount": 3,
+      "aliases": [
+        "欢都擎天",
+        "毒皇",
+        "万毒之王"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "欢都落兰",
+      "aliasCount": 2,
+      "aliases": [
+        "欢都落兰",
+        "落兰"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "平丘月初",
+      "aliasCount": 1,
+      "aliases": [
+        "平丘月初"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "律笺文",
+      "aliasCount": 1,
+      "aliases": [
+        "律笺文"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "颜如玉",
+      "aliasCount": 1,
+      "aliases": [
+        "颜如玉"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "阿克占·布泰",
+      "aliasCount": 2,
+      "aliases": [
+        "阿克占·布泰",
+        "布泰"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "石宽",
+      "aliasCount": 1,
+      "aliases": [
+        "石宽"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "月啼暇",
+      "aliasCount": 1,
+      "aliases": [
+        "月啼暇"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "胡尾生",
+      "aliasCount": 1,
+      "aliases": [
+        "胡尾生"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "厉雪扬",
+      "aliasCount": 1,
+      "aliases": [
+        "厉雪扬"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "梵云飞",
+      "aliasCount": 1,
+      "aliases": [
+        "梵云飞"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "白裘恩",
+      "aliasCount": 1,
+      "aliases": [
+        "白裘恩"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "清瞳",
+      "aliasCount": 1,
+      "aliases": [
+        "清瞳"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "王权富贵",
+      "aliasCount": 2,
+      "aliases": [
+        "王权富贵",
+        "道门兵人"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "王富贵",
+      "aliasCount": 1,
+      "aliases": [
+        "王富贵"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "涂山容容",
+      "aliasCount": 3,
+      "aliases": [
+        "涂山容容",
+        "容容",
+        "千面妖容"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "涂山雅雅",
+      "aliasCount": 2,
+      "aliases": [
+        "涂山雅雅",
+        "雅雅"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "东方月初",
+      "aliasCount": 1,
+      "aliases": [
+        "东方月初"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "涂山红红",
+      "aliasCount": 3,
+      "aliases": [
+        "涂山红红",
+        "红红",
+        "妖仙姐姐"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "白月初",
+      "aliasCount": 2,
+      "aliases": [
+        "白月初",
+        "道士哥哥"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "涂山苏苏",
+      "aliasCount": 2,
+      "aliases": [
+        "涂山苏苏",
+        "苏苏"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "六手蓝魔",
+      "aliasCount": 1,
+      "aliases": [
+        "六手蓝魔"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "环毛粉软怪",
+      "aliasCount": 1,
+      "aliases": [
+        "环毛粉软怪"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "锣佟",
+      "aliasCount": 1,
+      "aliases": [
+        "锣佟"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "小狐狸红线仙",
+      "aliasCount": 1,
+      "aliases": [
+        "小狐狸红线仙"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "白板",
+      "aliasCount": 1,
+      "aliases": [
+        "白板"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "红中",
+      "aliasCount": 1,
+      "aliases": [
+        "红中"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "西门吹沙",
+      "aliasCount": 2,
+      "aliases": [
+        "西门吹沙",
+        "玉面风君"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "樊七手",
+      "aliasCount": 2,
+      "aliases": [
+        "樊七手",
+        "梵七手"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "孟二飞",
+      "aliasCount": 1,
+      "aliases": [
+        "孟二飞"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "六尾黑魔",
+      "aliasCount": 1,
+      "aliases": [
+        "六尾黑魔"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "百妖魔君",
+      "aliasCount": 2,
+      "aliases": [
+        "百妖魔君",
+        "妖怪收藏家"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "鸡爷",
+      "aliasCount": 2,
+      "aliases": [
+        "鸡爷",
+        "卯日洞主"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "极北萨摩王故义",
+      "aliasCount": 3,
+      "aliases": [
+        "极北萨摩王故义",
+        "故义",
+        "极北萨摩王"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "青蛤",
+      "aliasCount": 1,
+      "aliases": [
+        "青蛤"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "毒后",
+      "aliasCount": 1,
+      "aliases": [
+        "毒后"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "盖老太君",
+      "aliasCount": 2,
+      "aliases": [
+        "盖老太君",
+        "盖太君"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "毒婆子",
+      "aliasCount": 1,
+      "aliases": [
+        "毒婆子"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "毒老子",
+      "aliasCount": 2,
+      "aliases": [
+        "毒老子",
+        "南国皇叔"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "毒童子",
+      "aliasCount": 6,
+      "aliases": [
+        "毒童子",
+        "高大强",
+        "阿来",
+        "傲来国三少爷",
+        "三少爷",
+        "三少"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "毒公子",
+      "aliasCount": 2,
+      "aliases": [
+        "毒公子",
+        "毒中公子"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "雪域魔鼠雪脏",
+      "aliasCount": 3,
+      "aliases": [
+        "雪域魔鼠雪脏",
+        "魔鼠雪脏",
+        "雪脏"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "猫妖夜魅",
+      "aliasCount": 2,
+      "aliases": [
+        "猫妖夜魅",
+        "夜魅"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "五眉石虎巨木",
+      "aliasCount": 3,
+      "aliases": [
+        "五眉石虎巨木",
+        "五眉石虎",
+        "巨木"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "赤须火龙赤雷",
+      "aliasCount": 3,
+      "aliases": [
+        "赤须火龙赤雷",
+        "赤雷",
+        "赤须火龙"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "毒娘子",
+      "aliasCount": 1,
+      "aliases": [
+        "毒娘子"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "毒夫子",
+      "aliasCount": 1,
+      "aliases": [
+        "毒夫子"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "枯木药仙",
+      "aliasCount": 2,
+      "aliases": [
+        "枯木药仙",
+        "枯木"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "复海大圣",
+      "aliasCount": 2,
+      "aliases": [
+        "复海大圣",
+        "复海"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "王权无嗔",
+      "aliasCount": 2,
+      "aliases": [
+        "王权无嗔",
+        "无嗔"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "杨添",
+      "aliasCount": 1,
+      "aliases": [
+        "杨添"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "鲁凉",
+      "aliasCount": 1,
+      "aliases": [
+        "鲁凉"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    },
+    {
+      "character": "阮秋沅",
+      "aliasCount": 2,
+      "aliases": [
+        "阮秋沅",
+        "阮姐"
+      ],
+      "review": "existing sanctioned aliases + independently evidenced additions; no invented abbreviations"
+    }
+  ],
+  "entries": [
+    {
+      "index": 44,
+      "entry": "核心设定:西门吹沙·能力",
+      "owner": "西门吹沙",
+      "aliases": [
+        "西门吹沙",
+        "玉面风君"
+      ],
+      "regex": "/<story_scene>.*?(西门吹沙|玉面风君).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 45,
+      "entry": "核心设定:三尾黑魉·附体身份",
+      "owner": "三尾黑魉",
+      "aliases": [
+        "三尾黑魉",
+        "颜如玉"
+      ],
+      "regex": "/<story_scene>.*?(三尾黑魉|颜如玉).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 46,
+      "entry": "核心设定:六尾黑魔·能力",
+      "owner": "六尾黑魔",
+      "aliases": [
+        "六尾黑魔"
+      ],
+      "regex": "/<story_scene>.*?(六尾黑魔).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 47,
+      "entry": "核心设定:毒童子·身份边界",
+      "owner": "毒童子",
+      "aliases": [
+        "毒童子",
+        "高大强",
+        "阿来",
+        "傲来国三少爷",
+        "三少爷",
+        "三少"
+      ],
+      "regex": "/<story_scene>.*?(毒童子|高大强|阿来|傲来国三少爷|三少爷|三少).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 48,
+      "entry": "核心设定:毒婆子·能力",
+      "owner": "毒婆子",
+      "aliases": [
+        "毒婆子"
+      ],
+      "regex": "/<story_scene>.*?(毒婆子).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 49,
+      "entry": "核心设定:毒老子·能力",
+      "owner": "毒老子",
+      "aliases": [
+        "毒老子",
+        "南国皇叔"
+      ],
+      "regex": "/<story_scene>.*?(毒老子|南国皇叔).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 50,
+      "entry": "核心设定:毒童子·能力",
+      "owner": "毒童子",
+      "aliases": [
+        "毒童子",
+        "高大强",
+        "阿来",
+        "傲来国三少爷",
+        "三少爷",
+        "三少"
+      ],
+      "regex": "/<story_scene>.*?(毒童子|高大强|阿来|傲来国三少爷|三少爷|三少).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 51,
+      "entry": "核心设定:毒公子·能力",
+      "owner": "毒公子",
+      "aliases": [
+        "毒公子",
+        "毒中公子"
+      ],
+      "regex": "/<story_scene>.*?(毒公子|毒中公子).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 52,
+      "entry": "核心设定:金晨曦·生物",
+      "owner": "金晨曦",
+      "aliases": [
+        "金晨曦"
+      ],
+      "regex": "/<story_scene>.*?(金晨曦).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 53,
+      "entry": "核心设定:五眉石虎巨木·能力",
+      "owner": "五眉石虎巨木",
+      "aliases": [
+        "五眉石虎巨木",
+        "五眉石虎",
+        "巨木"
+      ],
+      "regex": "/<story_scene>.*?(五眉石虎巨木|五眉石虎|巨木).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 54,
+      "entry": "核心设定:赤须火龙赤雷·能力",
+      "owner": "赤须火龙赤雷",
+      "aliases": [
+        "赤须火龙赤雷",
+        "赤雷",
+        "赤须火龙"
+      ],
+      "regex": "/<story_scene>.*?(赤须火龙赤雷|赤雷|赤须火龙).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 55,
+      "entry": "核心设定:毒娘子·能力",
+      "owner": "毒娘子",
+      "aliases": [
+        "毒娘子"
+      ],
+      "regex": "/<story_scene>.*?(毒娘子).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 56,
+      "entry": "核心设定:枯木药仙·能力",
+      "owner": "枯木药仙",
+      "aliases": [
+        "枯木药仙",
+        "枯木"
+      ],
+      "regex": "/<story_scene>.*?(枯木药仙|枯木).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 57,
+      "entry": "核心设定:复海大圣·能力",
+      "owner": "复海大圣",
+      "aliases": [
+        "复海大圣",
+        "复海"
+      ],
+      "regex": "/<story_scene>.*?(复海大圣|复海).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 58,
+      "entry": "核心设定:黑狐娘娘·身份与分身",
+      "owner": "黑狐娘娘",
+      "aliases": [
+        "黑狐娘娘",
+        "凤牺",
+        "凤栖",
+        "空青"
+      ],
+      "regex": "/<story_scene>.*?(黑狐娘娘|凤牺|凤栖|空青).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 59,
+      "entry": "核心设定:蛇发火姬·能力",
+      "owner": "蛇发火姬",
+      "aliases": [
+        "蛇发火姬",
+        "火姬"
+      ],
+      "regex": "/<story_scene>.*?(蛇发火姬|火姬).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 60,
+      "entry": "核心设定:欢都星珍·能力",
+      "owner": "欢都星珍",
+      "aliases": [
+        "欢都星珍",
+        "星珍"
+      ],
+      "regex": "/<story_scene>.*?(欢都星珍|星珍).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 61,
+      "entry": "核心设定:东方孤月·能力",
+      "owner": "东方孤月",
+      "aliases": [
+        "东方孤月"
+      ],
+      "regex": "/<story_scene>.*?(东方孤月).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 62,
+      "entry": "核心设定:傲来国三少爷·能力",
+      "owner": "傲来国三少爷",
+      "aliases": [
+        "傲来国三少爷",
+        "毒童子",
+        "高大强",
+        "阿来",
+        "三少爷",
+        "三少"
+      ],
+      "regex": "/<story_scene>.*?(傲来国三少爷|毒童子|高大强|阿来|三少爷|三少).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 63,
+      "entry": "核心设定:六耳猕猴·能力",
+      "owner": "六耳猕猴",
+      "aliases": [
+        "六耳猕猴",
+        "傲来国二小姐",
+        "六耳"
+      ],
+      "regex": "/<story_scene>.*?(六耳猕猴|傲来国二小姐|六耳).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 64,
+      "entry": "核心设定:空青·能力",
+      "owner": "空青",
+      "aliases": [
+        "空青"
+      ],
+      "regex": "/<story_scene>.*?(空青).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 65,
+      "entry": "核心设定:凤牺·能力",
+      "owner": "凤牺",
+      "aliases": [
+        "凤牺",
+        "凤栖"
+      ],
+      "regex": "/<story_scene>.*?(凤牺|凤栖).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 66,
+      "entry": "核心设定:张风·能力",
+      "owner": "张风",
+      "aliases": [
+        "张风",
+        "胖风"
+      ],
+      "regex": "/<story_scene>.*?(张风|胖风).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 67,
+      "entry": "核心设定:王权景行·能力",
+      "owner": "王权景行",
+      "aliases": [
+        "王权景行",
+        "景行"
+      ],
+      "regex": "/<story_scene>.*?(王权景行|景行).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 68,
+      "entry": "核心设定:王权无暮·能力",
+      "owner": "王权无暮",
+      "aliases": [
+        "王权无暮",
+        "司徒无暮",
+        "无暮"
+      ],
+      "regex": "/<story_scene>.*?(王权无暮|司徒无暮|无暮).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 69,
+      "entry": "核心设定:李慕尘·能力",
+      "owner": "李慕尘",
+      "aliases": [
+        "李慕尘",
+        "沐天城主"
+      ],
+      "regex": "/<story_scene>.*?(李慕尘|沐天城主).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 70,
+      "entry": "核心设定:翠玉灵·能力",
+      "owner": "翠玉灵",
+      "aliases": [
+        "翠玉灵",
+        "水灵",
+        "翠姐姐"
+      ],
+      "regex": "/<story_scene>.*?(翠玉灵|水灵|翠姐姐).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 71,
+      "entry": "核心设定:翠玉鸣鸾·能力",
+      "owner": "翠玉鸣鸾",
+      "aliases": [
+        "翠玉鸣鸾",
+        "鸣鸾",
+        "金晨曦小姐"
+      ],
+      "regex": "/<story_scene>.*?(翠玉鸣鸾|鸣鸾|金晨曦小姐).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 72,
+      "entry": "核心设定:杨蔑·能力",
+      "owner": "杨蔑",
+      "aliases": [
+        "杨蔑"
+      ],
+      "regex": "/<story_scene>.*?(杨蔑).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 73,
+      "entry": "核心设定:木蔑·能力",
+      "owner": "木蔑",
+      "aliases": [
+        "木蔑"
+      ],
+      "regex": "/<story_scene>.*?(木蔑).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 74,
+      "entry": "核心设定:邓七岳·能力",
+      "owner": "邓七岳",
+      "aliases": [
+        "邓七岳",
+        "不动地藏"
+      ],
+      "regex": "/<story_scene>.*?(邓七岳|不动地藏).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 75,
+      "entry": "核心设定:张正·能力",
+      "owner": "张正",
+      "aliases": [
+        "张正",
+        "黑剑"
+      ],
+      "regex": "/<story_scene>.*?(张正|黑剑).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 76,
+      "entry": "核心设定:牧神气·能力",
+      "owner": "牧神气",
+      "aliases": [
+        "牧神气",
+        "天吼星"
+      ],
+      "regex": "/<story_scene>.*?(牧神气|天吼星).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 77,
+      "entry": "核心设定:姬无忌·能力",
+      "owner": "姬无忌",
+      "aliases": [
+        "姬无忌",
+        "风雷双翼"
+      ],
+      "regex": "/<story_scene>.*?(姬无忌|风雷双翼).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 78,
+      "entry": "核心设定:青木媛·能力",
+      "owner": "青木媛",
+      "aliases": [
+        "青木媛",
+        "妙玉仙子"
+      ],
+      "regex": "/<story_scene>.*?(青木媛|妙玉仙子).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 79,
+      "entry": "核心设定:李去浊·能力",
+      "owner": "李去浊",
+      "aliases": [
+        "李去浊",
+        "天机童子",
+        "千机童子"
+      ],
+      "regex": "/<story_scene>.*?(李去浊|天机童子|千机童子).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 80,
+      "entry": "核心设定:李自在·能力",
+      "owner": "李自在",
+      "aliases": [
+        "李自在",
+        "无定刀君"
+      ],
+      "regex": "/<story_scene>.*?(李自在|无定刀君).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 81,
+      "entry": "核心设定:杨一叹·能力",
+      "owner": "杨一叹",
+      "aliases": [
+        "杨一叹",
+        "三识神君"
+      ],
+      "regex": "/<story_scene>.*?(杨一叹|三识神君).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 82,
+      "entry": "核心设定:王权醉·能力",
+      "owner": "王权醉",
+      "aliases": [
+        "王权醉",
+        "幻梦剑客"
+      ],
+      "regex": "/<story_scene>.*?(王权醉|幻梦剑客).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 83,
+      "entry": "核心设定:金人凤·能力",
+      "owner": "金人凤",
+      "aliases": [
+        "金人凤",
+        "金面火神"
+      ],
+      "regex": "/<story_scene>.*?(金人凤|金面火神).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 84,
+      "entry": "核心设定:东方秦兰·能力",
+      "owner": "东方秦兰",
+      "aliases": [
+        "东方秦兰",
+        "秦兰"
+      ],
+      "regex": "/<story_scene>.*?(东方秦兰|秦兰).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 85,
+      "entry": "核心设定:东方淮竹·能力",
+      "owner": "东方淮竹",
+      "aliases": [
+        "东方淮竹",
+        "淮竹"
+      ],
+      "regex": "/<story_scene>.*?(东方淮竹|淮竹).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 86,
+      "entry": "核心设定:王权霸业·能力",
+      "owner": "王权霸业",
+      "aliases": [
+        "王权霸业",
+        "霸业",
+        "剑先生"
+      ],
+      "regex": "/<story_scene>.*?(王权霸业|霸业|剑先生).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 87,
+      "entry": "核心设定:黑狐左使·能力",
+      "owner": "黑狐左使",
+      "aliases": [
+        "黑狐左使",
+        "左使"
+      ],
+      "regex": "/<story_scene>.*?(黑狐左使|左使).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 88,
+      "entry": "核心设定:欢都擎天·能力",
+      "owner": "欢都擎天",
+      "aliases": [
+        "欢都擎天",
+        "毒皇",
+        "万毒之王"
+      ],
+      "regex": "/<story_scene>.*?(欢都擎天|毒皇|万毒之王).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 89,
+      "entry": "核心设定:欢都落兰·能力",
+      "owner": "欢都落兰",
+      "aliases": [
+        "欢都落兰",
+        "落兰"
+      ],
+      "regex": "/<story_scene>.*?(欢都落兰|落兰).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 90,
+      "entry": "核心设定:平丘月初·能力",
+      "owner": "平丘月初",
+      "aliases": [
+        "平丘月初"
+      ],
+      "regex": "/<story_scene>.*?(平丘月初).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 91,
+      "entry": "核心设定:律笺文·能力",
+      "owner": "律笺文",
+      "aliases": [
+        "律笺文"
+      ],
+      "regex": "/<story_scene>.*?(律笺文).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 92,
+      "entry": "核心设定:颜如玉·能力",
+      "owner": "颜如玉",
+      "aliases": [
+        "颜如玉"
+      ],
+      "regex": "/<story_scene>.*?(颜如玉).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 93,
+      "entry": "核心设定:阿克占·布泰·能力",
+      "owner": "阿克占",
+      "aliases": [
+        "阿克占·布泰",
+        "布泰"
+      ],
+      "regex": "/<story_scene>.*?(阿克占·布泰|布泰).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 94,
+      "entry": "核心设定:石宽·能力",
+      "owner": "石宽",
+      "aliases": [
+        "石宽"
+      ],
+      "regex": "/<story_scene>.*?(石宽).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 95,
+      "entry": "核心设定:月啼暇·能力",
+      "owner": "月啼暇",
+      "aliases": [
+        "月啼暇"
+      ],
+      "regex": "/<story_scene>.*?(月啼暇).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 96,
+      "entry": "核心设定:胡尾生·能力",
+      "owner": "胡尾生",
+      "aliases": [
+        "胡尾生"
+      ],
+      "regex": "/<story_scene>.*?(胡尾生).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 97,
+      "entry": "核心设定:厉雪扬·能力",
+      "owner": "厉雪扬",
+      "aliases": [
+        "厉雪扬"
+      ],
+      "regex": "/<story_scene>.*?(厉雪扬).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 98,
+      "entry": "核心设定:梵云飞·能力",
+      "owner": "梵云飞",
+      "aliases": [
+        "梵云飞"
+      ],
+      "regex": "/<story_scene>.*?(梵云飞).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 99,
+      "entry": "核心设定:白裘恩·能力",
+      "owner": "白裘恩",
+      "aliases": [
+        "白裘恩"
+      ],
+      "regex": "/<story_scene>.*?(白裘恩).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 100,
+      "entry": "核心设定:清瞳·能力",
+      "owner": "清瞳",
+      "aliases": [
+        "清瞳"
+      ],
+      "regex": "/<story_scene>.*?(清瞳).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 101,
+      "entry": "核心设定:王权富贵·能力",
+      "owner": "王权富贵",
+      "aliases": [
+        "王权富贵",
+        "道门兵人"
+      ],
+      "regex": "/<story_scene>.*?(王权富贵|道门兵人).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 102,
+      "entry": "核心设定:王富贵·能力",
+      "owner": "王富贵",
+      "aliases": [
+        "王富贵"
+      ],
+      "regex": "/<story_scene>.*?(王富贵).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 103,
+      "entry": "核心设定:涂山容容·能力",
+      "owner": "涂山容容",
+      "aliases": [
+        "涂山容容",
+        "容容",
+        "千面妖容"
+      ],
+      "regex": "/<story_scene>.*?(涂山容容|容容|千面妖容).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 104,
+      "entry": "核心设定:涂山雅雅·能力",
+      "owner": "涂山雅雅",
+      "aliases": [
+        "涂山雅雅",
+        "雅雅"
+      ],
+      "regex": "/<story_scene>.*?(涂山雅雅|雅雅).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 105,
+      "entry": "核心设定:东方月初·能力",
+      "owner": "东方月初",
+      "aliases": [
+        "东方月初"
+      ],
+      "regex": "/<story_scene>.*?(东方月初).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 106,
+      "entry": "核心设定:涂山红红·能力",
+      "owner": "涂山红红",
+      "aliases": [
+        "涂山红红",
+        "红红",
+        "妖仙姐姐"
+      ],
+      "regex": "/<story_scene>.*?(涂山红红|红红|妖仙姐姐).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 107,
+      "entry": "核心设定:白月初·能力",
+      "owner": "白月初",
+      "aliases": [
+        "白月初",
+        "道士哥哥"
+      ],
+      "regex": "/<story_scene>.*?(白月初|道士哥哥).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 108,
+      "entry": "核心设定:涂山苏苏·能力",
+      "owner": "涂山苏苏",
+      "aliases": [
+        "涂山苏苏",
+        "苏苏"
+      ],
+      "regex": "/<story_scene>.*?(涂山苏苏|苏苏).*?<\\/story_scene>/s",
+      "characterBody": false,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 112,
+      "entry": "角色:蛇发火姬",
+      "owner": "蛇发火姬",
+      "aliases": [
+        "蛇发火姬",
+        "火姬"
+      ],
+      "regex": "/<story_scene>.*?(蛇发火姬|火姬).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 113,
+      "entry": "角色:沙狐国王",
+      "owner": "沙狐国王",
+      "aliases": [
+        "沙狐国王",
+        "西西域狐皇"
+      ],
+      "regex": "/<story_scene>.*?(沙狐国王|西西域狐皇).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 114,
+      "entry": "角色:月映丽城",
+      "owner": "月映丽城",
+      "aliases": [
+        "月映丽城",
+        "秘书小丽",
+        "小丽"
+      ],
+      "regex": "/<story_scene>.*?(月映丽城|秘书小丽|小丽).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 115,
+      "entry": "角色:东方殿良",
+      "owner": "东方殿良",
+      "aliases": [
+        "东方殿良"
+      ],
+      "regex": "/<story_scene>.*?(东方殿良).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 116,
+      "entry": "角色:东方彤",
+      "owner": "东方彤",
+      "aliases": [
+        "东方彤"
+      ],
+      "regex": "/<story_scene>.*?(东方彤).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 117,
+      "entry": "角色:欢都星珍",
+      "owner": "欢都星珍",
+      "aliases": [
+        "欢都星珍",
+        "星珍"
+      ],
+      "regex": "/<story_scene>.*?(欢都星珍|星珍).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 118,
+      "entry": "角色:东方孤月",
+      "owner": "东方孤月",
+      "aliases": [
+        "东方孤月"
+      ],
+      "regex": "/<story_scene>.*?(东方孤月).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 119,
+      "entry": "角色:傲来国三少爷",
+      "owner": "傲来国三少爷",
+      "aliases": [
+        "傲来国三少爷",
+        "毒童子",
+        "高大强",
+        "阿来",
+        "三少爷",
+        "三少"
+      ],
+      "regex": "/<story_scene>.*?(傲来国三少爷|毒童子|高大强|阿来|三少爷|三少).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 120,
+      "entry": "角色:六耳猕猴",
+      "owner": "六耳猕猴",
+      "aliases": [
+        "六耳猕猴",
+        "傲来国二小姐",
+        "六耳"
+      ],
+      "regex": "/<story_scene>.*?(六耳猕猴|傲来国二小姐|六耳).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 121,
+      "entry": "角色:空青",
+      "owner": "空青",
+      "aliases": [
+        "空青"
+      ],
+      "regex": "/<story_scene>.*?(空青).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 122,
+      "entry": "角色:凤牺",
+      "owner": "凤牺",
+      "aliases": [
+        "凤牺",
+        "凤栖"
+      ],
+      "regex": "/<story_scene>.*?(凤牺|凤栖).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 123,
+      "entry": "角色:卓雷",
+      "owner": "卓雷",
+      "aliases": [
+        "卓雷",
+        "小雷"
+      ],
+      "regex": "/<story_scene>.*?(卓雷|小雷).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 124,
+      "entry": "角色:卓闪",
+      "owner": "卓闪",
+      "aliases": [
+        "卓闪"
+      ],
+      "regex": "/<story_scene>.*?(卓闪).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 125,
+      "entry": "角色:张风",
+      "owner": "张风",
+      "aliases": [
+        "张风",
+        "胖风"
+      ],
+      "regex": "/<story_scene>.*?(张风|胖风).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 126,
+      "entry": "角色:王权景行",
+      "owner": "王权景行",
+      "aliases": [
+        "王权景行",
+        "景行"
+      ],
+      "regex": "/<story_scene>.*?(王权景行|景行).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 127,
+      "entry": "角色:王权无暮",
+      "owner": "王权无暮",
+      "aliases": [
+        "王权无暮",
+        "司徒无暮",
+        "无暮"
+      ],
+      "regex": "/<story_scene>.*?(王权无暮|司徒无暮|无暮).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 128,
+      "entry": "角色:翠玉小昙",
+      "owner": "翠玉小昙",
+      "aliases": [
+        "翠玉小昙",
+        "小昙"
+      ],
+      "regex": "/<story_scene>.*?(翠玉小昙|小昙).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 129,
+      "entry": "角色:杨雁",
+      "owner": "杨雁",
+      "aliases": [
+        "杨雁"
+      ],
+      "regex": "/<story_scene>.*?(杨雁).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 130,
+      "entry": "角色:李慕尘",
+      "owner": "李慕尘",
+      "aliases": [
+        "李慕尘",
+        "沐天城主"
+      ],
+      "regex": "/<story_scene>.*?(李慕尘|沐天城主).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 131,
+      "entry": "角色:翠玉灵",
+      "owner": "翠玉灵",
+      "aliases": [
+        "翠玉灵",
+        "水灵",
+        "翠姐姐"
+      ],
+      "regex": "/<story_scene>.*?(翠玉灵|水灵|翠姐姐).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 132,
+      "entry": "角色:翠玉鸣鸾",
+      "owner": "翠玉鸣鸾",
+      "aliases": [
+        "翠玉鸣鸾",
+        "鸣鸾",
+        "金晨曦小姐"
+      ],
+      "regex": "/<story_scene>.*?(翠玉鸣鸾|鸣鸾|金晨曦小姐).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 133,
+      "entry": "角色:杨蔑",
+      "owner": "杨蔑",
+      "aliases": [
+        "杨蔑"
+      ],
+      "regex": "/<story_scene>.*?(杨蔑).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 134,
+      "entry": "角色:木蔑",
+      "owner": "木蔑",
+      "aliases": [
+        "木蔑"
+      ],
+      "regex": "/<story_scene>.*?(木蔑).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 135,
+      "entry": "角色:邓七岳",
+      "owner": "邓七岳",
+      "aliases": [
+        "邓七岳",
+        "不动地藏"
+      ],
+      "regex": "/<story_scene>.*?(邓七岳|不动地藏).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 136,
+      "entry": "角色:张正",
+      "owner": "张正",
+      "aliases": [
+        "张正",
+        "黑剑"
+      ],
+      "regex": "/<story_scene>.*?(张正|黑剑).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 137,
+      "entry": "角色:牧神气",
+      "owner": "牧神气",
+      "aliases": [
+        "牧神气",
+        "天吼星"
+      ],
+      "regex": "/<story_scene>.*?(牧神气|天吼星).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 138,
+      "entry": "角色:姬无忌",
+      "owner": "姬无忌",
+      "aliases": [
+        "姬无忌",
+        "风雷双翼"
+      ],
+      "regex": "/<story_scene>.*?(姬无忌|风雷双翼).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 139,
+      "entry": "角色:青木媛",
+      "owner": "青木媛",
+      "aliases": [
+        "青木媛",
+        "妙玉仙子"
+      ],
+      "regex": "/<story_scene>.*?(青木媛|妙玉仙子).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 140,
+      "entry": "角色:李去浊",
+      "owner": "李去浊",
+      "aliases": [
+        "李去浊",
+        "天机童子",
+        "千机童子"
+      ],
+      "regex": "/<story_scene>.*?(李去浊|天机童子|千机童子).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 141,
+      "entry": "角色:李自在",
+      "owner": "李自在",
+      "aliases": [
+        "李自在",
+        "无定刀君"
+      ],
+      "regex": "/<story_scene>.*?(李自在|无定刀君).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 142,
+      "entry": "角色:杨一叹",
+      "owner": "杨一叹",
+      "aliases": [
+        "杨一叹",
+        "三识神君"
+      ],
+      "regex": "/<story_scene>.*?(杨一叹|三识神君).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 143,
+      "entry": "角色:王权醉",
+      "owner": "王权醉",
+      "aliases": [
+        "王权醉",
+        "幻梦剑客"
+      ],
+      "regex": "/<story_scene>.*?(王权醉|幻梦剑客).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 144,
+      "entry": "角色:金人凤",
+      "owner": "金人凤",
+      "aliases": [
+        "金人凤",
+        "金面火神"
+      ],
+      "regex": "/<story_scene>.*?(金人凤|金面火神).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 145,
+      "entry": "角色:东方秦兰",
+      "owner": "东方秦兰",
+      "aliases": [
+        "东方秦兰",
+        "秦兰"
+      ],
+      "regex": "/<story_scene>.*?(东方秦兰|秦兰).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 146,
+      "entry": "角色:东方淮竹",
+      "owner": "东方淮竹",
+      "aliases": [
+        "东方淮竹",
+        "淮竹"
+      ],
+      "regex": "/<story_scene>.*?(东方淮竹|淮竹).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 147,
+      "entry": "角色:王权霸业",
+      "owner": "王权霸业",
+      "aliases": [
+        "王权霸业",
+        "霸业",
+        "剑先生"
+      ],
+      "regex": "/<story_scene>.*?(王权霸业|霸业|剑先生).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 148,
+      "entry": "角色:黑狐左使",
+      "owner": "黑狐左使",
+      "aliases": [
+        "黑狐左使",
+        "左使"
+      ],
+      "regex": "/<story_scene>.*?(黑狐左使|左使).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 149,
+      "entry": "角色:欢都擎天",
+      "owner": "欢都擎天",
+      "aliases": [
+        "欢都擎天",
+        "毒皇",
+        "万毒之王"
+      ],
+      "regex": "/<story_scene>.*?(欢都擎天|毒皇|万毒之王).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 150,
+      "entry": "角色:欢都落兰",
+      "owner": "欢都落兰",
+      "aliases": [
+        "欢都落兰",
+        "落兰"
+      ],
+      "regex": "/<story_scene>.*?(欢都落兰|落兰).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 151,
+      "entry": "角色:平丘月初",
+      "owner": "平丘月初",
+      "aliases": [
+        "平丘月初"
+      ],
+      "regex": "/<story_scene>.*?(平丘月初).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 152,
+      "entry": "角色:律笺文",
+      "owner": "律笺文",
+      "aliases": [
+        "律笺文"
+      ],
+      "regex": "/<story_scene>.*?(律笺文).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 153,
+      "entry": "角色:颜如玉",
+      "owner": "颜如玉",
+      "aliases": [
+        "颜如玉"
+      ],
+      "regex": "/<story_scene>.*?(颜如玉).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 154,
+      "entry": "角色:阿克占·布泰",
+      "owner": "阿克占",
+      "aliases": [
+        "阿克占·布泰",
+        "布泰"
+      ],
+      "regex": "/<story_scene>.*?(阿克占·布泰|布泰).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 155,
+      "entry": "角色:石宽",
+      "owner": "石宽",
+      "aliases": [
+        "石宽"
+      ],
+      "regex": "/<story_scene>.*?(石宽).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 156,
+      "entry": "角色:月啼暇",
+      "owner": "月啼暇",
+      "aliases": [
+        "月啼暇"
+      ],
+      "regex": "/<story_scene>.*?(月啼暇).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 157,
+      "entry": "角色:胡尾生",
+      "owner": "胡尾生",
+      "aliases": [
+        "胡尾生"
+      ],
+      "regex": "/<story_scene>.*?(胡尾生).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 158,
+      "entry": "角色:厉雪扬",
+      "owner": "厉雪扬",
+      "aliases": [
+        "厉雪扬"
+      ],
+      "regex": "/<story_scene>.*?(厉雪扬).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 159,
+      "entry": "角色:梵云飞",
+      "owner": "梵云飞",
+      "aliases": [
+        "梵云飞"
+      ],
+      "regex": "/<story_scene>.*?(梵云飞).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 160,
+      "entry": "角色:白裘恩",
+      "owner": "白裘恩",
+      "aliases": [
+        "白裘恩"
+      ],
+      "regex": "/<story_scene>.*?(白裘恩).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 161,
+      "entry": "角色:清瞳",
+      "owner": "清瞳",
+      "aliases": [
+        "清瞳"
+      ],
+      "regex": "/<story_scene>.*?(清瞳).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 162,
+      "entry": "角色:王权富贵",
+      "owner": "王权富贵",
+      "aliases": [
+        "王权富贵",
+        "道门兵人"
+      ],
+      "regex": "/<story_scene>.*?(王权富贵|道门兵人).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 163,
+      "entry": "角色:王富贵",
+      "owner": "王富贵",
+      "aliases": [
+        "王富贵"
+      ],
+      "regex": "/<story_scene>.*?(王富贵).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 164,
+      "entry": "角色:涂山容容",
+      "owner": "涂山容容",
+      "aliases": [
+        "涂山容容",
+        "容容",
+        "千面妖容"
+      ],
+      "regex": "/<story_scene>.*?(涂山容容|容容|千面妖容).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 165,
+      "entry": "角色:涂山雅雅",
+      "owner": "涂山雅雅",
+      "aliases": [
+        "涂山雅雅",
+        "雅雅"
+      ],
+      "regex": "/<story_scene>.*?(涂山雅雅|雅雅).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 166,
+      "entry": "角色:东方月初",
+      "owner": "东方月初",
+      "aliases": [
+        "东方月初"
+      ],
+      "regex": "/<story_scene>.*?(东方月初).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 167,
+      "entry": "角色:涂山红红",
+      "owner": "涂山红红",
+      "aliases": [
+        "涂山红红",
+        "红红",
+        "妖仙姐姐"
+      ],
+      "regex": "/<story_scene>.*?(涂山红红|红红|妖仙姐姐).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 168,
+      "entry": "角色:白月初",
+      "owner": "白月初",
+      "aliases": [
+        "白月初",
+        "道士哥哥"
+      ],
+      "regex": "/<story_scene>.*?(白月初|道士哥哥).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 169,
+      "entry": "角色:涂山苏苏",
+      "owner": "涂山苏苏",
+      "aliases": [
+        "涂山苏苏",
+        "苏苏"
+      ],
+      "regex": "/<story_scene>.*?(涂山苏苏|苏苏).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 172,
+      "entry": "角色:六手蓝魔",
+      "owner": "六手蓝魔",
+      "aliases": [
+        "六手蓝魔"
+      ],
+      "regex": "/<story_scene>.*?(六手蓝魔).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 173,
+      "entry": "角色:环毛粉软怪",
+      "owner": "环毛粉软怪",
+      "aliases": [
+        "环毛粉软怪"
+      ],
+      "regex": "/<story_scene>.*?(环毛粉软怪).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 174,
+      "entry": "角色:锣佟",
+      "owner": "锣佟",
+      "aliases": [
+        "锣佟"
+      ],
+      "regex": "/<story_scene>.*?(锣佟).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 175,
+      "entry": "角色:小狐狸红线仙",
+      "owner": "小狐狸红线仙",
+      "aliases": [
+        "小狐狸红线仙"
+      ],
+      "regex": "/<story_scene>.*?(小狐狸红线仙).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 176,
+      "entry": "角色:白板",
+      "owner": "白板",
+      "aliases": [
+        "白板"
+      ],
+      "regex": "/<story_scene>.*?(白板).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 177,
+      "entry": "角色:红中",
+      "owner": "红中",
+      "aliases": [
+        "红中"
+      ],
+      "regex": "/<story_scene>.*?(红中).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 178,
+      "entry": "角色:西门吹沙",
+      "owner": "西门吹沙",
+      "aliases": [
+        "西门吹沙",
+        "玉面风君"
+      ],
+      "regex": "/<story_scene>.*?(西门吹沙|玉面风君).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 179,
+      "entry": "角色:樊七手",
+      "owner": "樊七手",
+      "aliases": [
+        "樊七手",
+        "梵七手"
+      ],
+      "regex": "/<story_scene>.*?(樊七手|梵七手).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 180,
+      "entry": "角色:孟二飞",
+      "owner": "孟二飞",
+      "aliases": [
+        "孟二飞"
+      ],
+      "regex": "/<story_scene>.*?(孟二飞).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 181,
+      "entry": "角色:六尾黑魔",
+      "owner": "六尾黑魔",
+      "aliases": [
+        "六尾黑魔"
+      ],
+      "regex": "/<story_scene>.*?(六尾黑魔).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 182,
+      "entry": "角色:百妖魔君",
+      "owner": "百妖魔君",
+      "aliases": [
+        "百妖魔君",
+        "妖怪收藏家"
+      ],
+      "regex": "/<story_scene>.*?(百妖魔君|妖怪收藏家).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 183,
+      "entry": "角色:鸡爷",
+      "owner": "鸡爷",
+      "aliases": [
+        "鸡爷",
+        "卯日洞主"
+      ],
+      "regex": "/<story_scene>.*?(鸡爷|卯日洞主).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 184,
+      "entry": "角色:极北萨摩王故义",
+      "owner": "极北萨摩王故义",
+      "aliases": [
+        "极北萨摩王故义",
+        "故义",
+        "极北萨摩王"
+      ],
+      "regex": "/<story_scene>.*?(极北萨摩王故义|故义|极北萨摩王).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 185,
+      "entry": "角色:青蛤",
+      "owner": "青蛤",
+      "aliases": [
+        "青蛤"
+      ],
+      "regex": "/<story_scene>.*?(青蛤).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 186,
+      "entry": "角色:毒后",
+      "owner": "毒后",
+      "aliases": [
+        "毒后"
+      ],
+      "regex": "/<story_scene>.*?(毒后).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 187,
+      "entry": "角色:盖老太君",
+      "owner": "盖老太君",
+      "aliases": [
+        "盖老太君",
+        "盖太君"
+      ],
+      "regex": "/<story_scene>.*?(盖老太君|盖太君).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 188,
+      "entry": "角色:毒婆子",
+      "owner": "毒婆子",
+      "aliases": [
+        "毒婆子"
+      ],
+      "regex": "/<story_scene>.*?(毒婆子).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 189,
+      "entry": "角色:毒老子",
+      "owner": "毒老子",
+      "aliases": [
+        "毒老子",
+        "南国皇叔"
+      ],
+      "regex": "/<story_scene>.*?(毒老子|南国皇叔).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 190,
+      "entry": "角色:毒童子",
+      "owner": "毒童子",
+      "aliases": [
+        "毒童子",
+        "高大强",
+        "阿来",
+        "傲来国三少爷",
+        "三少爷",
+        "三少"
+      ],
+      "regex": "/<story_scene>.*?(毒童子|高大强|阿来|傲来国三少爷|三少爷|三少).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 191,
+      "entry": "角色:毒公子",
+      "owner": "毒公子",
+      "aliases": [
+        "毒公子",
+        "毒中公子"
+      ],
+      "regex": "/<story_scene>.*?(毒公子|毒中公子).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 192,
+      "entry": "角色:雪域魔鼠雪脏",
+      "owner": "雪域魔鼠雪脏",
+      "aliases": [
+        "雪域魔鼠雪脏",
+        "魔鼠雪脏",
+        "雪脏"
+      ],
+      "regex": "/<story_scene>.*?(雪域魔鼠雪脏|魔鼠雪脏|雪脏).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 193,
+      "entry": "角色:猫妖夜魅",
+      "owner": "猫妖夜魅",
+      "aliases": [
+        "猫妖夜魅",
+        "夜魅"
+      ],
+      "regex": "/<story_scene>.*?(猫妖夜魅|夜魅).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 194,
+      "entry": "角色:五眉石虎巨木",
+      "owner": "五眉石虎巨木",
+      "aliases": [
+        "五眉石虎巨木",
+        "五眉石虎",
+        "巨木"
+      ],
+      "regex": "/<story_scene>.*?(五眉石虎巨木|五眉石虎|巨木).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 195,
+      "entry": "角色:赤须火龙赤雷",
+      "owner": "赤须火龙赤雷",
+      "aliases": [
+        "赤须火龙赤雷",
+        "赤雷",
+        "赤须火龙"
+      ],
+      "regex": "/<story_scene>.*?(赤须火龙赤雷|赤雷|赤须火龙).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 196,
+      "entry": "角色:毒娘子",
+      "owner": "毒娘子",
+      "aliases": [
+        "毒娘子"
+      ],
+      "regex": "/<story_scene>.*?(毒娘子).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 197,
+      "entry": "角色:毒夫子",
+      "owner": "毒夫子",
+      "aliases": [
+        "毒夫子"
+      ],
+      "regex": "/<story_scene>.*?(毒夫子).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 198,
+      "entry": "角色:枯木药仙",
+      "owner": "枯木药仙",
+      "aliases": [
+        "枯木药仙",
+        "枯木"
+      ],
+      "regex": "/<story_scene>.*?(枯木药仙|枯木).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 199,
+      "entry": "角色:复海大圣",
+      "owner": "复海大圣",
+      "aliases": [
+        "复海大圣",
+        "复海"
+      ],
+      "regex": "/<story_scene>.*?(复海大圣|复海).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 200,
+      "entry": "角色:王权无嗔",
+      "owner": "王权无嗔",
+      "aliases": [
+        "王权无嗔",
+        "无嗔"
+      ],
+      "regex": "/<story_scene>.*?(王权无嗔|无嗔).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 201,
+      "entry": "角色:杨添",
+      "owner": "杨添",
+      "aliases": [
+        "杨添"
+      ],
+      "regex": "/<story_scene>.*?(杨添).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 202,
+      "entry": "角色:鲁凉",
+      "owner": "鲁凉",
+      "aliases": [
+        "鲁凉"
+      ],
+      "regex": "/<story_scene>.*?(鲁凉).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    },
+    {
+      "index": 203,
+      "entry": "角色:阮秋沅",
+      "owner": "阮秋沅",
+      "aliases": [
+        "阮秋沅",
+        "阮姐"
+      ],
+      "regex": "/<story_scene>.*?(阮秋沅|阮姐).*?<\\/story_scene>/s",
+      "characterBody": true,
+      "sameCharacterConsistency": true
+    }
+  ],
+  "addedAliasEvidence": {
+    "涂山雅雅 / 雅雅": [
+      {
+        "entry": "核心设定:涂山雅雅·能力",
+        "quote": "- 寒冰妖气:雅雅专修的核心妖力属性，可大范围冻结环境与敌人，是成年后的主要战斗方式。"
+      },
+      {
+        "entry": "时间线-现代·王权篇【HXY_TIMELINE:M03】",
+        "quote": "权富贵转世·白苏也必须继续处理自己造成的天书损坏与续缘任务·雅雅的介入进一步把王权旧缘提升为涂山需要处理的问题"
+      }
+    ],
+    "涂山容容 / 容容": [
+      {
+        "entry": "核心设定:涂山容容·能力",
+        "quote": "- 狐念之术:以妖力控制目标运动；资料明确称容容的狐念术在涂山极为出色。"
+      },
+      {
+        "entry": "时间线-古代·千颜旧缘【HXY_TIMELINE:A08】",
+        "quote": "4698年08月03日): 牛鬼颜如玉早年被收养并留在涂山·容容正式把他收入门下而不是只把他当作普通收留妖怪·颜如玉开始学习涂山体系中的易容术与望月掌·这段师徒经历"
+      }
+    ],
+    "涂山容容 / 千面妖容": [
+      {
+        "entry": "角色:涂山容容",
+        "quote": "印象:涂山二当家，号称“千面妖容”，是涂山真正意义上的总管、军师与账房。绿色长发、齐刘海，双耳旁各留一束用狐形发饰扎起的小辫，平时总"
+      }
+    ],
+    "涂山红红 / 红红": [
+      {
+        "entry": "核心设定:涂山红红·能力",
+        "quote": "- 转世续缘时红红付出了全部妖力并失去相关记忆，之后缩小形成苏苏；不能把鼎盛期能力无条件套到现代苏苏身上。"
+      },
+      {
+        "entry": "时间线-古代·涂山道盟【HXY_TIMELINE:A03】",
+        "quote": "> 基线：v0.4。重点细化红红心结、竹业线、圈外惨败、神火山庄巨变与道门兵人计划。"
+      }
+    ],
+    "涂山红红 / 妖仙姐姐": [
+      {
+        "entry": "角色:涂山红红",
+        "quote": "之爪闻名，却把温柔与愧疚深深压在冷静外表之下。东方月初称她“妖仙姐姐”。"
+      },
+      {
+        "entry": "时间线-古代·月红初世【HXY_TIMELINE:A04】",
+        "quote": "手保护这个携带东方血脉的孩子·月初由此在涂山获得长期庇护并以妖仙姐姐称呼红红·此后约十年的共同生活让月初逐渐理解红红追求人妖和平的真正原因"
+      }
+    ],
+    "涂山苏苏 / 苏苏": [
+      {
+        "entry": "核心设定:涂山苏苏·能力",
+        "quote": "- 苏苏并不拥有涂山红红鼎盛期的完整妖力，禁止把红红全部招式默认当作苏苏常驻能力。"
+      },
+      {
+        "entry": "角色:涂山苏苏",
+        "quote": " Need: 靠自己的行动成为优秀红线仙，并让身边的人承认“苏苏也能做好自己的事”"
+      }
+    ],
+    "白月初 / 道士哥哥": [
+      {
+        "entry": "角色:涂山苏苏",
+        "quote": "“我、我这次一定不会搞砸的！道士哥哥你先别笑呀！”"
+      }
+    ],
+    "欢都擎天 / 毒皇": [
+      {
+        "entry": "核心设定:欢都擎天·能力",
+        "quote": "能力定位:南国“毒皇”“万毒之王”，以修炼多年的毒功和万毒之体体系闻名，是南国最顶级的力量来源之一。"
+      },
+      {
+        "entry": "角色:欢都擎天",
+        "quote": "印象:南国之王，人称毒皇、万毒之王、南皇，传说四皇之一，也是欢都落兰的父亲。外表其貌不扬、身材矮小，灰白头发编成许多小辫，戴"
+      }
+    ],
+    "欢都擎天 / 万毒之王": [
+      {
+        "entry": "核心设定:欢都擎天·能力",
+        "quote": "能力定位:南国“毒皇”“万毒之王”，以修炼多年的毒功和万毒之体体系闻名，是南国最顶级的力量来源之一。"
+      },
+      {
+        "entry": "角色:欢都擎天",
+        "quote": "印象:南国之王，人称毒皇、万毒之王、南皇，传说四皇之一，也是欢都落兰的父亲。外表其貌不扬、身材矮小，灰白头发编成许多小辫，戴夸张红帽、"
+      }
+    ],
+    "欢都落兰 / 落兰": [
+      {
+        "entry": "时间线-古代·南国旧缘【HXY_TIMELINE:A07】",
+        "quote": "年10月26日): 平丘没有因为身份敏感就离开已经建立感情的落兰·南国内部叛乱与皇室权力冲突随后全面爆发·平丘多次站在落兰一侧并使用自己能够调用的力量保护她·在人类"
+      },
+      {
+        "entry": "时间线-现代·南国篇【HXY_TIMELINE:M06】",
+        "quote": "丘是否独立存在”为核心 (狐妖历5000年09月02日): 落兰追求的不是制造一个听命于自己的东方月初复制品·她真正想确认的是平丘月初是否仍能作为独立个体存在·这个"
+      }
+    ],
+    "阿克占·布泰 / 布泰": [
+      {
+        "entry": "核心设定:阿克占·布泰·能力",
+        "quote": "- 王族知识与子母符解除法:布泰通过王位与政治婚姻取得解除御妖子母符的关键方法，并在临终前将解除之法告知石宽，由此改变御妖国众妖的命"
+      },
+      {
+        "entry": "时间线-古代·西域北山【HXY_TIMELINE:A02】",
+        "quote": "-事件C1: 石宽成为布泰公主侍卫 (狐妖历4050年04月12日): 石宽经过长期训练后开始正式保护布泰公主·布泰没有只把他"
+      }
+    ],
+    "王权富贵 / 道门兵人": [
+      {
+        "entry": "核心设定:王权富贵·能力",
+        "quote": "能力定位:王权世家培养的“道门兵人”，以王权剑体系和极高的道术修为见长；失去王权剑后仍能以生命精华凝成王权剑意继续作战。"
+      },
+      {
+        "entry": "角色:王权富贵",
+        "quote": "印象:王权霸业与东方淮竹之子，被王权世家作为“道门兵人”培养的少年天才。浅棕色长发束冠，中分长刘海，棕色至橙棕色眼睛，常持王权剑。外表孤傲冷静、执行命令近"
+      }
+    ],
+    "六耳猕猴 / 六耳": [
+      {
+        "entry": "核心设定:六耳猕猴·能力",
+        "quote": "- 六耳感知:能够捕捉极远或极细微的信息与异常动静，是其最鲜明的能力特征之一。"
+      }
+    ],
+    "黑狐左使 / 左使": [
+      {
+        "entry": "核心设定:黑狐左使·能力",
+        "quote": "能力定位:原涂山天才狐妖、后加入黑狐的主战派左使，核心法术是以幻梦影响大范围目标的“梦魇之狐”。"
+      }
+    ],
+    "月映丽城 / 小丽": [
+      {
+        "entry": "角色:月映丽城",
+        "quote": "印象:西西域沙狐一族的重要成员，常以“秘书小丽”身份协助梵云飞处理事务。她比梵云飞更擅长把散乱的人情、命令与现实问题整理成可执行的安排，既了解皇族"
+      },
+      {
+        "entry": "时间线-现代·下沙篇【HXY_TIMELINE:M01】",
+        "quote": "-事件B1: 梵云飞化回沙狐·小丽请求协助 (狐妖历5000年04月03日): 梵云飞准备向苏苏和白月初出手时白月初先保护苏苏·当日可"
+      }
+    ],
+    "樊七手 / 梵七手": [
+      {
+        "entry": "角色:樊七手",
+        "quote": "资料与百度百科使用“”这一写法；旧版萌娘百科角色索引曾写作“梵七手”，本项目将后者视为历史检索兼容写法，不再作为正式显示名。"
+      }
+    ],
+    "赤须火龙赤雷 / 赤须火龙": [
+      {
+        "entry": "核心设定:赤须火龙赤雷·能力",
+        "quote": "- 火属性妖力:作为“赤须火龙”，能够将灼热妖力用于强化攻击与制造火焰压制。"
+      },
+      {
+        "entry": "角色:赤须火龙赤雷",
+        "quote": "印象:赤砂魔盗团首领，被称作“赤须火龙”。作为一龙、二虎、三猫、四鼠中的“一龙”，他是这支西域妖盗团最具代表性的战斗核心；前世曾被妖捕体系"
+      }
+    ],
+    "极北萨摩王故义 / 故义": [
+      {
+        "entry": "角色:极北萨摩王故义",
+        "quote": "印象:北山极北一带的犬妖王，常被称作极北萨摩王或故义。沐天城事件中，他作为受邀妖王之一进入局中，并在局势失控后表现出很强的生存判断与行动力。比起硬拼到底"
+      }
+    ],
+    "极北萨摩王故义 / 极北萨摩王": [
+      {
+        "entry": "角色:极北萨摩王故义",
+        "quote": "印象:北山极北一带的犬妖王，常被称作极北萨摩王或故义。沐天城事件中，他作为受邀妖王之一进入局中，并在局势失控后表现出很强的生存判断与行动力。比起硬"
+      }
+    ]
+  },
+  "excludedCandidates": {
+    "月初": "东方月初/白月初/平丘月初重名歧义",
+    "富贵": "王权富贵/王富贵重名歧义",
+    "二小姐": "六耳/秦兰头衔重叠",
+    "小狐狸": "通用种族称呼",
+    "萨摩王": "未找到独立于极北萨摩王的用例，不机械拆词",
+    "孤月": "未找到独立简称用例",
+    "黑狐娘娘": "分身/借体/本体身份专题已有联合召回；不将其强制等同凤牺人物专名"
+  },
+  "contentsEnabledDepthPermissionsUnchanged": true,
+  "regexCompilePassRate": 1,
+  "regexCompileCount": 155,
+  "triggerTests": {
+    "regexCompilePassRate": 1,
+    "compiledRegexCount": 155,
+    "assertions": 1365,
+    "fullNamesAndEveryAliasHit": true,
+    "outsideSceneNegative": true,
+    "broadWordsNegative": true,
+    "sameCharacterConsistency": true
+  }
+}

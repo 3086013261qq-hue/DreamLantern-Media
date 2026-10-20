@@ -333,7 +333,14 @@ function createDreamController(env, chapters) {
   if(page==='doors'){mediaLayer.mountEraGate(root,lowMotion);}mediaLayer.mountGlobal(root);updateChapterBackground();bindThumbs();applyMotion();root.querySelectorAll('button[data-action="enter"]').forEach(b=>b.disabled=busy);
  }
  function open(next='home'){D.querySelectorAll('.dl-intro').forEach(e=>e.classList.add('dl-muted-scene'));mediaLayer.showIntro(false);returnFocus=D.activeElement;shade.hidden=false;page=next;render();root.querySelector('.dl-paper').focus();}
- function close(){D.querySelectorAll('.dl-intro').forEach(e=>e.classList.remove('dl-muted-scene'));shade.hidden=true;stopVisual();returnFocus?.focus?.();}
+ // 119: remount only AFTER the overlay has hidden and its media have been released.
+ function restoreIntroAfterOverlay(){
+  if(disposed||!shade.hidden||D.hidden)return;
+  const host=D.querySelector('#chat > .mes[mesid="0"] .mes_text .dl-intro');
+  if(!host?.isConnected||host.hidden||!host.getClientRects().length)return;
+  host.classList.remove('dl-muted-scene');enhanceIntro(host);
+ }
+ function close(restore=true){shade.hidden=true;stopVisual();D.querySelectorAll('.dl-intro').forEach(e=>e.classList.remove('dl-muted-scene'));if(restore)restoreIntroAfterOverlay();returnFocus?.focus?.();}
  async function enter(id){if(busy)return;busy=true;render();try{await controller.enter(id);page='home';render();notify('缘卷已展开。故事由你的下一句落笔。');
    // Fill an ordinary action; never auto-send or impersonate the player.
    const c=BY[id],input=D.querySelector('#send_textarea');if(input&&!input.value){input.value=`我选择从${c.era==='ancient'?'古代':'现代'}「${c.title}」开局，请依据当前启用时间线展开场景，并保留我的玩家设定。`;input.dispatchEvent(new W.Event('input',{bubbles:true}));}
@@ -371,7 +378,7 @@ function createDreamController(env, chapters) {
  }
  function schedule(){if(disposed)return;clearTimeout(refreshTimer);refreshTimer=later(()=>{mountIntro();mountMini();if(!shade.hidden)render();void controller.heal().catch(e=>notify(e.message));},100);}
  function on(name,fn){if(!name||typeof eventOn!=='function')return;const handle=eventOn(name,fn);disposers.push(()=>{if(handle?.stop)handle.stop();else if(typeof eventRemoveListener==='function')eventRemoveListener(name,fn);});}
- function chatChange(){epoch++;busy=false;page='home';close();music?.dispose();music=null;root.querySelector('.dl-music').replaceChildren();D.querySelectorAll('.dl-intro,.dl-mini').forEach(e=>e.remove());schedule();}
+ function chatChange(){epoch++;busy=false;page='home';close(false);music?.dispose();music=null;root.querySelector('.dl-music').replaceChildren();D.querySelectorAll('.dl-intro,.dl-mini').forEach(e=>e.remove());schedule();}
  if(typeof tavern_events!=='undefined'){
   on(tavern_events.CHAT_CHANGED,chatChange);for(const k of ['MESSAGE_SWIPED','MESSAGE_UPDATED','CHARACTER_MESSAGE_RENDERED','MESSAGE_DELETED'])on(tavern_events[k],schedule);
  }
@@ -384,7 +391,7 @@ function createDreamController(env, chapters) {
  function dispose(){if(disposed)return;disposed=true;epoch++;stopVisual();mediaLayer.dispose();music?.dispose();disposers.forEach(f=>{try{f();}catch{}});timers.forEach(clearTimeout);clearTimeout(refreshTimer);root.remove();style.remove();D.querySelectorAll('.dl-intro,.dl-mini').forEach(e=>e.remove());if(W.DreamLantern===api)delete W.DreamLantern;}
  const api={playOpening,refresh:schedule,dispose,open,controller,manifest:MANIFEST};W.DreamLantern=api;
  window.addEventListener('pagehide',dispose,{once:true});disposers.push(()=>window.removeEventListener('pagehide',dispose));
- function visibility(){mediaLayer.visibility(D.hidden);root.classList.toggle('dl-suspended',D.hidden);D.querySelectorAll('.dl-intro').forEach(e=>e.classList.toggle('dl-suspended',D.hidden));}
+ function visibility(){mediaLayer.visibility(D.hidden);if(!D.hidden)restoreIntroAfterOverlay();root.classList.toggle('dl-suspended',D.hidden);D.querySelectorAll('.dl-intro').forEach(e=>e.classList.toggle('dl-suspended',D.hidden));}
  D.addEventListener('visibilitychange',visibility);disposers.push(()=>D.removeEventListener('visibilitychange',visibility));
  installAssetSkin();mountIntro();mountMini();applyMotion();void bindMvu();void loadVisualOverrides();
 })();
