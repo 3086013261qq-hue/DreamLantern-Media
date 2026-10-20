@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "dream-lantern-video-2.1",
+  "schemaVersion": "dream-lantern-video-2.2",
   "chapterId": "A03",
   "title": "涂山道盟",
   "sources": [
@@ -11,17 +11,25 @@
       "uses": ["opening_candidate", "memory"]
     },
     {
+      "key": "official_stream_tencent_zhuye_full",
+      "title": "狐妖小红娘 竹业篇 · Full Version",
+      "page": "https://www.youtube.com/watch?v=jMGFPBP-Cd4",
+      "publisher": "Tencent Video",
+      "publisherVerified": true,
+      "status": "official_embed_only_arc_title_verified",
+      "uses": ["official_stream_reference", "memory_reference"],
+      "rules": ["不得下载转码为MP4", "不得替代竹业定档PV作为短Opening"]
+    },
+    {
       "key": "official_stream_tencent_youtube_s6_ep01",
       "title": "Fox Spirit Matchmaker Season 6 EP01 · Tencent Video-ANIMATION",
       "page": "https://www.youtube.com/watch?v=YYwrySatyVY",
-      "status": "official_embed_only",
-      "arcMapping": "Season 6 = 竹业篇",
-      "arcMappingEvidence": "historical season mapping cross-check; YouTube title itself only exposes season number",
-      "uses": ["official_stream_reference", "memory_reference"],
-      "rules": ["不得下载转码为MP4", "不得替代竹业定档PV作为Opening"]
+      "status": "official_embed_only_secondary_reference",
+      "uses": ["series_archive_reference"],
+      "rule": "仅作官方系列存档参考；不再依赖季号判断篇章。"
     }
   ],
   "stableDirectMp4": [],
   "runtime": "official_still_fx",
-  "rule": "无稳定直链时使用竹业官方静态视觉+FX；官方整季流媒体只作参考/缘忆，不转码。"
+  "rule": "篇章名已由腾讯官方视频标题直接确认；仍无稳定裸MP4时使用竹业官方静态视觉+FX，官方流媒体不下载转码。"
 }
