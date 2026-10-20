@@ -1,1 +1,21 @@
-{"schemaVersion":"dream-lantern-video-2.0","chapterId":"M04","title":"月红篇","sources":[],"stableDirectMp4":[],"runtime":"official_still_fx","rule":"当前以官方月红静态视觉+红线狐火花瓣做伪动态"}
+{
+  "schemaVersion": "dream-lantern-video-2.1",
+  "chapterId": "M04",
+  "title": "月红篇",
+  "sources": [
+    {
+      "key": "official_tencent_anime_bilibili_yuehong_op",
+      "title": "狐妖小红娘月红篇OP 若当来世",
+      "page": "https://www.bilibili.com/video/BV1Js411y7Eh/",
+      "publisher": "腾讯动漫",
+      "publisherVerifiedByPage": true,
+      "published": "2016-07-08",
+      "status": "official_page_only_arc_title_verified",
+      "uses": ["opening_reference", "memory_reference", "official_dynamic_reference"],
+      "rules": ["动画M04专用，禁止与2024真人剧月红篇混淆", "保持平台官方播放页，不抓取或转存平台媒体文件"]
+    }
+  ],
+  "stableDirectMp4": [],
+  "runtime": "official_still_fx",
+  "rule": "月红篇已找到腾讯动漫官方动画OP视频页；没有稳定裸MP4时仍以官方月红静态视觉+红线狐火花瓣FX为默认Opening，官方OP页作为动态/缘忆参考。"
+}
