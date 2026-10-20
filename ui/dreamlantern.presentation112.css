@@ -27,9 +27,14 @@
 /* Video paints above its persistent poster; the veil and text stay above both. */
 .dl-112-era-video{z-index:1}.dl-root .dl-door:after{z-index:2}.dl-root .dl-door b,.dl-root .dl-door span{z-index:3}
 
-/* 115: autoplay background sits above fallback, below veil/title/controls. */
-.dl-intro .dl-115-intro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;pointer-events:none;opacity:0}
+/* 118: non-negative intro layers, isolated from era media. Poster only before playback/failure. */
+.dl-intro .dl-115-intro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;pointer-events:none;opacity:0;display:block;visibility:visible;max-width:none!important}
 .dl-intro[data-intro-video=playing] .dl-115-intro-video{opacity:1}
+.dl-intro .dl-scene{z-index:0;pointer-events:none}
+.dl-intro:after{z-index:2}
+.dl-intro .dl-intro-content{z-index:3}
+.dl-intro .dl-primary,.dl-intro .dl-small{z-index:4}
+.dl-intro[data-intro-video=playing] .dl-scene{visibility:hidden}
 .dl-112-era-video{display:block!important}
 .dl-root.dl-fx-off .dl-112-fx{display:none!important}
 .dl-root .dl-115-review{font-size:12px;padding:8px!important;white-space:nowrap}

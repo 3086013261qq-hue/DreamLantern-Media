@@ -1,0 +1,15 @@
+{
+  "baselineCommit": "c8258d2589101bb50ec6db6b4fae4c60b31be8a6",
+  "baseline": "狐妖小红娘_梦灯笼_正式版_v1.2.0_117候选4.json",
+  "changedPaths": [
+    "/data/extensions/tavern_helper/scripts/4/content"
+  ],
+  "allOtherFieldsExactEquality": true,
+  "transactionCoordinatorExactEquality": true,
+  "mediaManifestAndChapterMappingExactEquality": true,
+  "eraOpeningAndVisibilityFunctionsExactEquality": true,
+  "introSoundLogicExactEquality": true,
+  "enhanceIntroAndAllBusinessHandlersExactEquality": true,
+  "cardVersion": "1.2.0",
+  "androidSillyTavernDevice": "NOT_EXECUTED_DEVICE_UNAVAILABLE"
+}

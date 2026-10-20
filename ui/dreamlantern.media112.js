@@ -1,4 +1,4 @@
-/* 117 isolated entrance/era media channels; incremental presentation repair of 112 adapter. Owns media/FX only; receives no MVU or worldbook API. */
+/* 118 visible entrance, preserving 117 isolated entrance/era media channels; incremental presentation repair of 112 adapter. Owns media/FX only; receives no MVU or worldbook API. */
 function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
   'use strict';
   const D=W.document, BASE='https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/';
@@ -34,7 +34,7 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
     if(!host?.classList.contains('dl-intro')||D.querySelector('.dl-shade:not([hidden])'))return;
     stopEra();
     if(introHost===host&&introVideo?.isConnected)return;
-    stopIntro();introHost=host;host.hidden=false;
+    stopIntro();introHost=host;host.hidden=false;host.dataset.introVideo='loading';
     const v=node('video','dl-115-intro-video');introVideo=v;
     v.loop=true;v.muted=true;v.defaultMuted=true;v.playsInline=true;
     v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.setAttribute('aria-hidden','true');

@@ -1,0 +1,188 @@
+const {chromium}=require('playwright');const fs=require('fs'),path=require('path');
+const DEPS=process.env.DREAMLANTERN_BROWSER_DEPS||'/tmp/dreamlantern-browser/node_modules';
+const ROOT=path.resolve('.'),report={environment:'Chromium mobile viewport + mocked SillyTavern helper APIs; NOT Android device',tests:[],errors:[],route:'CDN URLs fulfilled from exact repository bytes for deterministic UI QA'};
+const check=(name,ok,details)=>{console.log(name,ok);report.tests.push({name,ok,details});if(!ok)throw Error(name+': '+JSON.stringify(details));};
+async function capture(page,options){
+ // Only the entry regression requires pixel evidence; other pages use DOM/media/business assertions.
+ if(!options.path.includes('intro'))return;
+ await page.evaluate(()=>{window.__qaScreenshotVideos=[...document.querySelectorAll('video')].filter(v=>!v.paused);window.__qaScreenshotVideos.forEach(v=>v.pause());});
+ try{return await page.screenshot(options);}finally{await page.evaluate(()=>{window.__qaScreenshotVideos.forEach(v=>{if(v.isConnected)v.play().catch(()=>{});});window.__qaScreenshotVideos=[];});}
+}
+(async()=>{
+ const sp=await import(path.join(DEPS,'@sparticuz/chromium/build/index.js'));const C=sp.default;
+ const browser=await chromium.launch({executablePath:await C.executablePath(),args:C.args.filter(x=>!['--single-process','--disable-web-security','--disable-site-isolation-trials'].includes(x)),headless:true});
+ async function setup(width=390,fail=false,reduced=false,denySound=false){
+  const context=await browser.newContext({viewport:{width,height:844},deviceScaleFactor:1,hasTouch:true,isMobile:true,reducedMotion:reduced?'reduce':'no-preference'});
+  await context.route('https://cdn.jsdelivr.net/**',async route=>{
+   const u=route.request().url(),marker='DreamLantern-Media@main/';if(!u.includes(marker))return route.abort();
+   if(fail)return route.abort();const rel=decodeURIComponent(u.split(marker)[1].split('?')[0]);const f=path.resolve(ROOT,rel);if(!f.startsWith(ROOT)||!fs.existsSync(f))return route.fulfill({status:404,body:'not found'});
+   await route.fulfill({path:f,headers:{'access-control-allow-origin':'*'}});
+  });
+  await context.route('https://www.garden-culture.net/**',r=>r.abort());
+  await context.route('https://music.163.com/**',r=>r.fulfill({contentType:'text/html',body:'<p>网易云占位：auto=0，真实播放另行实机核验</p>'}));
+  const page=await context.newPage();page.on('pageerror',e=>report.errors.push(String(e)));
+  await context.addInitScript(({denySound})=>{
+    localStorage.setItem('hxy_dreamlantern_preferences',JSON.stringify({fxEnabled:false,lowMotion:true}));
+    const load=HTMLMediaElement.prototype.load;HTMLMediaElement.prototype.load=function(){this.__qaLoads=(this.__qaLoads||0)+1;return load.call(this);};
+    const play=HTMLMediaElement.prototype.play;window.__plays=[];window.__denySound=denySound;
+    HTMLMediaElement.prototype.play=function(){window.__plays.push({cls:this.className,muted:this.muted,active:navigator.userActivation.isActive});if(window.__denySound&&!this.muted)return Promise.reject(new DOMException('QA sound blocked','NotAllowedError'));return play.call(this);};
+  },{denySound});
+  await context.route('https://dreamlantern.test/',r=>r.fulfill({contentType:'text/html',body:fs.readFileSync('qa/harness.html','utf8')}));
+  await page.goto('https://dreamlantern.test/');await page.waitForSelector('.dl-intro');
+  const fontRoot=path.join(DEPS,'@fontsource/noto-serif-sc');
+  const fontcss=fs.readFileSync(fontRoot+'/400.css','utf8').replaceAll('Noto Serif SC','Noto Serif CJK SC').replace(/url\(\.\/files\/([^)]*)\)/g,(_,f)=>'url(data:font/woff2;base64,'+fs.readFileSync(fontRoot+'/files/'+f).toString('base64')+')');
+  await page.addStyleTag({content:fontcss});await page.evaluate(()=>document.fonts.ready);return {page,context};
+ }
+ let {page,context}=await setup();
+ const snapshot=()=>page.evaluate(()=>JSON.stringify([window.__data,window.__book,window.__qa.writes]));
+ const one=async()=>check('at most one active video',await page.locator('video').evaluateAll(vs=>vs.filter(v=>!v.paused&&!v.ended).length<=1));
+ const before=await snapshot();
+ await page.waitForFunction(()=>{const v=document.querySelector('.dl-intro video');return v&&v.readyState>=2&&v.currentTime>.15&&!v.paused&&v.videoWidth>0&&v.parentElement.dataset.introVideo==='playing';});
+ check('one initial entrance video with exact rukou CDN URL',await page.locator('.dl-intro .dl-115-intro-video').count()===1&&await page.locator('.dl-115-intro-video').getAttribute('src').then(s=>s==='https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/incoming/mp4_raw/rukou.mp4'));
+ const layers=await page.locator('.dl-intro').evaluate(h=>{const v=h.querySelector('video'),s=h.querySelector('.dl-scene'),c=h.querySelector('.dl-intro-content'),b=h.querySelector('.dl-primary'),sound=h.querySelector('.dl-116-intro-sound'),cv=getComputedStyle(v);return {state:h.dataset.introVideo,display:cv.display,visibility:cv.visibility,opacity:+cv.opacity,videoZ:+cv.zIndex,sceneZ:+getComputedStyle(s).zIndex,sceneVisibility:getComputedStyle(s).visibility,veilZ:+getComputedStyle(h,':after').zIndex,contentZ:+getComputedStyle(c).zIndex,buttonZ:+getComputedStyle(b).zIndex,soundZ:+getComputedStyle(sound).zIndex,decoded:v.readyState>=2&&v.videoWidth>0,advancing:v.currentTime>0&&!v.paused};});
+ check('playing video visible above poster below veil text button and sound',layers.state==='playing'&&layers.display!=='none'&&layers.visibility!=='hidden'&&layers.opacity>0&&layers.videoZ>=0&&layers.videoZ>layers.sceneZ&&layers.videoZ<layers.veilZ&&layers.veilZ<layers.contentZ&&layers.contentZ<=layers.buttonZ&&layers.buttonZ<layers.soundZ&&layers.sceneVisibility==='hidden'&&layers.decoded&&layers.advancing,layers);
+ check('intro preserves existing sound button',await page.locator('.dl-116-intro-sound').isVisible());
+ await page.evaluate(()=>document.querySelector('.dl-intro video').pause());
+ await capture(page,{animations:'disabled',path:'qa/118-browser-intro-390.png'});
+ await page.locator('.dl-scene').evaluate(e=>{e.style.backgroundImage='none';e.style.backgroundColor='#00ff00';});
+ await capture(page,{animations:'disabled',path:'qa/118-intro-poison-poster.png'});
+ await page.locator('.dl-115-intro-video').evaluate(e=>e.style.visibility='hidden');
+ await capture(page,{animations:'disabled',path:'qa/118-intro-video-hidden-control.png'});
+ const pixels=require('child_process').spawnSync('python',['qa/check118-pixels.py'],{encoding:'utf8'});
+ check('pixel proof: playing video covers static scene and changes rendered image',pixels.status===0,pixels.stdout.trim());
+ await page.locator('.dl-115-intro-video').evaluate(e=>e.style.removeProperty('visibility'));
+ await page.locator('.dl-scene').evaluate(e=>{e.style.removeProperty('background-color');e.style.backgroundImage='url("https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/ui/brand-background.webp")';});
+ await page.locator('.dl-116-intro-sound').click();
+ check('intro sound remains interactive without opening era page',await page.locator('.dl-door').count()===0&&await page.locator('.dl-115-intro-video').evaluate(v=>!v.muted&&!v.paused)&&await page.evaluate(()=>window.__plays.some(p=>p.cls==='dl-115-intro-video'&&!p.muted&&p.active)));
+ await page.locator('.dl-116-intro-sound').click();
+ check('intro mute still controls only entrance',await page.locator('.dl-115-intro-video').evaluate(v=>v.muted&&!v.paused));
+ await page.evaluate(()=>window.__entrance=document.querySelector('.dl-intro video'));
+ await page.getByRole('button',{name:'展开狐妖手札'}).click();
+ check('era page has exactly two cards and no entrance frame',await page.locator('.dl-door').count()===2&&await page.locator('.dl-116-entry,.dl-115-intro-video,.dl-116-intro-sound').count()===0);
+ check('entrance stopped muted unloaded and detached before era preview',await page.evaluate(()=>{const v=window.__entrance;return v&&v.paused&&v.muted&&!v.hasAttribute('src')&&!v.isConnected&&v.__qaLoads>0;}));
+ check('era DOM contains no rukou URL',await page.locator('[src*="rukou.mp4"]').count()===0);
+ check('era cards initially unarmed with no playing era video',await page.locator('.dl-door[data-armed]').count()===0&&await page.locator('.dl-112-era-video').count()===0);
+ const gate=await page.locator('.dl-door').evaluateAll(es=>es.map(e=>({y:e.getBoundingClientRect().y,w:e.clientWidth,h:e.clientHeight})));
+ check('stacked era cards retained',gate.length===2&&gate[0].y<gate[1].y&&gate.every(x=>x.w/x.h>1.5),gate);
+ await page.locator('.dl-door[data-era=ancient]').click();
+ await page.waitForFunction(()=>{const v=document.querySelector('.dl-door[data-era=ancient] video');return v&&!v.paused&&v.currentTime>.1;});
+ check('first ancient only previews exact fengmian',await snapshot()===before&&await page.locator('.dl-card').count()===0&&await page.locator('.dl-112-era-video').getAttribute('src').then(s=>s.endsWith('/fengmian.mp4')));
+ check('ancient starts with sound in trusted card gesture',await page.locator('.dl-112-era-video').evaluate(v=>!v.muted&&!v.paused)&&await page.evaluate(()=>window.__plays.some(p=>p.cls==='dl-112-era-video'&&!p.muted&&p.active)));
+ await page.evaluate(()=>window.__oldEra=document.querySelector('.dl-112-era-video'));
+ const src=await page.locator('.dl-112-era-video').getAttribute('src');
+ await page.locator('.dl-117-era-sound').click();
+ check('era mute controls current preview without reload or entering',await page.locator('.dl-112-era-video').evaluate((v,src)=>v.muted&&!v.paused&&v.getAttribute('src')===src,src)&&await page.locator('.dl-card').count()===0);
+ await page.locator('.dl-117-era-sound').click();
+ check('era sound restores current preview',await page.locator('.dl-112-era-video').evaluate(v=>!v.muted&&!v.paused));await one();
+ await page.locator('.dl-door[data-era=modern]').click();
+ await page.waitForFunction(()=>{const v=document.querySelector('.dl-door[data-era=modern] video');return v&&!v.paused&&v.currentTime>.1;});
+ check('cross-card switches preview only',await snapshot()===before&&await page.locator('.dl-card').count()===0&&await page.locator('.dl-112-era-video').count()===1&&await page.locator('.dl-112-era-video').getAttribute('src').then(s=>s.endsWith('/xiandaifengmian.mp4')));await one();
+ check('switch unloads detaches and mutes ancient',await page.evaluate(()=>{const v=window.__oldEra;return v.muted&&v.paused&&!v.isConnected&&!v.hasAttribute('src');}));
+ check('modern takes audible ownership with one sound control',await page.locator('.dl-117-era-sound').count()===1&&await page.locator('.dl-112-era-video').evaluate(v=>!v.muted&&!v.paused));
+ await page.locator('.dl-117-era-sound').click();
+ check('modern mute leaves released ancient silent',await page.locator('.dl-112-era-video').evaluate(v=>v.muted)&&await page.evaluate(()=>window.__oldEra.muted&&window.__oldEra.paused));
+ await page.locator('.dl-117-era-sound').click();
+ await page.locator('.dl-door[data-era=ancient]').click();await page.locator('.dl-door[data-era=ancient]').click();
+ check('second ancient enters original 8 chapter list without business mutation',await page.locator('.dl-cover-action').count()===8&&await snapshot()===before);
+ await page.getByRole('button',{name:'回看时代入口'}).click();
+ check('return resets armed cards',await page.locator('.dl-door[data-armed]').count()===0);
+ await page.locator('.dl-door[data-era=ancient]').click();
+ check('return can preview ancient from beginning',await page.locator('.dl-112-era-video').evaluate(v=>v.currentTime<1)&&await page.locator('.dl-card').count()===0);
+ await capture(page,{animations:'disabled',path:'qa/118-browser-preview-390.png'});
+ await page.locator('.dl-door[data-era=modern]').click();await page.locator('.dl-door[data-era=modern]').click();
+ check('second modern enters list without business mutation',await snapshot()===before);
+ check('default FX remains enabled',await page.evaluate(()=>JSON.parse(localStorage.getItem('hxy_dreamlantern_preferences')).fxEnabled===true));
+ check('modern 13 covers',await page.locator('.dl-cover-action img').count()===13);
+ check('whole cover opens Opening',await page.locator('.dl-cover-action[data-id=M03]').count()===1);
+ await page.locator('.dl-cover-action[data-id=M03]').click();await page.waitForSelector('.dl-112-opening-video');
+ check('cover click calls play in active gesture',await page.evaluate(()=>window.__plays.some(p=>p.cls==='dl-112-opening-video'&&!p.muted&&p.active)));
+ check('no blocking sound prompt',await page.getByText('点亮梦灯 · 开启原声').count()===0);
+ check('M03 remapped to anime 02',await page.locator('.dl-112-opening-video').getAttribute('src').then(s=>s.endsWith('/M02.mp4')));
+ await page.waitForFunction(()=>document.querySelector('.dl-opening').dataset.dlVideoMounted==='playing',{timeout:15000});
+ const v=await page.locator('.dl-112-opening-video').evaluate(v=>({currentTime:v.currentTime,muted:v.muted,readyState:v.readyState,paused:v.paused,src:v.src}));
+ check('video decodes and plays',v.readyState>=2&&!v.paused,v);
+ check('global plus chapter FX <=14',await page.locator('.dl-root .dl-112-fx i').count()<=14,await page.locator('.dl-root .dl-112-fx i').count());
+ check('visible sword extra DOM',await page.locator('.dl-opening .dl-112-extra').count()===1);
+ await capture(page,{animations:'disabled',path:'qa/118-browser-sword-390.png'});
+ await page.getByRole('button',{name:'由此入梦'}).click();await page.waitForFunction(()=>document.querySelector('.dl-state').textContent.includes('王权篇'));
+ check('transaction commits M03 modern lock',await page.evaluate(()=>window.__data.stat_data._当前篇章==='M03'&&window.__data.stat_data._现代锁定===true));
+ check('exactly one timeline enabled',await page.evaluate(()=>window.__book.filter(x=>/【HXY_TIMELINE:/.test(x.name)&&x.enabled).length===1));
+ await page.getByRole('button',{name:'回看时代入口'}).click();
+ check('review gate resets preview',await page.locator('.dl-door[data-armed]').count()===0);
+ check('review gate preserves modern lock and chapter',await page.evaluate(()=>window.__data.stat_data._现代锁定===true&&window.__data.stat_data._当前篇章==='M03'));
+ await page.locator('.dl-door[data-era=ancient]').click();await page.locator('.dl-door[data-era=ancient]').click();
+ check('locked ancient second click stays on era page',await page.locator('.dl-card').count()===0&&await page.getByText('今世已定 · 前尘仅供回看',{exact:true}).isVisible());
+ check('review selection writes no business state',await page.evaluate(()=>window.__data.stat_data._时代==='现代'&&window.__data.stat_data._当前篇章==='M03'));
+ check('Opening released on navigation' ,await page.locator('.dl-112-opening-video').count()===0);
+ await page.getByRole('button',{name:'缘卷',exact:true}).click();await page.locator('[data-action=era][data-era=ancient]').click();
+ check('ancient 8 covers',await page.locator('.dl-cover-action').count()===8);
+ await page.locator('.dl-cover-action[data-id=A03]').click();check('locked ancient replay has no enter',await page.locator('[data-action=enter]').count()===0);
+ for(const [id,profile] of [['M04','blossom_redthread'],['M06','southern_mist'],['M09','mirror_redthread']]){
+  await page.getByRole('button',{name:'缘卷',exact:true}).click();await page.locator('.dl-cover-action[data-id='+id+']').click();
+  check(id+' themed FX',await page.locator('.dl-opening').getAttribute('data-profile')===profile);
+  await capture(page,{animations:'disabled',path:`qa/118-browser-${id}-390.png`});
+ }
+ await page.getByRole('button',{name:'缘忆',exact:true}).click();
+ await page.locator('[data-action=memory][data-id=MEM_ZHUYE]').click();
+ check('bamboo history keeps anime06 rather than A03 Wangquan EP',await page.locator('.dl-112-opening-video').getAttribute('src').then(s=>s.endsWith('/M06.mp4')));
+ check('bamboo history remains replay only',await page.locator('[data-action=enter]').count()===0);
+ await page.getByRole('button',{name:'缘忆',exact:true}).click();check('memory spoiler retained',await page.locator('.dl-spoiler').count()>0);await capture(page,{animations:'disabled',path:'qa/118-browser-memory-390.png'});
+ await page.getByRole('button',{name:'缘音',exact:true}).click();await page.locator('[data-track-index="0"]').click();check('one netease iframe auto=0',await page.locator('.dl-music iframe').count()===1&&await page.locator('.dl-music iframe').getAttribute('src').then(s=>s.includes('auto=0')));await capture(page,{animations:'disabled',path:'qa/118-browser-music-390.png'});
+ await page.getByRole('button',{name:'缘卷',exact:true}).click();await page.locator('.dl-cover-action[data-id=M04]').click();check('Opening unloads hidden music iframe',await page.locator('.dl-music iframe').getAttribute('src')==='about:blank');
+ await page.getByRole('button',{name:'返回',exact:true}).click();check('restore music without autoplay',await page.locator('.dl-music iframe').getAttribute('src').then(s=>s.includes('auto=0')));
+ await page.getByRole('button',{name:'缘卷',exact:true}).click();
+ const mediaManifest=JSON.parse(fs.readFileSync(ROOT+'/source/script-4.js','utf8').match(/^ const MEDIA112=(.*);$/m)[1]);
+ const crosswalk=JSON.parse(fs.readFileSync(ROOT+'/manifest/anime-to-manga-remap.v1.json','utf8'));
+ check('21 unique final paths match latest crosswalk',new Set(Object.values(mediaManifest.chapterVideos).map(v=>v.video)).size===21&&Object.entries({...crosswalk.ancientOrderCrosswalk,...crosswalk.modernOrderCrosswalk}).every(([id,s])=>s.rawVideo===mediaManifest.chapterVideos[id].video));
+ for(const [id,spec] of Object.entries(mediaManifest.chapterVideos)){
+  await page.evaluate(id=>window.DreamLantern.playOpening(id,{mode:'replay',allowEnter:false}),id);
+  check(id+' final mapped video',spec.verified&&await page.locator('.dl-112-opening-video').getAttribute('src').then(s=>s.endsWith(spec.video)));
+  await page.waitForFunction(()=>document.querySelector('.dl-opening').dataset.dlVideoMounted==='playing',{timeout:15000});
+  check(id+' video decodes and advances',await page.locator('.dl-112-opening-video').evaluate(v=>v.readyState>=2&&!v.paused));
+  check(id+' only one Opening video',await page.locator('.dl-112-opening-video').count()<=1);
+ }
+
+ await context.close();
+ for(const width of [360,412,430]){
+  ({page,context}=await setup(width));await page.getByRole('button',{name:'展开狐妖手札'}).click();
+  check('viewport '+width+' no horizontal overflow',await page.locator('.dl-paper').evaluate(e=>e.scrollWidth<=e.clientWidth),await page.locator('.dl-paper').evaluate(e=>({scroll:e.scrollWidth,width:e.clientWidth})));await capture(page,{animations:'disabled',path:`qa/118-browser-era-${width}.png`});await context.close();
+ }
+ ({page,context}=await setup(390,true));
+ await page.waitForFunction(()=>document.querySelector('.dl-intro').dataset.introVideo==='fallback');
+ check('failed intro releases video and leaves static fallback and original button',await page.locator('.dl-115-intro-video').count()===0&&await page.locator('.dl-scene').evaluate(e=>getComputedStyle(e).visibility==='visible')&&await page.getByRole('button',{name:'展开狐妖手札'}).isEnabled());
+ await capture(page,{path:'qa/118-browser-intro-fallback-390.png'});await page.getByRole('button',{name:'展开狐妖手札'}).click();await page.locator('.dl-door[data-era=modern]').click();await page.locator('.dl-door[data-era=modern]').click();await page.locator('.dl-cover-action[data-id=M04]').click();await page.waitForFunction(()=>document.querySelector('.dl-opening').dataset.dlVideoMounted==='fallback');
+ check('all remote failure no black blocker',await page.getByRole('button',{name:'由此入梦'}).isEnabled()&&await page.locator('.dl-opening .dl-112-fx i').count()>0);
+ await capture(page,{animations:'disabled',path:'qa/118-browser-offline-390.png'});await page.getByRole('button',{name:'由此入梦'}).click();check('offline media still commits business',await page.evaluate(()=>window.__data.stat_data._当前篇章==='M04'));await context.close();
+ ({page,context}=await setup(390,false,true));await page.getByRole('button',{name:'展开狐妖手札'}).click();check('reduced motion FX static',await page.locator('.dl-paper>.dl-112-fx i').evaluateAll(es=>es.every(e=>getComputedStyle(e).animationName==='none')));await context.close();
+ ({page,context}=await setup(390,false,true,true));
+ await page.locator('.dl-116-intro-sound').click();
+ await page.waitForFunction(()=>{const v=document.querySelector('.dl-intro video');return v&&v.muted&&!v.paused&&v.currentTime>.1&&v.parentElement.dataset.introVideo==='playing';});
+ check('sound denial retains visible initial video and optional sound control',await page.locator('.dl-116-intro-sound').textContent().then(s=>s.includes('开启声音'))&&await page.locator('.dl-115-intro-video').evaluate(v=>+getComputedStyle(v).opacity>0));
+ await page.getByRole('button',{name:'展开狐妖手札'}).click();
+ await page.locator('.dl-door[data-era=ancient]').click();
+ await page.waitForFunction(()=>{const v=document.querySelector('.dl-112-era-video');return v&&v.muted&&!v.paused&&v.currentTime>.1;});
+ check('era sound denial immediately falls back and exposes current sound control',await page.locator('.dl-117-era-sound').textContent().then(s=>s.includes('开启声音')));
+ await page.evaluate(()=>window.__denySound=false);
+ await page.locator('.dl-117-era-sound').click();
+ await page.waitForFunction(()=>!document.querySelector('.dl-112-era-video').muted);
+ check('one era sound click restores sound without advancing',await page.locator('.dl-card').count()===0);
+ await capture(page,{path:'qa/118-browser-era-sound-390.png'});
+ await page.evaluate(()=>window.__denySound=true);
+ check('reduced motion still previews visible era video',await page.locator('.dl-112-era-video').evaluate(v=>getComputedStyle(v).display!=='none'&&getComputedStyle(v).opacity==='1'));
+ await page.locator('.dl-door[data-era=modern]').click();await page.locator('.dl-door[data-era=modern]').click();await page.locator('.dl-cover-action[data-id=M04]').click();
+ await page.waitForFunction(()=>{const v=document.querySelector('.dl-112-opening-video');return v&&v.muted&&!v.paused&&v.currentTime>.1;});
+ check('sound denied automatically plays muted without another click',true);
+ check('optional sound button is nonblocking',await page.getByRole('button',{name:'开启Opening声音'}).isVisible());
+ await page.getByRole('button',{name:'返回',exact:true}).click();await page.locator('.dl-cover-action[data-id=M04]').click();
+ await page.waitForFunction(()=>{const v=document.querySelector('.dl-112-opening-video');return v&&v.muted&&!v.paused&&v.currentTime>.1;});
+ check('replay automatically plays muted again',true);
+ await page.getByRole('button',{name:'关闭手札'}).click();check('close releases all video and sound',await page.locator('video').count()===0);await page.locator('.dl-launch').click();
+ await page.evaluate(()=>window.DreamLantern.open());await page.getByRole('button',{name:'特效 · 已开启',exact:true}).click();
+ check('explicit FX off works',await page.locator('.dl-root').evaluate(e=>e.classList.contains('dl-fx-off')));
+ await page.reload();await page.waitForSelector('.dl-intro');
+ // Init script seeds old prefs on reload; migration must turn FX back on for that old version.
+ check('legacy defaults migrate on a fresh load',await page.evaluate(()=>JSON.parse(localStorage.getItem('hxy_dreamlantern_preferences')).fxEnabled===true));
+ await context.close();
+ check('zero JS page errors' ,report.errors.length===0,report.errors);
+ await browser.close();
+})().catch(e=>{report.failure=String(e);process.exitCode=1;}).finally(()=>{fs.writeFileSync('qa/118-browser-report.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));});

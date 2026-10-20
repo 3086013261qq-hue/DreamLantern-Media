@@ -1,0 +1,28 @@
+{
+  "environment": "Chromium mobile viewport + mocked SillyTavern helper APIs; NOT Android device",
+  "tests": [
+    {
+      "name": "late ancient rejection cannot seize modern sound or recreate entrance",
+      "ok": true
+    },
+    {
+      "name": "stale ancient remains muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "sound control stays bound to modern after late rejection",
+      "ok": true
+    },
+    {
+      "name": "close removes both channels and sound controls",
+      "ok": true
+    },
+    {
+      "name": "zero JS page errors",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "route": "CDN URLs fulfilled from exact repository bytes for deterministic UI QA"
+}
