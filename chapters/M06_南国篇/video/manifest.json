@@ -1,1 +1,22 @@
-{"schemaVersion":"dream-lantern-video-2.0","chapterId":"M06","title":"南国篇","sources":[],"stableDirectMp4":[],"runtime":"official_still_fx","rule":"当前无稳定直连动态源时使用官方静态视觉+毒雾萤火FX"}
+{
+  "schemaVersion": "dream-lantern-video-2.1",
+  "chapterId": "M06",
+  "title": "南国篇",
+  "sources": [
+    {
+      "key": "official_stream_tencent_youtube_s5_highlights",
+      "title": "Fox Spirit Matchmaker Season 5 | EP01-EP26 Highlights · Tencent Video-ANIMATION",
+      "page": "https://www.youtube.com/watch?v=3nJAFUzqrz8",
+      "publisher": "Tencent Video-ANIMATION",
+      "publisherVerified": true,
+      "status": "official_embed_only_series_reference_mapping_crosschecked",
+      "arcMapping": "Season 5 / 26-episode block cross-checked to 南国篇",
+      "arcMappingCaveat": "海外/平台季号存在历史不一致，因此不把季号本身当作唯一篇章证据。",
+      "uses": ["official_stream_reference", "memory_reference"],
+      "rules": ["不得下载转码为MP4", "不得作为M06主Opening的唯一动态证据"]
+    }
+  ],
+  "stableDirectMp4": [],
+  "runtime": "official_still_fx",
+  "rule": "当前无稳定直连动态源时使用官方南国静态视觉+毒雾萤火FX；官方整季流媒体仅作参考/缘忆，不下载转码。"
+}
