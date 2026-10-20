@@ -1,1 +1,33 @@
-{"schemaVersion":"dream-lantern-video-2.0","chapterId":"M07","title":"金晨曦篇","sources":[{"key":"official_pv_mutiancheng","title":"沐天城篇定档PV","page":"https://www.garden-culture.net/hymtc.html","status":"page_verified_no_direct_mp4","uses":["memory"]},{"key":"official_pv_liangshenghua","title":"两生花篇定档PV","page":"https://www.garden-culture.net/hylsh.html","status":"page_verified_no_direct_mp4","uses":["memory"]}],"stableDirectMp4":[],"runtime":"official_still_fx","rule":"现有PV候选只作缘忆/辅助，不冒充M07正式MP4 Opening"}
+{
+  "schemaVersion": "dream-lantern-video-2.1",
+  "chapterId": "M07",
+  "title": "金晨曦篇",
+  "sources": [
+    {
+      "key": "official_pv_mutiancheng",
+      "title": "沐天城篇定档PV",
+      "page": "https://www.garden-culture.net/hymtc.html",
+      "status": "official_page_only",
+      "uses": ["memory"]
+    },
+    {
+      "key": "official_pv_liangshenghua",
+      "title": "两生花篇定档PV",
+      "page": "https://www.garden-culture.net/hylsh.html",
+      "status": "official_page_only",
+      "uses": ["memory"]
+    },
+    {
+      "key": "official_video_object_liangshenghua_schedule",
+      "title": "两生花篇定档PV · 微博视频对象页",
+      "page": "https://weibo.com/tv/show/1034:4616419246276683?from=old_pc_videoshow",
+      "officialPostReference": "https://weibo.com/5616549369/K6T3pc3ox",
+      "status": "official_video_object_page_secondary_provenance_confirmed",
+      "provenance": "二手动画资讯归档同时标注@狐妖小红娘并给出官方账号微博；可登记为官方视频对象页参考，但仍不是稳定裸MP4。",
+      "uses": ["memory", "official_dynamic_reference"]
+    }
+  ],
+  "stableDirectMp4": [],
+  "runtime": "official_still_fx",
+  "rule": "现有PV/视频对象只作缘忆与官方动态参考，不冒充M07正式MP4 Opening；不得从微博对象页提取临时签名媒体。"
+}
