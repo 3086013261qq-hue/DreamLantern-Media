@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "dream-lantern-bilibili-official-dynamic-sources-1.0",
+  "generatedAt": "2026-10-20",
+  "purpose": "为梦灯笼补充可核验的B站官方动态来源。仅登记官方/版权方账号页面与用途，不下载、不转码、不把B站视频片段重新上传到公开GitHub。",
+  "policy": {
+    "publicRepoMayMirrorVideoBytes": false,
+    "mayStoreOfficialPageUrls": true,
+    "mayUseOfficialPlayerOnUserClick": true,
+    "mayUseForMemoryReference": true,
+    "mayTreatAsStableDirectMp4": false,
+    "mayExtractAndReuploadClipWithoutPermission": false,
+    "openingDefault": "official_still_plus_runtime110_fx",
+    "note": "如未来取得明确授权、可再分发的短片文件，再单独登记为licensed_clip。"
+  },
+  "sources": [
+    {
+      "chapter": "M03",
+      "title": "王权篇",
+      "bvid": "BV1kx411e7vn",
+      "url": "https://www.bilibili.com/video/BV1kx411e7vn/",
+      "uploader": "腾讯动漫",
+      "sourceTitle": "【狐妖小红娘OP】梦回还 完整版",
+      "kind": "official_music_video",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false
+    },
+    {
+      "chapter": "M04",
+      "title": "月红篇",
+      "bvid": "BV1Js411y7Eh",
+      "url": "https://www.bilibili.com/video/BV1Js411y7Eh/",
+      "uploader": "腾讯动漫",
+      "sourceTitle": "狐妖小红娘月红篇OP 若当来世",
+      "kind": "official_op",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false
+    },
+    {
+      "chapter": "M04",
+      "title": "月红篇",
+      "bvid": "BV1Vs411q7tH",
+      "url": "https://www.bilibili.com/video/BV1Vs411q7tH/",
+      "uploader": "腾讯动漫",
+      "sourceTitle": "《狐妖小红娘》月红篇 OP首曝",
+      "kind": "official_op_promo",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false
+    },
+    {
+      "chapter": "M05",
+      "title": "千颜篇",
+      "bvid": "BV1Tx411y7E9",
+      "url": "https://www.bilibili.com/video/BV1Tx411y7E9/",
+      "uploader": "腾讯动漫",
+      "sourceTitle": "狐妖小红娘千颜篇OP 铭记 首曝！",
+      "kind": "official_op",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false
+    },
+    {
+      "chapter": "M06",
+      "title": "南国篇",
+      "bvid": "BV1ix411L7MZ",
+      "url": "https://www.bilibili.com/video/BV1ix411L7MZ/",
+      "uploader": "腾讯动漫",
+      "sourceTitle": "狐妖小红娘南国篇op！这一波操作你们一定想不到！",
+      "kind": "official_op_promo",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false
+    },
+    {
+      "chapter": "M06",
+      "title": "南国篇",
+      "bvid": "BV1YW411H7t3",
+      "url": "https://www.bilibili.com/video/BV1YW411H7t3/",
+      "uploader": "腾讯动漫",
+      "sourceTitle": "狐妖小红娘南国篇OP《众生》无字幕版",
+      "kind": "official_op_clean",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false,
+      "redistributionWarning": "页面标注未经作者授权，禁止转载"
+    },
+    {
+      "chapter": "M07",
+      "title": "金晨曦篇",
+      "bvid": "BV1q54y1S74y",
+      "url": "https://www.bilibili.com/video/BV1q54y1S74y/",
+      "uploader": "腾讯动漫",
+      "sourceTitle": "【狐妖小红娘】五年白苏，一集收割",
+      "kind": "official_scene_clip",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false,
+      "redistributionWarning": "页面标注未经作者授权，禁止转载"
+    },
+    {
+      "chapter": "M08",
+      "title": "真龙篇 / 无暮时期参考",
+      "bvid": "BV1x14y1U7U8",
+      "url": "https://www.bilibili.com/video/BV1x14y1U7U8/",
+      "uploader": "腾讯动漫",
+      "sourceTitle": "《狐妖小红娘》无暮篇片头曲《归宗》",
+      "kind": "official_op",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false,
+      "redistributionWarning": "页面标注未经作者授权，禁止转载"
+    },
+    {
+      "chapter": "A03",
+      "title": "涂山道盟 / 竹业时期参考",
+      "bvid": "BV1Xb411t7Rb",
+      "url": "https://www.bilibili.com/video/BV1Xb411t7Rb/",
+      "uploader": "腾讯视频动漫",
+      "sourceTitle": "【狐妖小红娘】来自王权霸业CV谷江山的应援！竹业篇倒计时1天！",
+      "kind": "official_promo",
+      "recommendedUse": ["memory_reference", "official_dynamic_button"],
+      "openingInline": false
+    }
+  ]
+}
