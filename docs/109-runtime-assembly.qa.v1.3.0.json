@@ -1,0 +1,53 @@
+{
+  "version": "1.3.0",
+  "frozen_input_commit": "b6fcd4d1afb962dfa2212ac02f17bc636f0bd5b2",
+  "browser_checks": [
+    {
+      "name": "brand opening uses completed lantern art and exact copy, no eager music",
+      "status": "PASS"
+    },
+    {
+      "name": "21 frozen runtime modes, exact owned sources and FX profiles",
+      "status": "PASS"
+    },
+    {
+      "name": "opening secondary scope follows uses and excludes memory-only art",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile 360/390/412/430 cover fill and coherent dark lacquer theme",
+      "status": "PASS"
+    },
+    {
+      "name": "14 exact Lethe tracks, no duplicate placeholders, album link and single auto=0 iframe",
+      "status": "PASS"
+    },
+    {
+      "name": "entry atomic switch and current official background preserved; replay does not switch timelines",
+      "status": "PASS"
+    },
+    {
+      "name": "official image failure falls to frozen brand visual without state writes",
+      "status": "PASS"
+    },
+    {
+      "name": "generated CDN and embedded image failures fall to SVG once, no broken images",
+      "status": "PASS"
+    },
+    {
+      "name": "all external media failure still permits original era/chapter transaction",
+      "status": "PASS"
+    },
+    {
+      "name": "reduced-motion disables animation and conditional particles",
+      "status": "PASS"
+    },
+    {
+      "name": "dispose removes runtime surfaces and event subscriptions",
+      "status": "PASS"
+    }
+  ],
+  "real_android_device": false,
+  "android_status": "pending",
+  "resource_tag_created": false
+}

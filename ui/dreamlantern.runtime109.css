@@ -1,0 +1,38 @@
+/* Values and profile membership come only from fx-profiles.v1.json. Existing night-lacquer art direction is retained. */
+.dl-root .dl-poster,.dl-intro .dl-scene{animation:dl-109-camera var(--dl-109-cycle,12s) ease-in-out infinite alternate}
+.dl-root .dl-secondary{animation:dl-109-secondary var(--dl-109-cycle,12s) linear infinite;opacity:0}
+.dl-root .dl-opening-copy{animation:dl-reveal var(--dl-109-title,650ms) both}
+.dl-root .dl-poster{transition:opacity var(--dl-109-crossfade,700ms);object-fit:cover}
+.dl-root .dl-video{z-index:0;object-fit:cover;background:transparent}
+.dl-root .dl-109-fx .dl-thread{animation:dl-thread-drift var(--dl-109-cycle,12s) ease-in-out infinite}
+.dl-root .dl-109-fx .dl-fox-glow,.dl-root .dl-109-fx .dl-mote{animation-duration:var(--dl-109-cycle,12s)}
+.dl-root .dl-109-fx .dl-petal{animation-duration:var(--dl-109-cycle,12s)}
+.dl-109-extra{position:absolute;inset:0;pointer-events:none;opacity:.14}
+.dl-109-extra[data-extra~="tree_silhouette"]{box-shadow:inset 0 60px 70px #100c1444}
+.dl-109-fx[data-extra~="warm_sand_motes"] .dl-mote,.dl-109-fx[data-extra~="gold_glints"] .dl-mote{background:#d8b36b}
+.dl-109-extra[data-extra~="heat_haze_very_light"]{background:radial-gradient(ellipse at 50% 70%,#d8b36b10,transparent 65%)}
+.dl-109-fx[data-extra~="bamboo_leaf_drift"] .dl-petal{background-image:none;background:#cbbeb28a;border-radius:95% 0 85% 0;width:4px;height:13px}
+.dl-109-extra[data-extra~="soft_backlight"]{background:radial-gradient(ellipse at 50% 15%,#f0d39830,transparent 66%)}
+.dl-109-extra[data-extra~="foreground_bokeh"]{box-shadow:inset 0 -30px 45px #100c1426}
+.dl-109-extra[data-extra~="slow_light_sweep"]{background:linear-gradient(120deg,transparent 40%,#d8b36b15 50%,transparent 60%)}
+.dl-109-extra[data-extra~="purple_mist_low_opacity"]{background:radial-gradient(ellipse at 55% 65%,#9b789e40,transparent 72%);opacity:.12}
+.dl-109-fx[data-extra~="firefly_drift"] .dl-fox-glow{opacity:.4}
+.dl-109-extra[data-extra~="water_shimmer"],.dl-109-extra[data-extra~="water_light"]{background:repeating-radial-gradient(ellipse at 50% 78%,transparent 0 42px,#d8b36b0b 43px,transparent 46px)}
+.dl-109-extra[data-extra~="memory_vignette"],.dl-109-extra[data-extra~="dark_vignette"]{box-shadow:inset 0 0 90px #100c1466}
+.dl-109-extra[data-extra~="thin_gold_slash"]{background:linear-gradient(124deg,transparent 48%,#f0d39888 49%,transparent 50%);opacity:0}
+.dl-109-extra[data-extra~="mirror_shimmer"],.dl-109-extra[data-extra~="mirror_refraction"]{background:linear-gradient(145deg,transparent 37%,#ddd2ee1c 39%,transparent 46%,#d8b36b10 70%,transparent 75%)}
+.dl-109-fx[data-extra~="gold_scale_glint"] .dl-mote{border-radius:0;transform:rotate(45deg)}
+.dl-109-extra[data-extra~="soft_double_exposure"]{box-shadow:inset 6px 0 35px #f3e7d30c,inset -6px 0 35px #9c354a0a}
+.dl-109-extra[data-extra~="mist_low"]{box-shadow:inset 0 -90px 100px #cbbeb212}
+.dl-109-fx[data-extra~="ember_motes"] .dl-mote{background:#d8b36b;opacity:.3}
+.dl-109-fx[data-extra~="slow_snow"] .dl-mote{background:#f3e7d3;width:3px;height:3px;animation-name:dl-109-snow}
+.dl-109-extra[data-extra~="cold_breath_haze"]{background:radial-gradient(ellipse at 50% 65%,#f3e7d31a,transparent 70%)}
+.dl-109-extra-motion{animation:dl-109-shimmer var(--dl-109-cycle,12s) ease-in-out infinite alternate}
+.dl-109-sword-flash{animation:dl-109-sword var(--dl-109-crossfade,700ms) ease-out 1}
+.dl-official-dynamic{padding:0 14px 14px;font-size:11px;color:#cbbeb2}.dl-official-dynamic summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:#d8b36b}.dl-official-dynamic a{display:block;min-height:44px;padding:10px 0;color:#d8b36b;overflow-wrap:anywhere}
+@keyframes dl-109-camera{from{transform:translate(0,0) scale(var(--dl-109-zoom-from,1))}to{transform:translate(calc(-1 * var(--dl-109-pan,1.2%)),calc(-.5 * var(--dl-109-pan,1.2%))) scale(var(--dl-109-zoom-to,1.035))}}
+@keyframes dl-109-shimmer{from{opacity:.08;transform:translateX(-.4%)}to{opacity:.18;transform:translateX(.4%)}}
+@keyframes dl-109-sword{0%,100%{opacity:0}40%{opacity:.18}}
+@keyframes dl-109-snow{from{transform:translateY(-35px);opacity:.12}to{transform:translateY(50px);opacity:.3}}
+.dl-root.dl-low-motion .dl-109-fx{display:none}.dl-root.dl-low-motion .dl-poster,.dl-intro.dl-low-motion .dl-scene{animation:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){.dl-root .dl-109-fx{display:none}.dl-root .dl-poster,.dl-intro .dl-scene{animation:none!important;transition:none!important}}
