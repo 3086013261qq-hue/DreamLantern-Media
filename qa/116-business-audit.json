@@ -1,0 +1,13 @@
+{
+  "baseline": "狐妖小红娘_梦灯笼_正式版_v1.2.0_115候选2.json",
+  "baselineCommit": "d5a755b83aa21f85d313baca0283d72b4ccfa51f",
+  "baselineSha256": "0a13088f40f09aa20ea322ca6aeae1496190c07b88b4d143711b60f571a29885",
+  "changedPaths": [
+    "/data/extensions/tavern_helper/scripts/4/content"
+  ],
+  "businessAndAllOtherFieldsExactEquality": true,
+  "transactionCoordinatorExactEquality": true,
+  "mediaManifestExactEquality": true,
+  "androidSillyTavern": "NOT_EXECUTED_DEVICE_UNAVAILABLE",
+  "jsonSha256": "4833866821cc1939898ba9ea8fc217c31b892be14894aa12288c1c69ffabe2fa"
+}

@@ -1,10 +1,10 @@
-/* 115 presentation repair of 112 adapter. Owns media/FX only; receives no MVU or worldbook API. */
+/* 116 presentation interaction repair of 112 adapter. Owns media/FX only; receives no MVU or worldbook API. */
 function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
   'use strict';
   const D=W.document, BASE='https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/';
   const url=p=>/^https:\/\//.test(p||'')?p:BASE+String(p||'').replace(/^\/+/, '');
   let active=null, gates=[], globalLayer=null, generation=0, dead=false;
-  let introVideo=null, introHost=null;
+  let introVideo=null, introHost=null, introSound=null, introAttempt=0, armed=null;
   const node=(tag,cls)=>{const n=D.createElement(tag);n.className=cls;return n;};
   function release(v){try{v.pause();v.removeAttribute('src');v.load();}catch{}v.remove();}
   function cover(id){return manifest.chapterVideos?.[id]?.cover||manifest.covers?.chapters?.[id]?.path||'ui/brand-background.webp';}
@@ -19,23 +19,36 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
     host.append(layer);return layer;
   }
   function mountGlobal(root){globalLayer?.remove();globalLayer=fx(root.querySelector('.dl-paper')||root,'global',6);}
-  function mountIntro(host){
+  function soundLabel(){if(!introSound||!introVideo)return;introSound.textContent=introVideo.muted?'🔇 开启声音':'🔊 关闭声音';introSound.setAttribute('aria-pressed',String(!introVideo.muted));}
+  function stopIntro(){introAttempt++;if(introHost?.classList.contains('dl-116-entry'))introHost.hidden=true;if(introVideo)release(introVideo);introSound?.remove();introVideo=null;introSound=null;introHost=null;}
+  function playIntro(sound=false){
+    const v=introVideo,host=introHost,attempt=++introAttempt;if(!v)return;
+    v.muted=!sound;soundLabel();
+    v.play().then(()=>{if(v===introVideo&&attempt===introAttempt)soundLabel();}).catch(()=>{
+      if(v!==introVideo||attempt!==introAttempt)return;
+      v.muted=true;soundLabel();v.play().catch(()=>{if(v===introVideo)host.dataset.introVideo='fallback';});
+    });
+  }
+  function mountIntro(host,sound=false){
     if(introHost===host&&introVideo?.isConnected)return;
-    if(introVideo)release(introVideo);introHost=host;
+    stopIntro();introHost=host;host.hidden=false;
     const v=node('video','dl-115-intro-video');introVideo=v;
-    v.autoplay=true;v.loop=true;v.muted=true;v.defaultMuted=true;v.playsInline=true;
+    v.loop=true;v.muted=true;v.defaultMuted=true;v.playsInline=true;
     v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.setAttribute('aria-hidden','true');
     v.preload='auto';v.poster=url('ui/brand-background.webp');
-    v.addEventListener('playing',()=>host.dataset.introVideo='playing');
-    v.addEventListener('error',()=>{host.dataset.introVideo='fallback';release(v);if(introVideo===v)introVideo=null;},{once:true});
-    v.src=url(manifest.intro.video);host.prepend(v);v.play().catch(()=>{host.dataset.introVideo='fallback';});
+    v.addEventListener('playing',()=>{if(v===introVideo)host.dataset.introVideo='playing';});
+    v.addEventListener('error',()=>{if(v===introVideo){host.dataset.introVideo='fallback';stopIntro();}},{once:true});
+    v.src=url(manifest.intro.video);host.prepend(v);
+    introSound=node('button','dl-116-intro-sound');introSound.type='button';
+    introSound.addEventListener('click',e=>{e.stopPropagation();if(!introVideo)return;if(introVideo.muted)playIntro(true);else{introAttempt++;introVideo.muted=true;soundLabel();}});host.append(introSound);
+    playIntro(sound);
   }
-  function showIntro(visible){
-    if(!introVideo)return;
-    if(visible&&!D.hidden)introVideo.play().catch(()=>{});else introVideo.pause();
+  function showIntro(visible,sound=false){
+    if(visible&&!D.hidden){if(!introVideo){const host=D.querySelector('.dl-intro');if(host)mountIntro(host,sound);}else playIntro(sound);}
+    else stopIntro();
   }
   function clear(){
-    generation++;if(active){const a=active;active=null;a.stop();}
+    generation++;armed=null;stopIntro();if(active){const a=active;active=null;a.stop();}
     for(const v of gates)release(v);gates=[];
   }
   function suspendMusic(root){
@@ -45,21 +58,32 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
     return ()=>{for(const {f,src} of frames)if(f.isConnected&&src)f.src=src;};
   }
   function mountEraGate(root,lowMotion=false){
-    clear();showIntro(false);const doors=root.querySelector('.dl-doors');if(!doors)return;
+    clear();const doors=root.querySelector('.dl-doors');if(!doors)return;
     doors.classList.add('dl-112-era-stack');
     for(const door of doors.querySelectorAll('.dl-door')){
       const era=door.dataset.era,spec=manifest.eraGate[era];if(!spec)continue;
-      door.querySelectorAll('.dl-112-era-video,.dl-112-era-cover').forEach(n=>n.remove());delete door.dataset.video;
+      door.querySelectorAll('.dl-112-era-video,.dl-112-era-cover').forEach(n=>n.remove());delete door.dataset.video;delete door.dataset.armed;
       const img=node('img','dl-112-era-cover');img.alt='';img.src=url(spec.cover||cover(era==='ancient'?'A04':'M04'));
       img.onerror=()=>{img.onerror=null;img.src=url('ui/brand-background.webp');};door.prepend(img);
-      const v=node('video','dl-112-era-video');v.muted=true;v.defaultMuted=true;v.loop=true;v.autoplay=true;v.playsInline=true;v.preload='auto';v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.setAttribute('aria-hidden','true');
-      v.poster=img.src;v.src=url(spec.video);door.prepend(v);gates.push(v);
-      v.addEventListener('playing',()=>door.dataset.video='playing');
-      v.addEventListener('error',()=>{door.dataset.video='fallback';release(v);},{once:true});
-      if(v.autoplay)v.play().catch(()=>{door.dataset.video='fallback';});
       door.querySelector('b').textContent=era==='ancient'?'前尘':'今世';
-      const sub=door.querySelector('span');if(sub)sub.textContent=era==='ancient'?'古代八卷 · 一念落在苦情树下':'现代十三卷 · 红线再续人间';
+      const sub=door.querySelector('span');if(sub)sub.textContent='轻触预览 · 再触入'+(era==='ancient'?'前尘':'今世');
     }
+  }
+  function previewEra(door,locked=false){
+    const era=door.dataset.era;
+    if(armed===door){if(locked){door.querySelector('span').textContent='今世已定 · 前尘仅供回看';return false;}return true;}
+    clear();armed=door;door.dataset.armed='true';
+    const v=node('video','dl-112-era-video');v.muted=true;v.defaultMuted=true;v.loop=true;v.playsInline=true;v.preload='auto';v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.setAttribute('aria-hidden','true');
+    const spec=manifest.eraGate[era];v.poster=door.querySelector('img').src;v.src=url(spec.video);door.prepend(v);gates=[v];
+    const token=generation;
+    v.addEventListener('playing',()=>{if(token===generation)door.dataset.video='playing';});
+    v.addEventListener('error',()=>{if(token===generation){door.dataset.video='fallback';release(v);gates=[];}},{once:true});
+    v.play().catch(()=>{if(token===generation)door.dataset.video='fallback';});
+    for(const other of door.parentElement.querySelectorAll('.dl-door')){
+      if(other!==door){delete other.dataset.armed;delete other.dataset.video;other.querySelector('span').textContent='轻触预览 · 再触入'+(other.dataset.era==='ancient'?'前尘':'今世');}
+    }
+    door.querySelector('span').textContent=locked?'今世已定 · 前尘仅供回看':'再触一次 · 入'+(era==='ancient'?'前尘':'今世');
+    return false;
   }
   function mountOpening(root,host,id,svgFallback,lowMotion=false,memoryId=null){
     clear();showIntro(false);const token=generation;delete host.dataset.dlVideoMounted;
@@ -90,11 +114,12 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
     });
   }
   function visibility(hidden){
-    showIntro(!hidden&&!D.querySelector('.dl-root .dl-shade:not([hidden])'));
-    for(const v of [...gates,...(active?[...D.querySelectorAll('.dl-112-opening-video')]:[])]){
-      if(hidden)v.pause();else v.play().catch(()=>{v.muted=true;v.play().catch(()=>{});});
+    if(hidden){introVideo?.pause();for(const v of gates)v.pause();D.querySelectorAll('.dl-112-opening-video').forEach(v=>v.pause());}
+    else{
+      if(introVideo)playIntro(!introVideo.muted);
+      for(const v of [...gates,...D.querySelectorAll('.dl-112-opening-video')])v.play().catch(()=>{v.muted=true;v.play().catch(()=>{});});
     }
   }
-  function dispose(){if(dead)return;dead=true;clear();if(introVideo)release(introVideo);introVideo=null;introHost=null;globalLayer?.remove();}
-  return Object.freeze({mountIntro,showIntro,mountEraGate,mountOpening,mountGlobal,clear,dispose,visibility,cover,url});
+  function dispose(){if(dead)return;dead=true;clear();globalLayer?.remove();}
+  return Object.freeze({mountIntro,showIntro,mountEraGate,previewEra,mountOpening,mountGlobal,clear,dispose,visibility,cover,url});
 }
