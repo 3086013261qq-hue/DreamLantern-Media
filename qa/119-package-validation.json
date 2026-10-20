@@ -1,0 +1,8 @@
+{
+  "jsonSha256": "f84dbf352f7833a516f6f0f424bc24ce2c86dd048a2770b35b749966d418a5dd",
+  "pngSha256": "98d192893df44cc6133ac047c47e49429b43d2868aacac7bc954cf3692031f95",
+  "strictUtf8": true,
+  "pngCrc": true,
+  "charaCcv3JsonExactEquality": true,
+  "imageAndNonCardChunksExactEquality": true
+}
