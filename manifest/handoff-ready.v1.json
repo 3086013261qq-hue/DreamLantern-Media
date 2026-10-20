@@ -1,60 +1,48 @@
 {
-  "schemaVersion": "dream-lantern-handoff-ready-1.1",
-  "status": "REWORK_REQUIRED_RUNTIME110",
+  "schemaVersion": "dream-lantern-handoff-ready-1.2",
+  "status": "REWORK_REQUIRED_RUNTIME111_MEDIA_INTEGRATION",
   "date": "2026-10-20",
-  "reason": "Android/SillyTavern real-device screenshots show v1.3 did not visibly realize the dual-mirror gate or the intended pseudo-dynamic Opening FX. Manifest/CSS presence is not accepted as visual completion.",
+  "reason": "User supplied complete chapter MP4 set plus separate ancient/modern era-cover videos. The dual-mirror design is superseded. Next build must use stacked dynamic era video gates and local chapter MP4-first Opening playback.",
   "authorities": {
     "chapterResources": "manifest/chapter-runtime.v2.json",
-    "dynamicRuntime": "manifest/dynamic-runtime.v1.json",
+    "userMedia": "manifest/user-media-runtime.v1.json",
+    "dynamicFallback": "manifest/dynamic-runtime.v1.json",
     "fxProfiles": "manifest/fx-profiles.v1.json",
     "videoResearch": "manifest/video-hunt-status.v1.json",
-    "reworkDoc": "docs/110_给静静的梦灯笼实机失败返工_双镜门与伪动态渲染器_v1.0.md",
-    "runtimeJs": "ui/dreamlantern.runtime110.js",
-    "runtimeCss": "ui/dreamlantern.runtime110.css"
+    "handoffDoc": "docs/111_给静静的梦灯笼用户MP4接入_双动态时代入口与21卷视频_v1.0.md",
+    "mediaJs": "ui/dreamlantern.media111.js",
+    "mediaCss": "ui/dreamlantern.media111.css",
+    "fallbackJs": "ui/dreamlantern.runtime110.js",
+    "fallbackCss": "ui/dreamlantern.runtime110.css"
   },
   "counts": {
     "chapters": 21,
-    "officialStaticMapped": 15,
-    "officialStaticPending": 6,
-    "verifiedOfficialDynamicReferenceChapters": 9,
-    "stableDirectMp4": 0,
-    "legacyGeneratedUniqueThemes": 9
+    "userUploadedChapterMp4": 21,
+    "eraGateMp4": 2,
+    "rawCoverCandidates": 23,
+    "targetChapterCovers": 21,
+    "coverSpares": 2,
+    "stableDirectMp4Research": 0
   },
-  "knownFailures": [
-    "era gate appears as two flat dark cards instead of two mirrors",
-    "Opening/detail page appears effectively static on Android",
-    "FX DOM was not proven mounted on device",
-    "multi-still montage was not visibly realized",
-    "some chapter image manifests still contain only one formal official still"
+  "superseded": [
+    "dual_mirror_era_gate",
+    "opening_static_first_when_user_mp4_exists"
   ],
   "runtimeDecision": {
-    "stableMp4Available": "use stable_official_mp4",
-    "noMp4WithOfficialStill": "use official_primary_still_plus_runtime110_fx",
-    "noMp4NoOfficialStill": "use brand_background_plus_runtime110_fx",
-    "officialEmbedPages": "memory_or_external_reference_only"
+    "eraGate": "stacked_ancient_modern_video_cards",
+    "chapterOpeningPreferred": "user_uploaded_mp4",
+    "chapterOpeningFallback": "runtime110_static_plus_fx",
+    "chapterAudioAllowed": true,
+    "eraGatePreviewMuted": true,
+    "videoFailureMustNotBlockBusiness": true
   },
+  "knownPending": [
+    "visually map 23 raw jpg candidates to 21 chapter covers plus 2 spares",
+    "Android/SillyTavern real-device media playback QA",
+    "confirm A01/A02 SVID order if user notices they are reversed"
+  ],
   "resourceLayerFrozen": false,
   "businessLayerFrozen": true,
-  "jingjingMay": [
-    "integrate_runtime110_js_css",
-    "wire_existing_buttons_to_runtime110",
-    "implement_montage_from_existing_manifests",
-    "add_verified_chapter_specific_secondary_images",
-    "optimize_performance",
-    "fix_implementation_bugs",
-    "build",
-    "run_android_qa"
-  ],
-  "jingjingMayNot": [
-    "freely_choose_unverified_assets",
-    "cross_borrow_chapter_assets",
-    "invent_mp4",
-    "use_ai_as_normal_primary",
-    "change_mvu",
-    "change_worldbook_logic",
-    "change_netease_business_logic"
-  ],
-  "expectedNextStep": "integrate runtime110, enrich verified chapter montage sources where available, then prove visible motion on Android with timed screenshots before any completion claim",
   "formalTagAllowed": false,
-  "formalTagUnlockCondition": "runtime110 visible on Android + dual mirrors pass + montage/FX proof + business freeze diff audit pass + user confirmation"
+  "formalTagUnlockCondition": "21 chapter MP4 integration pass + stacked era gate pass + cover mapping pass + Android real-device QA + business freeze diff audit + user confirmation"
 }
