@@ -1,7 +1,9 @@
 {
-  "schemaVersion": "dream-lantern-user-media-runtime-1.0",
+  "schemaVersion": "dream-lantern-user-media-runtime-1.1",
   "generatedAt": "2026-10-20",
   "assetBase": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/",
+  "mappingAuthority": "manifest/anime-to-manga-remap.v1.json",
+  "mappingStatus": "REMAP_REQUIRED_BEFORE_RUNTIME",
   "eraGate": {
     "layout": "vertical_video_cards",
     "ancient": {
@@ -21,41 +23,43 @@
       "playsInline": true
     }
   },
-  "chapterVideos": {
-    "A01": {"video": "incoming/mp4_raw/SVID_20261020_194425_1.mp4", "mappingNote": "user identified the two SVID files as A01/A02; this assignment follows timestamp order and is swappable if reversed"},
-    "A02": {"video": "incoming/mp4_raw/SVID_20261020_195926_1.mp4", "mappingNote": "user identified the two SVID files as A01/A02; this assignment follows timestamp order and is swappable if reversed"},
-    "A03": {"video": "incoming/mp4_raw/A03.mp4"},
-    "A04": {"video": "incoming/mp4_raw/A04.mp4"},
-    "A05": {"video": "incoming/mp4_raw/A05.mp4"},
-    "A06": {"video": "incoming/mp4_raw/A06.mp4"},
-    "A07": {"video": "incoming/mp4_raw/A07.mp4"},
-    "A08": {"video": "incoming/mp4_raw/A08.mp4"},
-    "M01": {"video": "incoming/mp4_raw/M01.mp4"},
-    "M02": {"video": "incoming/mp4_raw/M02.mp4"},
-    "M03": {"video": "incoming/mp4_raw/M03.mp4"},
-    "M04": {"video": "incoming/mp4_raw/M04.mp4"},
-    "M05": {"video": "incoming/mp4_raw/M05.mp4"},
-    "M06": {"video": "incoming/mp4_raw/M06.mp4"},
-    "M07": {"video": "incoming/mp4_raw/M07.mp4"},
-    "M08": {"video": "incoming/mp4_raw/M08.mp4"},
-    "M09": {"video": "incoming/mp4_raw/M09.mp4"},
-    "M10": {"video": "incoming/mp4_raw/M10.mp4"},
-    "M11": {"video": "incoming/mp4_raw/M11.mp4"},
-    "M12": {"video": "incoming/mp4_raw/M12.mp4"},
-    "M13": {"video": "incoming/mp4_raw/M13.mp4"}
-  },
+  "rawVideoPool": [
+    "incoming/mp4_raw/SVID_20261020_194425_1.mp4",
+    "incoming/mp4_raw/SVID_20261020_195926_1.mp4",
+    "incoming/mp4_raw/A03.mp4",
+    "incoming/mp4_raw/A04.mp4",
+    "incoming/mp4_raw/A05.mp4",
+    "incoming/mp4_raw/A06.mp4",
+    "incoming/mp4_raw/A07.mp4",
+    "incoming/mp4_raw/A08.mp4",
+    "incoming/mp4_raw/M01.mp4",
+    "incoming/mp4_raw/M02.mp4",
+    "incoming/mp4_raw/M03.mp4",
+    "incoming/mp4_raw/M04.mp4",
+    "incoming/mp4_raw/M05.mp4",
+    "incoming/mp4_raw/M06.mp4",
+    "incoming/mp4_raw/M07.mp4",
+    "incoming/mp4_raw/M08.mp4",
+    "incoming/mp4_raw/M09.mp4",
+    "incoming/mp4_raw/M10.mp4",
+    "incoming/mp4_raw/M11.mp4",
+    "incoming/mp4_raw/M12.mp4",
+    "incoming/mp4_raw/M13.mp4"
+  ],
+  "chapterVideos": {},
   "openingPolicy": {
-    "preferred": "user_uploaded_mp4",
+    "preferred": "user_uploaded_mp4_after_verified_manga_remap",
     "audioTrackAllowed": true,
     "playsInline": true,
     "loop": true,
     "fallback": "runtime110_static_plus_fx",
-    "videoFailureMustNotBlockBusinessLogic": true
+    "videoFailureMustNotBlockBusinessLogic": true,
+    "forbidNumericSameIdAssumption": true
   },
   "covers": {
     "rawFolder": "incoming/covers_raw/",
     "countExpected": 21,
-    "mappingStatus": "pending_visual_match",
-    "note": "23 jpg files are present; select 21 chapter covers plus 2 spares after visual matching. Do not reuse the old ugly chapter art by default."
+    "mappingStatus": "pending_visual_match_and_manga_order",
+    "note": "23 jpg files are present; select 21 chapter covers plus 2 spares and map them to canonical DreamLantern manga order. Do not map by upload/hash filename."
   }
 }
