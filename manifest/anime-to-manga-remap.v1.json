@@ -1,13 +1,28 @@
 {
-  "schemaVersion": "dream-lantern-anime-to-manga-remap-1.0",
+  "schemaVersion": "dream-lantern-anime-to-manga-remap-1.1",
   "generatedAt": "2026-10-20",
-  "rule": "User-uploaded MP4 numeric suffixes follow ANIME arc/order conventions and MUST NOT be interpreted as DreamLantern canonical manga chapter IDs by matching numbers.",
+  "rule": "The user's numeric suffixes follow anime arc/broadcast order. M/A are source-type labels only and MUST NOT be interpreted as DreamLantern ancient/modern IDs. Remap by anime arc order -> arc name -> canonical manga slot; do not inspect every clip frame-by-frame just to identify order.",
   "mappingPipeline": [
-    "raw_uploaded_filename",
-    "identify_actual_arc_or_period",
-    "map_to_dreamlantern_manga_chapter",
-    "mark_verified",
+    "raw_numeric_order",
+    "anime_arc_order_lookup",
+    "arc_name_crosswalk",
+    "dreamlantern_manga_slot",
     "runtime_use"
+  ],
+  "animeArcOrder": [
+    {"animeIndex":1,"title":"下沙篇"},
+    {"animeIndex":2,"title":"王权篇"},
+    {"animeIndex":3,"title":"月红篇"},
+    {"animeIndex":4,"title":"千颜篇"},
+    {"animeIndex":5,"title":"南国篇"},
+    {"animeIndex":6,"title":"竹业篇"},
+    {"animeIndex":7,"title":"尾生篇"},
+    {"animeIndex":8,"title":"金晨曦篇"},
+    {"animeIndex":9,"title":"沐天城篇"},
+    {"animeIndex":10,"title":"两生花篇"},
+    {"animeIndex":11,"title":"无暮篇"},
+    {"animeIndex":12,"title":"镜花缘篇"},
+    {"animeIndex":13,"title":"黄风岭篇"}
   ],
   "canonicalMangaOrder": [
     {"id":"A01","title":"上古源流"},
@@ -32,30 +47,25 @@
     {"id":"M12","title":"再入南国篇"},
     {"id":"M13","title":"新北山篇"}
   ],
-  "arcCrosswalk": {
-    "下沙篇": "M01",
-    "尾生篇": "M02",
-    "王权篇": "M03",
-    "王权富贵篇": "M03",
-    "月红篇": "M04",
-    "千颜篇": "M05",
-    "颜如玉篇": "M05",
-    "南国篇": "M06",
-    "竹业篇": "HISTORY_ONLY_NOT_MODERN_SLOT",
-    "金晨曦篇": "M07",
-    "沐天城篇": "M07",
-    "两生花篇": "M07",
-    "边境篇": "M07",
-    "真龙篇": "M08",
-    "无暮篇": "M08",
-    "龙妖篇": "M08",
-    "镜花缘篇": "M09",
-    "圈外篇": "M09",
-    "龙湾篇": "M10",
-    "东方灵族篇": "M11",
-    "再入南国篇": "M12",
-    "新北山篇": "M13"
+  "modernOrderCrosswalk": {
+    "M01": {"sourceAnimeIndex":1,"sourceArc":"下沙篇"},
+    "M02": {"sourceAnimeIndex":7,"sourceArc":"尾生篇"},
+    "M03": {"sourceAnimeIndex":2,"sourceArc":"王权篇"},
+    "M04": {"sourceAnimeIndex":3,"sourceArc":"月红篇"},
+    "M05": {"sourceAnimeIndex":4,"sourceArc":"千颜篇"},
+    "M06": {"sourceAnimeIndex":5,"sourceArc":"南国篇"},
+    "M07": {"sourceAnimeIndex":8,"sourceArc":"金晨曦篇","relatedAnimeIndices":[9,10],"note":"沐天城/两生花在梦灯笼漫画切分中归入M07相关阶段，不另占现代卷位"},
+    "M08": {"sourceAnimeIndex":11,"sourceArc":"无暮篇","note":"对应梦灯笼真龙/无暮阶段"},
+    "M09": {"sourceAnimeIndex":12,"sourceArc":"镜花缘篇"}
   },
-  "ancientRule": "A01-A08 are DreamLantern chronological ancient volumes, not animation broadcast arcs. Their uploaded clips must be mapped by actual depicted period/characters/events; never by source numeric suffix alone.",
-  "status": "REMAP_REQUIRED_BEFORE_RUNTIME"
+  "historyOnlyAnimeArcs": {
+    "6": "竹业篇为历史/回看，不占现代卷位"
+  },
+  "doNotMisbind": {
+    "13": "黄风岭篇不是M13新北山篇，不得因数字13相同而绑定"
+  },
+  "lateMangaSlots": ["M10","M11","M12","M13"],
+  "lateMangaRule": "These manga slots do not have a one-to-one anime broadcast arc in the above sequence. Keep the user's separately chosen matching media for them if provided; never fill them merely by equal numeric suffix.",
+  "ancientRule": "For the user's A-source set, use the same principle: numeric order means source anime order, while target A01-A08 are DreamLantern chronological ancient slots. Use the user's selected episode-to-ancient correspondence when assigning; do not treat A01 filename as canonical A01 by name alone.",
+  "status": "ORDER_BASED_REMAP_NOT_FRAME_IDENTIFICATION"
 }
