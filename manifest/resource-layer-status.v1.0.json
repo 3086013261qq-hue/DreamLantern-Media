@@ -3,40 +3,160 @@
   "version": "1.0.0",
   "visualPolicy": "official-first",
   "chapters": {
-    "A01": {"visual":"pending_official","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "A02": {"visual":"official_verified_multi","video":"official_page_only","fallback":"generated+svg","allowAutoSubstitute":false},
-    "A03": {"visual":"official_verified","video":"official_page_only","fallback":"generated+svg","allowAutoSubstitute":false},
-    "A04": {"visual":"official_verified","video":"official_page_candidate","fallback":"generated+svg","allowAutoSubstitute":false},
-    "A05": {"visual":"official_verified_multi","video":"official_page_only","fallback":"generated+svg","allowAutoSubstitute":false},
-    "A06": {"visual":"official_verified","video":"official_page_candidate","fallback":"generated+svg","allowAutoSubstitute":false},
-    "A07": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "A08": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M01": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M02": {"visual":"official_verified","video":"official_page_only","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M03": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M04": {"visual":"official_verified","video":"official_page_candidate","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M05": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M06": {"visual":"official_verified","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M07": {"visual":"official_verified","video":"official_page_candidates","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M08": {"visual":"official_verified","video":"official_page_candidates","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M09": {"visual":"official_pv_verified_still_pending","video":"official_page_candidates","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M10": {"visual":"pending_official_manga","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M11": {"visual":"pending_official_manga","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M12": {"visual":"pending_official_manga","video":"none","fallback":"generated+svg","allowAutoSubstitute":false},
-    "M13": {"visual":"pending_official_manga","video":"none","fallback":"generated+svg","allowAutoSubstitute":false}
+    "A01": {
+      "visual": "pending_official",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "A02": {
+      "visual": "official_verified_multi",
+      "video": "official_page_only",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "A03": {
+      "visual": "official_verified",
+      "video": "official_page_only",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "A04": {
+      "visual": "official_verified",
+      "video": "official_page_candidate",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "A05": {
+      "visual": "official_verified_multi",
+      "video": "official_page_only",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "A06": {
+      "visual": "official_verified",
+      "video": "official_page_candidate",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "A07": {
+      "visual": "official_verified",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "A08": {
+      "visual": "official_verified",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M01": {
+      "visual": "official_verified",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M02": {
+      "visual": "official_verified",
+      "video": "official_page_only",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M03": {
+      "visual": "official_verified",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M04": {
+      "visual": "official_verified",
+      "video": "official_page_candidate",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M05": {
+      "visual": "official_verified",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M06": {
+      "visual": "official_verified",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M07": {
+      "visual": "official_verified",
+      "video": "official_page_candidates",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M08": {
+      "visual": "official_verified",
+      "video": "official_page_candidates",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M09": {
+      "visual": "official_pv_verified_still_pending",
+      "video": "official_page_candidates",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M10": {
+      "visual": "pending_official_manga",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M11": {
+      "visual": "pending_official_manga",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M12": {
+      "visual": "pending_official_manga",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    },
+    "M13": {
+      "visual": "pending_official_manga",
+      "video": "none",
+      "fallback": "generated+svg",
+      "allowAutoSubstitute": false
+    }
   },
   "music": {
-    "source":"Lethe《狐妖小红娘》",
-    "shareUrl":"https://163cn.tv/bi16o77e",
-    "trackIds":"pending_user-visible_album_resolution",
-    "allowCrossAlbumSubstitute":false
+    "source": "Lethe《狐妖小红娘》",
+    "shareUrl": "https://163cn.tv/bi16o77e",
+    "trackIds": "14-verified-5-duplicates-excluded",
+    "allowCrossAlbumSubstitute": false,
+    "albumId": 393928252
   },
   "assemblerRules": {
-    "mayChangeMediaSelection":false,
-    "mayGenerateReplacementPoster":false,
-    "mayUseThirdPartyScreenshot":false,
-    "mayUseFanVideo":false,
-    "mayTouchMvuCore":false,
-    "mayBeautifyUiAfterMediaFreeze":true
+    "mayChangeMediaSelection": false,
+    "mayGenerateReplacementPoster": false,
+    "mayUseThirdPartyScreenshot": false,
+    "mayUseFanVideo": false,
+    "mayTouchMvuCore": false,
+    "mayBeautifyUiAfterMediaFreeze": true
+  },
+  "runtimeIntegration": {
+    "version": "1.2.0",
+    "officialReady": 15,
+    "pendingOfficial": [
+      "A01",
+      "M09",
+      "M10",
+      "M11",
+      "M12",
+      "M13"
+    ],
+    "androidDeviceQA": "pending",
+    "newTag": "not-created-before-device-QA"
   }
 }

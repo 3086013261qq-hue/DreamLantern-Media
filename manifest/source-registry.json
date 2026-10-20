@@ -394,6 +394,15 @@
       "description": "为梦灯笼制作的原创场景意象，不是官方动画或漫画截图。",
       "generator": "built-in image_gen",
       "redistribution": "project asset publication authorized by project owner"
+    },
+    "dreamlantern_brand_v12": {
+      "type": "project_original_brand",
+      "assets": [
+        "ui/brand-cover.webp",
+        "ui/brand-background.webp"
+      ],
+      "generator": "built-in image_gen",
+      "use": "public card cover and generic brand opening only; never chapter main art"
     }
   },
   "policy": "optimized-project-original-art-and-official-links",

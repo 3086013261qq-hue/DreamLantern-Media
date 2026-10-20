@@ -1,14 +1,14 @@
 {
-  "schemaVersion": "dream-lantern-opening-1.0.1",
-  "version": "1.0.1",
-  "assetBase": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@v1.0.1/",
+  "schemaVersion": "dream-lantern-opening-1.2.0",
+  "version": "1.2.0",
+  "assetBase": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/",
   "chapters": [
     {
       "id": "A01",
       "era": "ancient",
       "rank": 1,
       "title": "上古源流",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_source_pending_still",
       "status": "yellow",
       "slug": "a01-上古源流",
       "assetDir": "poster/A01",
@@ -23,8 +23,7 @@
       "fx": [
         "star_dust",
         "ancient_fire",
-        "soft_rift",
-        "far_dragon_shadow"
+        "soft_rift"
       ],
       "transitionIn": "star-ignite",
       "audioPolicy": "mute",
@@ -33,22 +32,22 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#131c30",
-        "light": "#b9addd",
-        "gold": "#cba978"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "official_still",
       "clip_in": null,
       "clip_out": null,
       "verified": true,
-      "officialUrl": "https://www.garden-culture.net/services.html",
+      "officialUrl": "https://weibo.com/huyaoxhn",
       "rightsMode": "original-generated",
       "available": true,
       "unresolvedCandidateSources": [
         "author_anniversary",
         "official_manga_origin"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": null,
       "posterMobile": "poster/A01/portrait.webp",
       "objectPosition": "50% 42%",
@@ -76,14 +75,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": false,
+      "officialAssetUrl": null,
+      "fallbackGeneratedLandscape": "poster/A01/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/A01/portrait.webp",
+      "sourcePage": "https://weibo.com/huyaoxhn",
+      "visualStatus": "official-pending"
     },
     {
       "id": "A02",
       "era": "ancient",
       "rank": 2,
       "title": "西域北山",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx_multi",
       "status": "green",
       "slug": "a02-西域北山",
       "assetDir": "poster/A02",
@@ -92,14 +97,15 @@
         "original_fallback_A02",
         "dreamlantern_original_desert"
       ],
-      "poster": "poster/A02/landscape.webp",
-      "thumb": "thumb/A02.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
       "video": null,
       "keyart": null,
       "fx": [
         "sand",
         "snow",
-        "wind"
+        "wind",
+        "dragon_shadow"
       ],
       "transitionIn": "sand-to-snow",
       "audioPolicy": "mute",
@@ -108,9 +114,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#263342",
-        "light": "#b8d9d5",
-        "gold": "#d0ac73"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -124,10 +130,10 @@
         "wumu_pv",
         "wumu_dragon_demon"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
-      "posterMobile": "poster/A02/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "desert",
       "source_key": "dreamlantern_original_desert",
       "responsive": {
@@ -152,14 +158,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
+      "fallbackGeneratedLandscape": "poster/A02/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/A02/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "A03",
       "era": "ancient",
       "rank": 3,
       "title": "涂山道盟",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "green",
       "slug": "a03-涂山道盟",
       "assetDir": "poster/A03",
@@ -168,8 +180,8 @@
         "original_fallback_A03",
         "dreamlantern_original_bamboo"
       ],
-      "poster": "poster/A03/landscape.webp",
-      "thumb": "thumb/A03.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_zy.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_zy.jpg",
       "video": null,
       "keyart": null,
       "fx": [
@@ -185,9 +197,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#192f2b",
-        "light": "#8cb7a1",
-        "gold": "#d1b36b"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -200,9 +212,9 @@
         "zhuye_pv",
         "zhuye_anime"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_zy.jpg",
-      "posterMobile": "poster/A03/portrait.webp",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_zy.jpg",
       "objectPosition": "50% 42%",
       "sourceArtwork": "bamboo",
       "source_key": "dreamlantern_original_bamboo",
@@ -228,14 +240,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_zy.jpg",
+      "fallbackGeneratedLandscape": "poster/A03/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/A03/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "A04",
       "era": "ancient",
       "rank": 4,
       "title": "月红初世",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "flagship",
       "slug": "a04-月红初世",
       "assetDir": "poster/A04",
@@ -245,8 +263,8 @@
         "original_fallback_A04",
         "dreamlantern_original_blossom"
       ],
-      "poster": "poster/A04/landscape.webp",
-      "thumb": "thumb/A04.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
       "video": null,
       "keyart": null,
       "fx": [
@@ -262,24 +280,24 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#281d32",
-        "light": "#e58c99",
-        "gold": "#dfba77"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
       "clip_out": null,
       "verified": true,
-      "officialUrl": "https://weibo.com/5616549369/4961092583032595",
+      "officialUrl": "https://www.garden-culture.net/services.html",
       "rightsMode": "original-generated",
       "available": true,
       "unresolvedCandidateSources": [
         "yuehong_anime",
         "jinghuayuan_yuehong_pv"
       ],
-      "officialLinkLabel": "查看官方PV",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
-      "posterMobile": "poster/A04/portrait.webp",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
       "objectPosition": "50% 42%",
       "sourceArtwork": "blossom",
       "source_key": "dreamlantern_original_blossom",
@@ -305,14 +323,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
+      "fallbackGeneratedLandscape": "poster/A04/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/A04/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "A05",
       "era": "ancient",
       "rank": 5,
       "title": "道盟变局",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx_multi",
       "status": "green",
       "slug": "a05-道盟变局",
       "assetDir": "poster/A05",
@@ -321,14 +345,15 @@
         "original_fallback_A05",
         "dreamlantern_original_golden"
       ],
-      "poster": "poster/A05/landscape.webp",
-      "thumb": "thumb/A05.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_mtc.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_mtc.jpg",
       "video": null,
       "keyart": null,
       "fx": [
         "golden_liquid",
         "paper_ash",
-        "seal_lines"
+        "seal_lines",
+        "cold_dust"
       ],
       "transitionIn": "fractured-seal",
       "audioPolicy": "mute",
@@ -337,9 +362,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#22252d",
-        "light": "#cbb76d",
-        "gold": "#a79060"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -353,10 +378,10 @@
         "liangshenghua_pv",
         "jinchenxi_op"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_mtc.jpg",
-      "posterMobile": "poster/A05/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_mtc.jpg",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "golden",
       "source_key": "dreamlantern_original_golden",
       "responsive": {
@@ -381,14 +406,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_mtc.jpg",
+      "fallbackGeneratedLandscape": "poster/A05/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/A05/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "A06",
       "era": "ancient",
       "rank": 6,
       "title": "月红终局",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "flagship",
       "slug": "a06-月红终局",
       "assetDir": "poster/A06",
@@ -398,8 +429,8 @@
         "original_fallback_A06",
         "dreamlantern_original_blossom"
       ],
-      "poster": "poster/A06/landscape.webp",
-      "thumb": "thumb/A06.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
       "video": null,
       "keyart": null,
       "fx": [
@@ -415,24 +446,24 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#261722",
-        "light": "#ef7e88",
-        "gold": "#e0bda0"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
       "clip_out": null,
       "verified": true,
-      "officialUrl": "https://weibo.com/5616549369/4961092583032595",
+      "officialUrl": "https://www.garden-culture.net/services.html",
       "rightsMode": "original-generated",
       "available": true,
       "unresolvedCandidateSources": [
         "yuehong_anime",
         "jinghuayuan_yuehong_pv"
       ],
-      "officialLinkLabel": "查看官方PV",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
-      "posterMobile": "poster/A06/portrait.webp",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
       "objectPosition": "50% 42%",
       "sourceArtwork": "blossom",
       "source_key": "dreamlantern_original_blossom",
@@ -458,14 +489,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
+      "fallbackGeneratedLandscape": "poster/A06/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/A06/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "A07",
       "era": "ancient",
       "rank": 7,
       "title": "南国旧缘",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "green",
       "slug": "a07-南国旧缘",
       "assetDir": "poster/A07",
@@ -474,14 +511,14 @@
         "original_fallback_A07",
         "dreamlantern_original_purple"
       ],
-      "poster": "poster/A07/landscape.webp",
-      "thumb": "thumb/A07.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
       "video": null,
       "keyart": null,
       "fx": [
-        "purple_mist",
-        "poison_firefly",
-        "leaf"
+        "poison_mist",
+        "firefly",
+        "warm_purple_haze"
       ],
       "transitionIn": "mist-bloom",
       "audioPolicy": "mute",
@@ -490,9 +527,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#211a32",
-        "light": "#b192d0",
-        "gold": "#ceae76"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -507,10 +544,10 @@
         "nanguo_ed",
         "wumu_nanguo_poison_queen"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
-      "posterMobile": "poster/A07/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "purple",
       "source_key": "dreamlantern_original_purple",
       "responsive": {
@@ -535,14 +572,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
+      "fallbackGeneratedLandscape": "poster/A07/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/A07/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "A08",
       "era": "ancient",
       "rank": 8,
       "title": "千颜旧缘",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "green",
       "slug": "a08-千颜旧缘",
       "assetDir": "poster/A08",
@@ -551,14 +594,14 @@
         "original_fallback_A08",
         "dreamlantern_original_river"
       ],
-      "poster": "poster/A08/landscape.webp",
-      "thumb": "thumb/A08.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
       "video": null,
       "keyart": null,
       "fx": [
-        "mask_shards",
-        "moon_reflection",
-        "water_ripple"
+        "paper_shards",
+        "mirror_glow",
+        "night_rain"
       ],
       "transitionIn": "mask-shatter-soft",
       "audioPolicy": "mute",
@@ -567,9 +610,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#152e33",
-        "light": "#83b8bc",
-        "gold": "#ddb99b"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -582,10 +625,10 @@
         "qianyan_anime",
         "qianyan_official_still"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
-      "posterMobile": "poster/A08/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
+      "objectPosition": "50% 43%",
       "sourceArtwork": "river",
       "source_key": "dreamlantern_original_river",
       "responsive": {
@@ -610,14 +653,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
+      "fallbackGeneratedLandscape": "poster/A08/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/A08/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M01",
       "era": "modern",
       "rank": 9,
       "title": "下沙篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "green",
       "slug": "m01-下沙篇",
       "assetDir": "poster/M01",
@@ -626,14 +675,15 @@
         "original_fallback_M01",
         "dreamlantern_original_desert"
       ],
-      "poster": "poster/M01/landscape.webp",
-      "thumb": "thumb/M01.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
       "video": null,
       "keyart": null,
       "fx": [
         "sand",
-        "ice_spark",
-        "water_pearl"
+        "snow",
+        "red_thread",
+        "foxfire"
       ],
       "transitionIn": "sand-rise",
       "audioPolicy": "mute",
@@ -642,9 +692,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#322b27",
-        "light": "#dec096",
-        "gold": "#c4a171"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -657,10 +707,10 @@
         "xiasha_anime",
         "xiasha_official_poster"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
-      "posterMobile": "poster/M01/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
+      "objectPosition": "50% 45%",
       "sourceArtwork": "desert",
       "source_key": "dreamlantern_original_desert",
       "responsive": {
@@ -685,14 +735,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_xs.jpg",
+      "fallbackGeneratedLandscape": "poster/M01/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M01/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M02",
       "era": "modern",
       "rank": 10,
       "title": "尾生篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "green",
       "slug": "m02-尾生篇",
       "assetDir": "poster/M02",
@@ -701,14 +757,14 @@
         "original_fallback_M02",
         "dreamlantern_original_river"
       ],
-      "poster": "poster/M02/landscape.webp",
-      "thumb": "thumb/M02.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_ws.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_ws.jpg",
       "video": null,
       "keyart": null,
       "fx": [
-        "rain",
-        "leaf",
-        "warm_window"
+        "petals",
+        "soft_bokeh",
+        "water_glow"
       ],
       "transitionIn": "rain-window",
       "audioPolicy": "mute",
@@ -717,9 +773,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#183339",
-        "light": "#9ac6b1",
-        "gold": "#d7bca2"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -732,10 +788,10 @@
         "weisheng_pv",
         "weisheng_anime"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_ws.jpg",
-      "posterMobile": "poster/M02/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_ws.jpg",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "river",
       "source_key": "dreamlantern_original_river",
       "responsive": {
@@ -760,14 +816,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_ws.jpg",
+      "fallbackGeneratedLandscape": "poster/M02/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M02/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M03",
       "era": "modern",
       "rank": 11,
       "title": "王权篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "flagship",
       "slug": "m03-王权篇",
       "assetDir": "poster/M03",
@@ -776,14 +838,14 @@
         "original_fallback_M03",
         "dreamlantern_original_bamboo"
       ],
-      "poster": "poster/M03/landscape.webp",
-      "thumb": "thumb/M03.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_wq.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_wq.jpg",
       "video": null,
       "keyart": null,
       "fx": [
-        "gold_sword",
-        "silk_thread",
-        "moon_dust"
+        "sword_glint",
+        "talisman",
+        "cold_gold_dust"
       ],
       "transitionIn": "sword-glint",
       "audioPolicy": "mute",
@@ -792,9 +854,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#1c2831",
-        "light": "#b5c9db",
-        "gold": "#d6b784"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -807,10 +869,10 @@
         "wangquan_anime",
         "wangquan_official_poster"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_wq.jpg",
-      "posterMobile": "poster/M03/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_wq.jpg",
+      "objectPosition": "50% 43%",
       "sourceArtwork": "bamboo",
       "source_key": "dreamlantern_original_bamboo",
       "responsive": {
@@ -835,14 +897,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_wq.jpg",
+      "fallbackGeneratedLandscape": "poster/M03/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M03/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M04",
       "era": "modern",
       "rank": 12,
       "title": "月红篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "flagship",
       "slug": "m04-月红篇",
       "assetDir": "poster/M04",
@@ -852,14 +920,15 @@
         "original_fallback_M04",
         "dreamlantern_original_blossom"
       ],
-      "poster": "poster/M04/landscape.webp",
-      "thumb": "thumb/M04.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
       "video": null,
       "keyart": null,
       "fx": [
         "red_thread",
         "foxfire",
-        "petals"
+        "petals",
+        "warm_dust"
       ],
       "transitionIn": "foxfire-thread",
       "audioPolicy": "mute",
@@ -868,24 +937,24 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#251e31",
-        "light": "#e69ca4",
-        "gold": "#d8b787"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
       "clip_out": null,
       "verified": true,
-      "officialUrl": "https://weibo.com/5616549369/4961092583032595",
+      "officialUrl": "https://www.garden-culture.net/services.html",
       "rightsMode": "original-generated",
       "available": true,
       "unresolvedCandidateSources": [
         "yuehong_anime",
         "jinghuayuan_yuehong_pv"
       ],
-      "officialLinkLabel": "查看官方PV",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
-      "posterMobile": "poster/M04/portrait.webp",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
       "objectPosition": "50% 42%",
       "sourceArtwork": "blossom",
       "source_key": "dreamlantern_original_blossom",
@@ -911,14 +980,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_yh.jpg",
+      "fallbackGeneratedLandscape": "poster/M04/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M04/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M05",
       "era": "modern",
       "rank": 13,
       "title": "千颜篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "green",
       "slug": "m05-千颜篇",
       "assetDir": "poster/M05",
@@ -927,14 +1002,14 @@
         "original_fallback_M05",
         "dreamlantern_original_river"
       ],
-      "poster": "poster/M05/landscape.webp",
-      "thumb": "thumb/M05.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
       "video": null,
       "keyart": null,
       "fx": [
-        "mask_shards",
-        "night_glass",
-        "chase_streak"
+        "water_ripple",
+        "paper_shards",
+        "mirror_glow"
       ],
       "transitionIn": "mask-shatter-soft",
       "audioPolicy": "mute",
@@ -943,9 +1018,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#1e2736",
-        "light": "#a9b9d5",
-        "gold": "#d4b493"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -958,10 +1033,10 @@
         "qianyan_anime",
         "qianyan_official_still"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
-      "posterMobile": "poster/M05/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
+      "objectPosition": "50% 43%",
       "sourceArtwork": "river",
       "source_key": "dreamlantern_original_river",
       "responsive": {
@@ -986,14 +1061,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_qy.jpg",
+      "fallbackGeneratedLandscape": "poster/M05/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M05/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M06",
       "era": "modern",
       "rank": 14,
       "title": "南国篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "flagship",
       "slug": "m06-南国篇",
       "assetDir": "poster/M06",
@@ -1002,14 +1083,14 @@
         "original_fallback_M06",
         "dreamlantern_original_purple"
       ],
-      "poster": "poster/M06/landscape.webp",
-      "thumb": "thumb/M06.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
       "video": null,
       "keyart": null,
       "fx": [
-        "purple_mist",
-        "green_poison_light",
-        "pollen"
+        "poison_mist",
+        "firefly",
+        "warm_purple_haze"
       ],
       "transitionIn": "mist-bloom",
       "audioPolicy": "mute",
@@ -1018,9 +1099,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#251a36",
-        "light": "#bb9bcf",
-        "gold": "#d8b47e"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -1034,10 +1115,10 @@
         "nanguo_op",
         "nanguo_ed"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
-      "posterMobile": "poster/M06/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "purple",
       "source_key": "dreamlantern_original_purple",
       "responsive": {
@@ -1062,14 +1143,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_ng.jpg",
+      "fallbackGeneratedLandscape": "poster/M06/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M06/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M07",
       "era": "modern",
       "rank": 15,
       "title": "金晨曦篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "flagship",
       "slug": "m07-金晨曦篇",
       "assetDir": "poster/M07",
@@ -1078,15 +1165,14 @@
         "original_fallback_M07",
         "dreamlantern_original_golden"
       ],
-      "poster": "poster/M07/landscape.webp",
-      "thumb": "thumb/M07.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_jcx.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_jcx.jpg",
       "video": null,
       "keyart": null,
       "fx": [
-        "gold_liquid",
-        "dark_spore",
-        "city_dust",
-        "twin_flower"
+        "golden_liquid",
+        "seal_crack",
+        "floating_dust"
       ],
       "transitionIn": "three-stage",
       "audioPolicy": "mute",
@@ -1095,9 +1181,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#27252a",
-        "light": "#d4bb77",
-        "gold": "#bdac73"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -1112,10 +1198,10 @@
         "mutiancheng_pv",
         "liangshenghua_pv"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_jcx.jpg",
-      "posterMobile": "poster/M07/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_jcx.jpg",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "golden",
       "source_key": "dreamlantern_original_golden",
       "responsive": {
@@ -1140,14 +1226,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_jcx.jpg",
+      "fallbackGeneratedLandscape": "poster/M07/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M07/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M08",
       "era": "modern",
       "rank": 16,
       "title": "真龙篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_still_fx",
       "status": "flagship",
       "slug": "m08-真龙篇",
       "assetDir": "poster/M08",
@@ -1157,14 +1249,15 @@
         "original_fallback_M08",
         "dreamlantern_original_desert"
       ],
-      "poster": "poster/M08/landscape.webp",
-      "thumb": "thumb/M08.webp",
+      "poster": "https://www.garden-culture.net/assets/images/works/hy_wm.jpg",
+      "thumb": "https://www.garden-culture.net/assets/images/works/hy_wm.jpg",
       "video": null,
       "keyart": null,
       "fx": [
-        "dragon_breath",
+        "dragon_shadow",
         "sand",
-        "sword_intent"
+        "golden_glow",
+        "sword_glint"
       ],
       "transitionIn": "dragon-sand",
       "audioPolicy": "mute",
@@ -1173,15 +1266,15 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#142d38",
-        "light": "#96c7cf",
-        "gold": "#d9bb87"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
       "clip_out": null,
       "verified": true,
-      "officialUrl": "https://weibo.com/5616549369/4905948790129250",
+      "officialUrl": "https://www.garden-culture.net/services.html",
       "rightsMode": "original-generated",
       "available": true,
       "unresolvedCandidateSources": [
@@ -1190,10 +1283,10 @@
         "wumu_dragon_demon",
         "wumu_op"
       ],
-      "officialLinkLabel": "查看官方PV",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": "https://www.garden-culture.net/assets/images/works/hy_wm.jpg",
-      "posterMobile": "poster/M08/portrait.webp",
-      "objectPosition": "50% 42%",
+      "posterMobile": "https://www.garden-culture.net/assets/images/works/hy_wm.jpg",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "desert",
       "source_key": "dreamlantern_original_desert",
       "responsive": {
@@ -1218,14 +1311,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": true,
+      "officialAssetUrl": "https://www.garden-culture.net/assets/images/works/hy_wm.jpg",
+      "fallbackGeneratedLandscape": "poster/M08/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M08/portrait.webp",
+      "sourcePage": "https://www.garden-culture.net/services.html",
+      "visualStatus": "official-ready"
     },
     {
       "id": "M09",
       "era": "modern",
       "rank": 17,
       "title": "镜花缘篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_pv_source_pending_still",
       "status": "s_flagship",
       "slug": "m09-镜花缘篇",
       "assetDir": "poster/M09",
@@ -1242,9 +1341,9 @@
       "keyart": null,
       "fx": [
         "mirror_shards",
-        "ice_memory",
-        "reverse_petals",
-        "time_glitch"
+        "reflection",
+        "mist",
+        "soft_glass_light"
       ],
       "transitionIn": "mirror-fold",
       "audioPolicy": "mute",
@@ -1253,9 +1352,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#252034",
-        "light": "#b0b3dd",
-        "gold": "#e1bd97"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "anime_clip",
       "clip_in": null,
@@ -1267,7 +1366,7 @@
       "unresolvedCandidateSources": [
         "jinghuayuan_final_pv"
       ],
-      "officialLinkLabel": "查看官方PV",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": null,
       "posterMobile": "poster/M09/portrait.webp",
       "objectPosition": "50% 42%",
@@ -1295,14 +1394,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": false,
+      "officialAssetUrl": null,
+      "fallbackGeneratedLandscape": "poster/M09/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M09/portrait.webp",
+      "sourcePage": "https://weibo.com/5616549369/4961092583032595",
+      "visualStatus": "official-pending"
     },
     {
       "id": "M10",
       "era": "modern",
       "rank": 18,
       "title": "龙湾篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_manga_visual_pending",
       "status": "yellow",
       "slug": "m10-龙湾篇",
       "assetDir": "poster/M10",
@@ -1315,10 +1420,9 @@
       "video": null,
       "keyart": null,
       "fx": [
-        "deep_water",
-        "dragon_qi",
-        "caustics",
-        "bubble"
+        "water_ripple",
+        "dragon_scale_glint",
+        "deep_blue_mist"
       ],
       "transitionIn": "water-dive",
       "audioPolicy": "mute",
@@ -1327,9 +1431,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#102f3b",
-        "light": "#8bc6d4",
-        "gold": "#d9bc7e"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "official_still",
       "clip_in": null,
@@ -1344,10 +1448,10 @@
         "manga_506",
         "manga_518"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": null,
       "posterMobile": "poster/M10/portrait.webp",
-      "objectPosition": "50% 42%",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "bay",
       "source_key": "dreamlantern_original_bay",
       "responsive": {
@@ -1372,14 +1476,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": false,
+      "officialAssetUrl": null,
+      "fallbackGeneratedLandscape": "poster/M10/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M10/portrait.webp",
+      "sourcePage": null,
+      "visualStatus": "official-pending"
     },
     {
       "id": "M11",
       "era": "modern",
       "rank": 19,
       "title": "东方灵族篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_manga_visual_pending",
       "status": "yellow",
       "slug": "m11-东方灵族篇",
       "assetDir": "poster/M11",
@@ -1392,9 +1502,9 @@
       "video": null,
       "keyart": null,
       "fx": [
-        "spirit_flame",
+        "pure_yang_flame",
         "memory_crystal",
-        "spatial_ripple"
+        "space_ripple"
       ],
       "transitionIn": "crystal-open",
       "audioPolicy": "mute",
@@ -1403,9 +1513,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#27253b",
-        "light": "#d5a26b",
-        "gold": "#c6a7df"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "official_still",
       "clip_in": null,
@@ -1420,10 +1530,10 @@
         "manga_550",
         "manga_557"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": null,
       "posterMobile": "poster/M11/portrait.webp",
-      "objectPosition": "50% 42%",
+      "objectPosition": "50% 43%",
       "sourceArtwork": "portal",
       "source_key": "dreamlantern_original_portal",
       "responsive": {
@@ -1448,14 +1558,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": false,
+      "officialAssetUrl": null,
+      "fallbackGeneratedLandscape": "poster/M11/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M11/portrait.webp",
+      "sourcePage": null,
+      "visualStatus": "official-pending"
     },
     {
       "id": "M12",
       "era": "modern",
       "rank": 20,
       "title": "再入南国篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_manga_visual_pending",
       "status": "yellow",
       "slug": "m12-再入南国篇",
       "assetDir": "poster/M12",
@@ -1468,10 +1584,9 @@
       "video": null,
       "keyart": null,
       "fx": [
-        "cold_purple_mist",
-        "witch_mountain_wind",
-        "poison_spark",
-        "love_gu_thread"
+        "poison_mist",
+        "sound_wave",
+        "dark_green_glow"
       ],
       "transitionIn": "mountain-fog",
       "audioPolicy": "mute",
@@ -1480,9 +1595,9 @@
       "canReplay": true,
       "notes": "",
       "theme": {
-        "background": "#281c3b",
-        "light": "#bb86d0",
-        "gold": "#d2b197"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "official_still",
       "clip_in": null,
@@ -1497,10 +1612,10 @@
         "manga_591",
         "manga_598"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": null,
       "posterMobile": "poster/M12/portrait.webp",
-      "objectPosition": "50% 42%",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "purple",
       "source_key": "dreamlantern_original_purple",
       "responsive": {
@@ -1525,14 +1640,20 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": false,
+      "officialAssetUrl": null,
+      "fallbackGeneratedLandscape": "poster/M12/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M12/portrait.webp",
+      "sourcePage": null,
+      "visualStatus": "official-pending"
     },
     {
       "id": "M13",
       "era": "modern",
       "rank": 21,
       "title": "新北山篇",
-      "mediaMode": "original_poster",
+      "mediaMode": "official_manga_visual_pending",
       "status": "yellow_open",
       "slug": "m13-新北山篇",
       "assetDir": "poster/M13",
@@ -1546,9 +1667,9 @@
       "keyart": null,
       "fx": [
         "snow",
-        "red_ember",
-        "abyss_pattern",
-        "mountain_wind"
+        "abyss_mist",
+        "black_fox_trace",
+        "cold_blue_glow"
       ],
       "transitionIn": "snow-ember",
       "audioPolicy": "mute",
@@ -1557,9 +1678,9 @@
       "canReplay": true,
       "notes": "M13 remains open-ended",
       "theme": {
-        "background": "#192c3b",
-        "light": "#c0d4dd",
-        "gold": "#b4a383"
+        "background": "#100C14",
+        "light": "#F0D398",
+        "gold": "#D8B36B"
       },
       "plannedMediaMode": "official_still",
       "clip_in": null,
@@ -1574,10 +1695,10 @@
         "manga_640",
         "manga_655"
       ],
-      "officialLinkLabel": "查看官方素材来源",
+      "officialLinkLabel": "查看官方来源",
       "officialPoster": null,
       "posterMobile": "poster/M13/portrait.webp",
-      "objectPosition": "50% 42%",
+      "objectPosition": "50% 44%",
       "sourceArtwork": "snow",
       "source_key": "dreamlantern_original_snow",
       "responsive": {
@@ -1602,7 +1723,13 @@
           "fit": "cover",
           "position": "50% 40%"
         }
-      }
+      },
+      "officialAssetVerified": false,
+      "officialAssetUrl": null,
+      "fallbackGeneratedLandscape": "poster/M13/landscape.webp",
+      "fallbackGeneratedPortrait": "poster/M13/portrait.webp",
+      "sourcePage": null,
+      "visualStatus": "official-pending"
     }
   ],
   "memories": [
@@ -2008,5 +2135,7 @@
       "generator": "built-in image_gen",
       "redistribution": "project asset publication authorized by project owner"
     }
-  }
+  },
+  "visualOverride": "manifest/visual.override.v1.2.json",
+  "releaseStatus": "implementation-complete-device-qa-pending"
 }

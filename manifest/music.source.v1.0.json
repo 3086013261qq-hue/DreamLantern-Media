@@ -7,9 +7,151 @@
     "artist": "Lethe",
     "shareUrl": "https://163cn.tv/bi16o77e",
     "role": "primary_album_source",
-    "trackIdsVerified": false,
-    "trackList": [],
-    "note": "该专辑由用户明确指定为《梦灯笼》缘音主音乐源。禁止跨专辑拼接同名曲替代版，禁止猜Track ID。"
+    "trackIdsVerified": true,
+    "trackList": [
+      {
+        "title": "人间白首",
+        "track_id": "3424274382",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:18.665175+00:00"
+      },
+      {
+        "title": "梦回还",
+        "track_id": "3425555792",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:21.109919+00:00"
+      },
+      {
+        "title": "此彼绘卷",
+        "track_id": "3425803209",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:21.165942+00:00"
+      },
+      {
+        "title": "愿我",
+        "track_id": "3425323878",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:28.000005+00:00"
+      },
+      {
+        "title": "落空",
+        "track_id": "3427622638",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:33.679874+00:00"
+      },
+      {
+        "title": "铭记",
+        "track_id": "3427623613",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:34.121969+00:00"
+      },
+      {
+        "title": "众生",
+        "track_id": "3425804120",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:40.119199+00:00"
+      },
+      {
+        "title": "相聚万年树",
+        "track_id": "3427645007",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:47.061604+00:00"
+      },
+      {
+        "title": "雪年轮",
+        "track_id": "3446487035",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:50.110592+00:00"
+      },
+      {
+        "title": "爱YOU READY 爱我READY",
+        "track_id": "3428712446",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:20:51.071349+00:00"
+      },
+      {
+        "title": "牵千结",
+        "track_id": "3443860586",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:21:02.623204+00:00"
+      },
+      {
+        "title": "轮转",
+        "track_id": "3446487034",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:21:03.434564+00:00"
+      },
+      {
+        "title": "归宗",
+        "track_id": "3446591581",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:21:00.426122+00:00"
+      },
+      {
+        "title": "下沙",
+        "track_id": "3443861321",
+        "artist": "Lethe",
+        "album": "狐妖小红娘",
+        "album_id": 393928252,
+        "verified": true,
+        "full_audio_verified": true,
+        "verified_at": "2026-10-20T01:21:15.556040+00:00"
+      }
+    ],
+    "note": "该专辑由用户明确指定为《梦灯笼》缘音主音乐源。禁止跨专辑拼接同名曲替代版，禁止猜Track ID。",
+    "id": 393928252
   },
   "runtimePolicy": {
     "outchainTemplate": "https://music.163.com/outchain/player?type=2&id={track_id}&auto=0&height=66",
@@ -27,5 +169,34 @@
     "优先非VIP可直接点播版本",
     "曲名、歌手/版本、专辑至少两项元数据吻合",
     "音乐失败不得影响MVU、Opening、世界书切换"
-  ]
+  ],
+  "pendingTracks": [],
+  "excludedTracks": [
+    {
+      "title": "补",
+      "track_id": "3427623628",
+      "reason": "用户明确排除补/（补）重复记录"
+    },
+    {
+      "title": "（补）",
+      "track_id": "3425555790",
+      "reason": "用户明确排除补/（补）重复记录"
+    },
+    {
+      "title": "补",
+      "track_id": "3427644744",
+      "reason": "用户明确排除补/（补）重复记录"
+    },
+    {
+      "title": "（补）",
+      "track_id": "3425804148",
+      "reason": "用户明确排除补/（补）重复记录"
+    },
+    {
+      "title": "补",
+      "track_id": "3427622652",
+      "reason": "用户明确排除补/（补）重复记录"
+    }
+  ],
+  "metadataNote": "施工单所列牵于结在该专辑实际元数据中为牵千结，按实际曲名展示；没有寻找其他专辑或自行改名。"
 }
