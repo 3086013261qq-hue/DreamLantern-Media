@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "dream-lantern-video-object-candidates-1.0",
+  "purpose": "记录已发现的公开官方视频对象页或疑似官方对象页。候选池与stableDirectMp4严格分离。",
+  "verifiedObjectPages": [
+    {
+      "chapter": "M07",
+      "arc": "两生花篇",
+      "title": "两生花篇定档PV",
+      "page": "https://weibo.com/tv/show/1034:4616419246276683?from=old_pc_videoshow",
+      "officialPostReference": "https://weibo.com/5616549369/K6T3pc3ox",
+      "status": "secondary_archive_with_official_account_reference",
+      "runtimeClass": "official_video_object_page",
+      "stableDirectMp4": false
+    }
+  ],
+  "provenancePending": [
+    {
+      "chapter": "M08",
+      "arc": "无暮篇",
+      "title": "无暮篇终极PV",
+      "page": "https://weibo.com/tv/show/1034:4913683554566186?from=old_pc_videoshow",
+      "status": "object_id_found_via_nonofficial_repost_requires_primary_account_confirmation",
+      "runtimeClass": "do_not_use_yet",
+      "stableDirectMp4": false
+    },
+    {
+      "chapter": "M09",
+      "arc": "镜花缘篇",
+      "title": "镜花缘篇定档/ED抢先听",
+      "page": "https://h5.video.weibo.com/show/1034:5055372449218612",
+      "status": "object_id_found_via_nonofficial_archive_requires_primary_account_confirmation",
+      "runtimeClass": "do_not_use_yet",
+      "stableDirectMp4": false
+    },
+    {
+      "chapter": "M09",
+      "arc": "镜花缘篇",
+      "title": "镜花缘篇配音团队应援合集",
+      "page": "https://h5.video.weibo.com/show/1034:5062237774086253",
+      "status": "object_id_found_via_nonofficial_archive_requires_primary_account_confirmation",
+      "runtimeClass": "memory_candidate_only_after_confirmation",
+      "stableDirectMp4": false
+    }
+  ],
+  "rules": [
+    "微博video object URL不等于裸MP4",
+    "不得解析或固化对象页背后的临时签名媒体",
+    "provenancePending在确认官方发布账号前不得进入章节正式manifest",
+    "仅verifiedObjectPages允许作为官方动态页参考"
+  ]
+}
