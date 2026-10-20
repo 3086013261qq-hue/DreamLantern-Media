@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "dream-lantern-user-media-runtime-1.0",
+  "generatedAt": "2026-10-20",
+  "assetBase": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/",
+  "eraGate": {
+    "layout": "vertical_video_cards",
+    "ancient": {
+      "label": "前尘",
+      "video": "incoming/mp4_raw/fengmian.mp4",
+      "autoplay": true,
+      "loop": true,
+      "muted": true,
+      "playsInline": true
+    },
+    "modern": {
+      "label": "今世",
+      "video": "incoming/mp4_raw/xiandaifengmian.mp4",
+      "autoplay": true,
+      "loop": true,
+      "muted": true,
+      "playsInline": true
+    }
+  },
+  "chapterVideos": {
+    "A01": {"video": "incoming/mp4_raw/SVID_20261020_194425_1.mp4", "mappingNote": "user identified the two SVID files as A01/A02; this assignment follows timestamp order and is swappable if reversed"},
+    "A02": {"video": "incoming/mp4_raw/SVID_20261020_195926_1.mp4", "mappingNote": "user identified the two SVID files as A01/A02; this assignment follows timestamp order and is swappable if reversed"},
+    "A03": {"video": "incoming/mp4_raw/A03.mp4"},
+    "A04": {"video": "incoming/mp4_raw/A04.mp4"},
+    "A05": {"video": "incoming/mp4_raw/A05.mp4"},
+    "A06": {"video": "incoming/mp4_raw/A06.mp4"},
+    "A07": {"video": "incoming/mp4_raw/A07.mp4"},
+    "A08": {"video": "incoming/mp4_raw/A08.mp4"},
+    "M01": {"video": "incoming/mp4_raw/M01.mp4"},
+    "M02": {"video": "incoming/mp4_raw/M02.mp4"},
+    "M03": {"video": "incoming/mp4_raw/M03.mp4"},
+    "M04": {"video": "incoming/mp4_raw/M04.mp4"},
+    "M05": {"video": "incoming/mp4_raw/M05.mp4"},
+    "M06": {"video": "incoming/mp4_raw/M06.mp4"},
+    "M07": {"video": "incoming/mp4_raw/M07.mp4"},
+    "M08": {"video": "incoming/mp4_raw/M08.mp4"},
+    "M09": {"video": "incoming/mp4_raw/M09.mp4"},
+    "M10": {"video": "incoming/mp4_raw/M10.mp4"},
+    "M11": {"video": "incoming/mp4_raw/M11.mp4"},
+    "M12": {"video": "incoming/mp4_raw/M12.mp4"},
+    "M13": {"video": "incoming/mp4_raw/M13.mp4"}
+  },
+  "openingPolicy": {
+    "preferred": "user_uploaded_mp4",
+    "audioTrackAllowed": true,
+    "playsInline": true,
+    "loop": true,
+    "fallback": "runtime110_static_plus_fx",
+    "videoFailureMustNotBlockBusinessLogic": true
+  },
+  "covers": {
+    "rawFolder": "incoming/covers_raw/",
+    "countExpected": 21,
+    "mappingStatus": "pending_visual_match",
+    "note": "23 jpg files are present; select 21 chapter covers plus 2 spares after visual matching. Do not reuse the old ugly chapter art by default."
+  }
+}
