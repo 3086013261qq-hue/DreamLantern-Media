@@ -1,0 +1,540 @@
+{
+  "environment": "Chromium mobile viewport + mocked SillyTavern helper APIs; NOT Android device",
+  "tests": [
+    {
+      "name": "era page has exactly two cards and no entrance frame",
+      "ok": true
+    },
+    {
+      "name": "entrance stopped muted unloaded and detached before era preview",
+      "ok": true
+    },
+    {
+      "name": "era cards initially unarmed with no playing era video",
+      "ok": true
+    },
+    {
+      "name": "stacked era cards retained",
+      "ok": true,
+      "details": [
+        {
+          "y": 339.7967224121094,
+          "w": 358,
+          "h": 201
+        },
+        {
+          "y": 560.2967529296875,
+          "w": 358,
+          "h": 201
+        }
+      ]
+    },
+    {
+      "name": "first ancient only previews exact fengmian",
+      "ok": true
+    },
+    {
+      "name": "ancient starts with sound in trusted card gesture",
+      "ok": true
+    },
+    {
+      "name": "era mute controls current preview without reload or entering",
+      "ok": true
+    },
+    {
+      "name": "era sound restores current preview",
+      "ok": true
+    },
+    {
+      "name": "at most one active video",
+      "ok": true
+    },
+    {
+      "name": "cross-card switches preview only",
+      "ok": true
+    },
+    {
+      "name": "at most one active video",
+      "ok": true
+    },
+    {
+      "name": "switch unloads detaches and mutes ancient",
+      "ok": true
+    },
+    {
+      "name": "modern takes audible ownership with one sound control",
+      "ok": true
+    },
+    {
+      "name": "modern mute leaves released ancient silent",
+      "ok": true
+    },
+    {
+      "name": "second ancient enters original 8 chapter list without business mutation",
+      "ok": true
+    },
+    {
+      "name": "return resets armed cards",
+      "ok": true
+    },
+    {
+      "name": "return can preview ancient from beginning",
+      "ok": true
+    },
+    {
+      "name": "second modern enters list without business mutation",
+      "ok": true
+    },
+    {
+      "name": "default FX remains enabled",
+      "ok": true
+    },
+    {
+      "name": "modern 13 covers",
+      "ok": true
+    },
+    {
+      "name": "whole cover opens Opening",
+      "ok": true
+    },
+    {
+      "name": "cover click calls play in active gesture",
+      "ok": true
+    },
+    {
+      "name": "no blocking sound prompt",
+      "ok": true
+    },
+    {
+      "name": "M03 remapped to anime 02",
+      "ok": true
+    },
+    {
+      "name": "video decodes and plays",
+      "ok": true,
+      "details": {
+        "currentTime": 0.00434,
+        "muted": false,
+        "readyState": 4,
+        "paused": false,
+        "src": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/incoming/mp4_raw/M02.mp4"
+      }
+    },
+    {
+      "name": "global plus chapter FX <=14",
+      "ok": true,
+      "details": 14
+    },
+    {
+      "name": "visible sword extra DOM",
+      "ok": true
+    },
+    {
+      "name": "transaction commits M03 modern lock",
+      "ok": true
+    },
+    {
+      "name": "exactly one timeline enabled",
+      "ok": true
+    },
+    {
+      "name": "review gate resets preview",
+      "ok": true
+    },
+    {
+      "name": "review gate preserves modern lock and chapter",
+      "ok": true
+    },
+    {
+      "name": "locked ancient second click stays on era page",
+      "ok": true
+    },
+    {
+      "name": "review selection writes no business state",
+      "ok": true
+    },
+    {
+      "name": "Opening released on navigation",
+      "ok": true
+    },
+    {
+      "name": "ancient 8 covers",
+      "ok": true
+    },
+    {
+      "name": "locked ancient replay has no enter",
+      "ok": true
+    },
+    {
+      "name": "M04 themed FX",
+      "ok": true
+    },
+    {
+      "name": "M06 themed FX",
+      "ok": true
+    },
+    {
+      "name": "M09 themed FX",
+      "ok": true
+    },
+    {
+      "name": "bamboo history keeps anime06 rather than A03 Wangquan EP",
+      "ok": true
+    },
+    {
+      "name": "bamboo history remains replay only",
+      "ok": true
+    },
+    {
+      "name": "memory spoiler retained",
+      "ok": true
+    },
+    {
+      "name": "one netease iframe auto=0",
+      "ok": true
+    },
+    {
+      "name": "Opening unloads hidden music iframe",
+      "ok": true
+    },
+    {
+      "name": "restore music without autoplay",
+      "ok": true
+    },
+    {
+      "name": "21 unique final paths match latest crosswalk",
+      "ok": true
+    },
+    {
+      "name": "A01 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "A01 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "A01 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "A02 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "A02 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "A02 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "A03 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "A03 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "A03 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "A04 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "A04 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "A04 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "A05 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "A05 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "A05 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "A06 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "A06 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "A06 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "A07 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "A07 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "A07 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "A08 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "A08 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "A08 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M01 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M01 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M01 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M02 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M02 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M02 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M03 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M03 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M03 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M04 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M04 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M04 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M05 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M05 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M05 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M06 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M06 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M06 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M07 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M07 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M07 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M08 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M08 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M08 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M09 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M09 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M09 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M10 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M10 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M10 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M11 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M11 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M11 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M12 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M12 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M12 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "M13 final mapped video",
+      "ok": true
+    },
+    {
+      "name": "M13 video decodes and advances",
+      "ok": true
+    },
+    {
+      "name": "M13 only one Opening video",
+      "ok": true
+    },
+    {
+      "name": "viewport 360 no horizontal overflow",
+      "ok": true,
+      "details": {
+        "scroll": 360,
+        "width": 360
+      }
+    },
+    {
+      "name": "viewport 412 no horizontal overflow",
+      "ok": true,
+      "details": {
+        "scroll": 412,
+        "width": 412
+      }
+    },
+    {
+      "name": "viewport 430 no horizontal overflow",
+      "ok": true,
+      "details": {
+        "scroll": 430,
+        "width": 430
+      }
+    },
+    {
+      "name": "all remote failure no black blocker",
+      "ok": true
+    },
+    {
+      "name": "offline media still commits business",
+      "ok": true
+    },
+    {
+      "name": "reduced motion FX static",
+      "ok": true
+    },
+    {
+      "name": "era sound denial immediately falls back and exposes current sound control",
+      "ok": true
+    },
+    {
+      "name": "one era sound click restores sound without advancing",
+      "ok": true
+    },
+    {
+      "name": "reduced motion still previews visible era video",
+      "ok": true
+    },
+    {
+      "name": "sound denied automatically plays muted without another click",
+      "ok": true
+    },
+    {
+      "name": "optional sound button is nonblocking",
+      "ok": true
+    },
+    {
+      "name": "replay automatically plays muted again",
+      "ok": true
+    },
+    {
+      "name": "close releases all video and sound",
+      "ok": true
+    },
+    {
+      "name": "explicit FX off works",
+      "ok": true
+    },
+    {
+      "name": "legacy defaults migrate on a fresh load",
+      "ok": true
+    },
+    {
+      "name": "zero JS page errors",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "route": "CDN URLs fulfilled from exact repository bytes for deterministic UI QA"
+}

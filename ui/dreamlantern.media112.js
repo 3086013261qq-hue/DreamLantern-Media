@@ -1,12 +1,13 @@
-/* 116 presentation interaction repair of 112 adapter. Owns media/FX only; receives no MVU or worldbook API. */
+/* 117 isolated entrance/era media channels; incremental presentation repair of 112 adapter. Owns media/FX only; receives no MVU or worldbook API. */
 function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
   'use strict';
   const D=W.document, BASE='https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/';
   const url=p=>/^https:\/\//.test(p||'')?p:BASE+String(p||'').replace(/^\/+/, '');
   let active=null, gates=[], globalLayer=null, generation=0, dead=false;
   let introVideo=null, introHost=null, introSound=null, introAttempt=0, armed=null;
+  const eraPreview={video:null,door:null,sound:null,attempt:0};
   const node=(tag,cls)=>{const n=D.createElement(tag);n.className=cls;return n;};
-  function release(v){try{v.pause();v.removeAttribute('src');v.load();}catch{}v.remove();}
+  function release(v){try{v.muted=true;v.pause();v.removeAttribute('src');v.load();}catch{}v.remove();}
   function cover(id){return manifest.chapterVideos?.[id]?.cover||manifest.covers?.chapters?.[id]?.path||'ui/brand-background.webp';}
   function fx(host,profileName='global',budget=7){
     const layer=node('div','dl-112-fx');layer.setAttribute('aria-hidden','true');layer.dataset.profile=profileName;
@@ -20,7 +21,7 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
   }
   function mountGlobal(root){globalLayer?.remove();globalLayer=fx(root.querySelector('.dl-paper')||root,'global',6);}
   function soundLabel(){if(!introSound||!introVideo)return;introSound.textContent=introVideo.muted?'🔇 开启声音':'🔊 关闭声音';introSound.setAttribute('aria-pressed',String(!introVideo.muted));}
-  function stopIntro(){introAttempt++;if(introHost?.classList.contains('dl-116-entry'))introHost.hidden=true;if(introVideo)release(introVideo);introSound?.remove();introVideo=null;introSound=null;introHost=null;}
+  function stopIntro(){introAttempt++;if(introVideo)release(introVideo);introSound?.remove();introVideo=null;introSound=null;introHost=null;}
   function playIntro(sound=false){
     const v=introVideo,host=introHost,attempt=++introAttempt;if(!v)return;
     v.muted=!sound;soundLabel();
@@ -30,6 +31,8 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
     });
   }
   function mountIntro(host,sound=false){
+    if(!host?.classList.contains('dl-intro')||D.querySelector('.dl-shade:not([hidden])'))return;
+    stopEra();
     if(introHost===host&&introVideo?.isConnected)return;
     stopIntro();introHost=host;host.hidden=false;
     const v=node('video','dl-115-intro-video');introVideo=v;
@@ -48,7 +51,7 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
     else stopIntro();
   }
   function clear(){
-    generation++;armed=null;stopIntro();if(active){const a=active;active=null;a.stop();}
+    generation++;armed=null;stopIntro();stopEra();if(active){const a=active;active=null;a.stop();}
     for(const v of gates)release(v);gates=[];
   }
   function suspendMusic(root){
@@ -69,16 +72,42 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
       const sub=door.querySelector('span');if(sub)sub.textContent='轻触预览 · 再触入'+(era==='ancient'?'前尘':'今世');
     }
   }
+  function eraSoundLabel(){
+    const {video:v,sound:b}=eraPreview;if(!v||!b)return;
+    b.textContent=v.muted?'🔇 开启声音':'🔊 关闭声音';
+    b.setAttribute('aria-pressed',String(!v.muted));
+  }
+  function stopEra(){
+    eraPreview.attempt++;
+    if(eraPreview.video)release(eraPreview.video);
+    eraPreview.sound?.remove();
+    if(eraPreview.door){delete eraPreview.door.dataset.armed;delete eraPreview.door.dataset.video;}
+    eraPreview.video=null;eraPreview.door=null;eraPreview.sound=null;armed=null;gates=[];
+  }
+  function playEra(sound=true){
+    const v=eraPreview.video,door=eraPreview.door,attempt=++eraPreview.attempt;if(!v)return;
+    v.muted=!sound;eraSoundLabel();
+    v.play().then(()=>{if(v===eraPreview.video&&attempt===eraPreview.attempt)eraSoundLabel();}).catch(()=>{
+      if(v!==eraPreview.video||attempt!==eraPreview.attempt)return;
+      v.muted=true;eraSoundLabel();
+      v.play().catch(()=>{if(v===eraPreview.video&&attempt===eraPreview.attempt)door.dataset.video='fallback';});
+    });
+  }
   function previewEra(door,locked=false){
-    const era=door.dataset.era;
+    const era=door.dataset.era,spec=manifest.eraGate?.[era];
+    if(!['ancient','modern'].includes(era)||!spec?.video||spec.video===manifest.intro.video)return false;
     if(armed===door){if(locked){door.querySelector('span').textContent='今世已定 · 前尘仅供回看';return false;}return true;}
-    clear();armed=door;door.dataset.armed='true';
-    const v=node('video','dl-112-era-video');v.muted=true;v.defaultMuted=true;v.loop=true;v.playsInline=true;v.preload='auto';v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.setAttribute('aria-hidden','true');
-    const spec=manifest.eraGate[era];v.poster=door.querySelector('img').src;v.src=url(spec.video);door.prepend(v);gates=[v];
+    clear();armed=door;eraPreview.door=door;door.dataset.armed='true';
+    const v=node('video','dl-112-era-video');eraPreview.video=v;
+    v.muted=false;v.defaultMuted=false;v.loop=true;v.playsInline=true;v.preload='auto';v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.setAttribute('aria-hidden','true');
+    v.poster=door.querySelector('img').src;v.src=url(spec.video);door.prepend(v);gates=[v];
     const token=generation;
-    v.addEventListener('playing',()=>{if(token===generation)door.dataset.video='playing';});
-    v.addEventListener('error',()=>{if(token===generation){door.dataset.video='fallback';release(v);gates=[];}},{once:true});
-    v.play().catch(()=>{if(token===generation)door.dataset.video='fallback';});
+    v.addEventListener('playing',()=>{if(v===eraPreview.video&&token===generation){door.dataset.video='playing';eraSoundLabel();}});
+    v.addEventListener('error',()=>{if(v===eraPreview.video&&token===generation){stopEra();armed=door;door.dataset.armed='true';door.dataset.video='fallback';}},{once:true});
+    // A sibling button avoids invalid nested interactive elements inside the era card.
+    const sound=node('button','dl-117-era-sound');eraPreview.sound=sound;sound.type='button';
+    sound.addEventListener('click',e=>{e.stopPropagation();if(v!==eraPreview.video)return;if(v.muted)playEra(true);else{eraPreview.attempt++;v.muted=true;eraSoundLabel();}});
+    door.after(sound);playEra(true);
     for(const other of door.parentElement.querySelectorAll('.dl-door')){
       if(other!==door){delete other.dataset.armed;delete other.dataset.video;other.querySelector('span').textContent='轻触预览 · 再触入'+(other.dataset.era==='ancient'?'前尘':'今世');}
     }
@@ -117,7 +146,8 @@ function createDreamLanternMedia112(W, manifest, dynamic, profiles) {
     if(hidden){introVideo?.pause();for(const v of gates)v.pause();D.querySelectorAll('.dl-112-opening-video').forEach(v=>v.pause());}
     else{
       if(introVideo)playIntro(!introVideo.muted);
-      for(const v of [...gates,...D.querySelectorAll('.dl-112-opening-video')])v.play().catch(()=>{v.muted=true;v.play().catch(()=>{});});
+      if(eraPreview.video)playEra(!eraPreview.video.muted);
+      for(const v of D.querySelectorAll('.dl-112-opening-video'))v.play().catch(()=>{v.muted=true;v.play().catch(()=>{});});
     }
   }
   function dispose(){if(dead)return;dead=true;clear();globalLayer?.remove();}
