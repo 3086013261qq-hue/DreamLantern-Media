@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "dream-lantern-handoff-ready-1.0",
+  "status": "READY_FOR_JINGJING_ASSEMBLY",
+  "date": "2026-10-20",
+  "authorities": {
+    "chapterResources": "manifest/chapter-runtime.v2.json",
+    "dynamicRuntime": "manifest/dynamic-runtime.v1.json",
+    "fxProfiles": "manifest/fx-profiles.v1.json",
+    "videoResearch": "manifest/video-hunt-status.v1.json",
+    "handoffDoc": "docs/109_给静静的梦灯笼资源层最终装配交接_v1.0.md"
+  },
+  "counts": {
+    "chapters": 21,
+    "officialStaticMapped": 15,
+    "officialStaticPending": 6,
+    "verifiedOfficialDynamicReferenceChapters": 9,
+    "stableDirectMp4": 0,
+    "legacyGeneratedUniqueThemes": 9
+  },
+  "runtimeDecision": {
+    "stableMp4Available": "use stable_official_mp4",
+    "noMp4WithOfficialStill": "use official_primary_still_plus_fx",
+    "noMp4NoOfficialStill": "use brand_background_plus_fx",
+    "officialEmbedPages": "memory_or_external_reference_only"
+  },
+  "resourceLayerFrozen": true,
+  "businessLayerFrozen": true,
+  "jingjingMay": ["assemble", "wire_paths", "implement_css_js", "optimize_performance", "fix_implementation_bugs", "build", "run_qa"],
+  "jingjingMayNot": ["freely_choose_assets", "cross_borrow_chapter_assets", "invent_mp4", "use_ai_as_normal_primary", "redesign_fx_profiles", "change_mvu", "change_worldbook_logic", "change_netease_business_logic"],
+  "expectedNextStep": "assemble current formal card against the three runtime authorities and perform Android real-device QA",
+  "formalTagAllowed": false,
+  "formalTagUnlockCondition": "assembly complete + Android real-device QA pass + business freeze diff audit pass"
+}
