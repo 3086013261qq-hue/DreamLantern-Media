@@ -1,1 +1,27 @@
-{"schemaVersion":"dream-lantern-video-2.0","chapterId":"M02","title":"尾生篇","sources":[{"key":"official_pv_weisheng","title":"尾生篇定档PV","page":"https://www.garden-culture.net/hyws.html","status":"page_verified_no_direct_mp4","uses":["opening_candidate","memory"]}],"stableDirectMp4":[],"runtime":"official_still_fx","rule":"有官方PV页但无稳定裸MP4；禁止抓临时媒体"}
+{
+  "schemaVersion": "dream-lantern-video-2.1",
+  "chapterId": "M02",
+  "title": "尾生篇",
+  "sources": [
+    {
+      "key": "official_pv_weisheng",
+      "title": "尾生篇定档PV",
+      "page": "https://www.garden-culture.net/hyws.html",
+      "status": "official_page_only",
+      "uses": ["opening_candidate", "memory"]
+    },
+    {
+      "key": "official_stream_tencent_youtube_s7_ep01",
+      "title": "Fox Spirit Matchmaker Season 7 EP01 · Tencent Video-ANIMATION",
+      "page": "https://www.youtube.com/watch?v=1N7TrGhemnc",
+      "status": "official_embed_only",
+      "arcMapping": "Season 7 = 尾生篇",
+      "arcMappingEvidence": "historical season mapping cross-check; YouTube title itself only exposes season number",
+      "uses": ["official_stream_reference", "memory_reference"],
+      "rules": ["不得下载转码为MP4", "不得替代尾生篇定档PV作为Opening"]
+    }
+  ],
+  "stableDirectMp4": [],
+  "runtime": "official_still_fx",
+  "rule": "有官方PV页与官方整季流媒体参考，但仍无稳定裸MP4；禁止抓临时媒体或下载转码。"
+}
