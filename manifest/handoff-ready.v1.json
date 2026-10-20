@@ -1,13 +1,16 @@
 {
-  "schemaVersion": "dream-lantern-handoff-ready-1.0",
-  "status": "READY_FOR_JINGJING_ASSEMBLY",
+  "schemaVersion": "dream-lantern-handoff-ready-1.1",
+  "status": "REWORK_REQUIRED_RUNTIME110",
   "date": "2026-10-20",
+  "reason": "Android/SillyTavern real-device screenshots show v1.3 did not visibly realize the dual-mirror gate or the intended pseudo-dynamic Opening FX. Manifest/CSS presence is not accepted as visual completion.",
   "authorities": {
     "chapterResources": "manifest/chapter-runtime.v2.json",
     "dynamicRuntime": "manifest/dynamic-runtime.v1.json",
     "fxProfiles": "manifest/fx-profiles.v1.json",
     "videoResearch": "manifest/video-hunt-status.v1.json",
-    "handoffDoc": "docs/109_给静静的梦灯笼资源层最终装配交接_v1.0.md"
+    "reworkDoc": "docs/110_给静静的梦灯笼实机失败返工_双镜门与伪动态渲染器_v1.0.md",
+    "runtimeJs": "ui/dreamlantern.runtime110.js",
+    "runtimeCss": "ui/dreamlantern.runtime110.css"
   },
   "counts": {
     "chapters": 21,
@@ -17,17 +20,41 @@
     "stableDirectMp4": 0,
     "legacyGeneratedUniqueThemes": 9
   },
+  "knownFailures": [
+    "era gate appears as two flat dark cards instead of two mirrors",
+    "Opening/detail page appears effectively static on Android",
+    "FX DOM was not proven mounted on device",
+    "multi-still montage was not visibly realized",
+    "some chapter image manifests still contain only one formal official still"
+  ],
   "runtimeDecision": {
     "stableMp4Available": "use stable_official_mp4",
-    "noMp4WithOfficialStill": "use official_primary_still_plus_fx",
-    "noMp4NoOfficialStill": "use brand_background_plus_fx",
+    "noMp4WithOfficialStill": "use official_primary_still_plus_runtime110_fx",
+    "noMp4NoOfficialStill": "use brand_background_plus_runtime110_fx",
     "officialEmbedPages": "memory_or_external_reference_only"
   },
-  "resourceLayerFrozen": true,
+  "resourceLayerFrozen": false,
   "businessLayerFrozen": true,
-  "jingjingMay": ["assemble", "wire_paths", "implement_css_js", "optimize_performance", "fix_implementation_bugs", "build", "run_qa"],
-  "jingjingMayNot": ["freely_choose_assets", "cross_borrow_chapter_assets", "invent_mp4", "use_ai_as_normal_primary", "redesign_fx_profiles", "change_mvu", "change_worldbook_logic", "change_netease_business_logic"],
-  "expectedNextStep": "assemble current formal card against the three runtime authorities and perform Android real-device QA",
+  "jingjingMay": [
+    "integrate_runtime110_js_css",
+    "wire_existing_buttons_to_runtime110",
+    "implement_montage_from_existing_manifests",
+    "add_verified_chapter_specific_secondary_images",
+    "optimize_performance",
+    "fix_implementation_bugs",
+    "build",
+    "run_android_qa"
+  ],
+  "jingjingMayNot": [
+    "freely_choose_unverified_assets",
+    "cross_borrow_chapter_assets",
+    "invent_mp4",
+    "use_ai_as_normal_primary",
+    "change_mvu",
+    "change_worldbook_logic",
+    "change_netease_business_logic"
+  ],
+  "expectedNextStep": "integrate runtime110, enrich verified chapter montage sources where available, then prove visible motion on Android with timed screenshots before any completion claim",
   "formalTagAllowed": false,
-  "formalTagUnlockCondition": "assembly complete + Android real-device QA pass + business freeze diff audit pass"
+  "formalTagUnlockCondition": "runtime110 visible on Android + dual mirrors pass + montage/FX proof + business freeze diff audit pass + user confirmation"
 }
