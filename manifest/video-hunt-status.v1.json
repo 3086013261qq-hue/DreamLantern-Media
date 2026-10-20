@@ -1,73 +1,22 @@
 {
-  "schemaVersion": "dream-lantern-video-hunt-1.4",
+  "schemaVersion": "dream-lantern-video-hunt-1.5",
   "startedAt": "2026-10-20",
   "policy": {
     "stableDirectMp4": "only a verified long-lived direct media URL suitable for public runtime",
     "officialPageOnly": "official PV/video page exists but no stable direct media URL has been verified",
     "officialEmbedOnly": "official hosted/embed stream exists; do not download or convert it into MP4",
-    "noReliablePvHostFound": "official animation existence is confirmed, but no reliable official PV host was verified in this search pass",
     "reject": ["temporary_signed_media", "drm_media", "third_party_reupload", "commentary_video", "fan_stop_motion", "pirate_source", "guessed_url", "live_action_name_collision", "wrong_arc_animation"]
   },
   "verifiedOfficialDynamic": {
-    "A03": {
-      "title": "涂山道盟 / 竹业视觉",
-      "status": "official_arc_title_embed_verified",
-      "officialPages": ["https://www.garden-culture.net/hyzy.html"],
-      "officialEmbedReferences": ["https://www.youtube.com/watch?v=jMGFPBP-Cd4"],
-      "evidence": "Tencent Video verified channel; video title directly names 狐妖小红娘 竹业篇 and Full Version.",
-      "stableDirectMp4": []
-    },
-    "M02": {
-      "title": "尾生篇",
-      "status": "official_arc_title_embed_verified",
-      "officialPages": ["https://www.garden-culture.net/hyws.html"],
-      "officialEmbedReferences": ["https://www.youtube.com/watch?v=vrgHZPAllg4", "https://www.youtube.com/watch?v=v_Q9yS5yW5Y"],
-      "evidence": "Tencent Video-ANIMATION verified channel; titles directly name 狐妖小红娘·尾生篇.",
-      "stableDirectMp4": []
-    },
-    "M03": {
-      "title": "王权篇",
-      "status": "official_tencent_dynamic_reference_verified",
-      "officialEmbedReferences": ["https://www.youtube.com/watch?v=qKE3IS_QXkw"],
-      "evidence": "Tencent Video verified channel; official video directly features 王权富贵与清瞳前世今生内容. It is a memory/dynamic reference, not a short PV.",
-      "stableDirectMp4": []
-    },
-    "M05": {
-      "title": "千颜篇",
-      "status": "official_tencent_anime_op_page_verified",
-      "officialPages": ["https://www.bilibili.com/video/BV1Tx411y7E9/"],
-      "evidence": "腾讯动漫官方账号发布《狐妖小红娘千颜篇OP 铭记 首曝！》.",
-      "stableDirectMp4": []
-    },
-    "M06": {
-      "title": "南国篇",
-      "status": "official_series_embed_verified_mapping_crosschecked",
-      "officialEmbedReferences": ["https://www.youtube.com/watch?v=3nJAFUzqrz8"],
-      "evidence": "Tencent Video-ANIMATION verified stream; arc mapping cross-checked independently. Season numbering is not used as sole evidence.",
-      "stableDirectMp4": []
-    },
-    "M07": {
-      "title": "金晨曦篇",
-      "status": "official_tencent_anime_arc_clip_verified",
-      "officialPages": ["https://www.bilibili.com/video/BV1q54y1S74y/", "https://www.garden-culture.net/hymtc.html", "https://www.garden-culture.net/hylsh.html"],
-      "evidence": "腾讯动漫官方账号存在金晨曦篇白苏官方片段；沐天城/两生花PV仅作为后续缘忆和辅助，不冒充M07主Opening.",
-      "stableDirectMp4": []
-    },
-    "M08": {
-      "title": "真龙篇 / 无暮对应",
-      "status": "official_page_and_embed_verified",
-      "officialPages": ["https://www.garden-culture.net/hywm.html", "https://weibo.com/5616549369/4905948790129250"],
-      "officialEmbedReferences": ["https://www.youtube.com/watch?v=zS7JdSyZC2I", "https://www.youtube.com/watch?v=E2urmrSjxcA"],
-      "evidence": "Tencent Video-ANIMATION verified channel plus official 无暮篇 Weibo/Garden sources.",
-      "stableDirectMp4": []
-    },
-    "M09": {
-      "title": "镜花缘篇",
-      "status": "official_weibo_video_pages_verified",
-      "officialPages": ["https://weibo.com/5616549369/4961092583032595", "https://weibo.com/5616549369/5038597844241834", "https://weibo.com/5616549369/5045120822939971"],
-      "evidence": "All three pages are posts from 狐妖小红娘动画 official Weibo and contain official video objects.",
-      "stableDirectMp4": []
-    }
+    "A03": {"title":"涂山道盟 / 竹业视觉","status":"official_arc_title_embed_verified","officialPages":["https://www.garden-culture.net/hyzy.html"],"officialEmbedReferences":["https://www.youtube.com/watch?v=jMGFPBP-Cd4"],"stableDirectMp4":[]},
+    "M02": {"title":"尾生篇","status":"official_arc_title_embed_verified","officialPages":["https://www.garden-culture.net/hyws.html"],"officialEmbedReferences":["https://www.youtube.com/watch?v=vrgHZPAllg4","https://www.youtube.com/watch?v=v_Q9yS5yW5Y"],"stableDirectMp4":[]},
+    "M03": {"title":"王权篇","status":"official_tencent_dynamic_reference_verified","officialEmbedReferences":["https://www.youtube.com/watch?v=qKE3IS_QXkw"],"use":"memory_and_dynamic_reference_not_short_opening","stableDirectMp4":[]},
+    "M04": {"title":"月红篇（动画）","status":"official_tencent_anime_op_page_verified","officialPages":["https://www.bilibili.com/video/BV1Js411y7Eh/"],"evidence":"腾讯动漫官方账号2016-07-08发布《狐妖小红娘月红篇OP 若当来世》；与2024真人剧严格区分。","stableDirectMp4":[]},
+    "M05": {"title":"千颜篇","status":"official_tencent_anime_op_page_verified","officialPages":["https://www.bilibili.com/video/BV1Tx411y7E9/"],"stableDirectMp4":[]},
+    "M06": {"title":"南国篇","status":"official_series_embed_verified_mapping_crosschecked","officialEmbedReferences":["https://www.youtube.com/watch?v=3nJAFUzqrz8"],"stableDirectMp4":[]},
+    "M07": {"title":"金晨曦篇","status":"official_tencent_anime_arc_clip_verified","officialPages":["https://www.bilibili.com/video/BV1q54y1S74y/","https://www.garden-culture.net/hymtc.html","https://www.garden-culture.net/hylsh.html"],"note":"M07自有腾讯动漫金晨曦片段；沐天城/两生花只作辅助。","stableDirectMp4":[]},
+    "M08": {"title":"真龙篇 / 无暮对应","status":"official_page_and_embed_verified","officialPages":["https://www.garden-culture.net/hywm.html","https://weibo.com/5616549369/4905948790129250"],"officialEmbedReferences":["https://www.youtube.com/watch?v=zS7JdSyZC2I","https://www.youtube.com/watch?v=E2urmrSjxcA"],"stableDirectMp4":[]},
+    "M09": {"title":"镜花缘篇","status":"official_weibo_video_pages_verified","officialPages":["https://weibo.com/5616549369/4961092583032595","https://weibo.com/5616549369/5038597844241834","https://weibo.com/5616549369/5045120822939971"],"stableDirectMp4":[]}
   },
   "officialPageOnly": {
     "A02": {"title":"西域北山 / 无暮辅助","pages":["https://www.garden-culture.net/hywm.html"],"stableDirectMp4":[]},
@@ -75,8 +24,7 @@
     "A06": {"title":"月红终局 / 尾生后半缘忆","pages":["https://www.garden-culture.net/hyws.html"],"stableDirectMp4":[]}
   },
   "earlyAnimationStillSearching": {
-    "M01":{"title":"下沙篇","status":"no_reliable_official_dynamic_host_found_yet","runtimeUntilFound":"official_still_fx"},
-    "M04":{"title":"月红篇（动画）","status":"official_animation_mapping_confirmed_but_no_clean_direct_video_page_selected_yet","runtimeUntilFound":"official_still_fx","collisionRule":"2024真人剧《狐妖小红娘月红篇》必须排除。"}
+    "M01": {"title":"下沙篇","status":"no_clean_chapter_visual_dynamic_selected_yet","knownOfficialTencentDynamic":"官方腾讯动漫账号存在下沙主题音乐/周年活动动态，但暂不把非篇章视觉视频冒充Opening。","runtimeUntilFound":"official_still_fx"}
   },
   "lateManga": {
     "M10":{"title":"龙湾篇","status":"no_exact_official_dynamic_verified","runtimeUntilFound":"brand_fx_pending_official"},
@@ -85,13 +33,12 @@
     "M13":{"title":"新北山篇","status":"no_exact_official_dynamic_verified","rule":"黄风岭/动画第13季不得绑定M13新北山","runtimeUntilFound":"brand_fx_pending_official"}
   },
   "searchFindings": {
-    "gardenCulture": "制作方官网确认尾生、竹业、沐天城、两生花存在定档PV入口，并确认下沙、王权、月红、千颜、南国等动画制作/播出信息。",
-    "officialWeibo": "镜花缘概念PV、东方月初个人PV、涂山雅雅PV以及无暮王权景行动态已确认来自狐妖小红娘动画官博。",
-    "officialTencent": "竹业和尾生已找到标题直接写明篇章名的腾讯官方认证视频；王权找到腾讯官方剧情动态；千颜找到腾讯动漫官方OP页；金晨曦找到腾讯动漫官方篇章片段；南国和无暮存在腾讯官方流媒体参考。",
+    "officialTencent": "A03/M02/M03/M04/M05/M06/M07/M08均已有可核实腾讯官方动态页或流媒体参考；M09有动画官博官方PV视频页。",
+    "m04CollisionResolved": "动画月红篇腾讯动漫官方OP页面已找到；真人剧同名结果继续永久排除。",
     "stableDirectMp4": "当前仍未核实任何适合公开长期runtime的裸MP4直链。",
-    "searchPollution": "继续排除真人剧同名结果、普通UP主转载/二创、第三方解说、临时签名媒体和错误篇章映射。"
+    "searchPollution": "继续排除普通UP主转载/二创、第三方解说、临时签名媒体、真人剧同名结果和错误篇章映射。"
   },
-  "verifiedOfficialDynamicChapterCount": 8,
+  "verifiedOfficialDynamicChapterCount": 9,
   "stableDirectMp4Count": 0,
-  "next": ["continue_searching_clean_official_dynamic_for_M01_and_animation_M04", "search_exact_M07_official_PV_host_if_still_public", "only_register_direct_media_if_long_lived_and_publicly_usable", "keep_official_embed_as_embed_not_mp4"]
+  "next": ["continue_searching_clean_chapter_visual_dynamic_for_M01", "search_exact_M07_official_PV_host_if_still_public", "only_register_direct_media_if_long_lived_and_publicly_usable", "keep_official_embed_as_embed_not_mp4"]
 }
