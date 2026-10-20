@@ -1,9 +1,17 @@
 {
-  "schemaVersion": "dream-lantern-user-media-runtime-1.1",
+  "schemaVersion": "dream-lantern-user-media-runtime-1.2",
   "generatedAt": "2026-10-20",
+  "delivery": {
+    "mode": "remote_repo_cdn",
+    "repository": "3086013261qq-hue/DreamLantern-Media",
+    "cdnBase": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/",
+    "embedMediaBytesInCard": false,
+    "bundleMp4IntoPngJsonZip": false,
+    "note": "All images and MP4 files are hosted in DreamLantern-Media and loaded remotely at runtime through jsDelivr. The card stores only paths, manifests and presentation logic."
+  },
   "assetBase": "https://cdn.jsdelivr.net/gh/3086013261qq-hue/DreamLantern-Media@main/",
   "mappingAuthority": "manifest/anime-to-manga-remap.v1.json",
-  "mappingStatus": "REMAP_REQUIRED_BEFORE_RUNTIME",
+  "mappingStatus": "ORDER_REMAP_IN_PROGRESS",
   "eraGate": {
     "layout": "vertical_video_cards",
     "ancient": {
@@ -48,18 +56,18 @@
   ],
   "chapterVideos": {},
   "openingPolicy": {
-    "preferred": "user_uploaded_mp4_after_verified_manga_remap",
+    "preferred": "repo_hosted_jsdelivr_mp4_after_order_remap",
     "audioTrackAllowed": true,
     "playsInline": true,
     "loop": true,
-    "fallback": "runtime110_static_plus_fx",
+    "fallback": "repo_hosted_cover_plus_runtime_fx",
     "videoFailureMustNotBlockBusinessLogic": true,
-    "forbidNumericSameIdAssumption": true
+    "forbidBundlingVideoBytesIntoCard": true
   },
   "covers": {
     "rawFolder": "incoming/covers_raw/",
     "countExpected": 21,
-    "mappingStatus": "pending_visual_match_and_manga_order",
-    "note": "23 jpg files are present; select 21 chapter covers plus 2 spares and map them to canonical DreamLantern manga order. Do not map by upload/hash filename."
+    "mappingStatus": "aesthetic_assignment_only",
+    "note": "The 23 uploaded JPG files are preview covers. Their upload/hash order is not meaningful; choose 21 attractive covers for the 21 manga slots and keep 2 spares. Clicking a cover opens the corresponding remotely hosted MP4."
   }
 }
