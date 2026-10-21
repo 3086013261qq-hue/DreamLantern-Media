@@ -347,7 +347,7 @@ function createDreamController(env, chapters) {
    mountIntro();mountMini();
   }catch(e){notify(e.message||'入梦暂未成功，请重试。');}finally{busy=false;root.querySelectorAll('[data-action="enter"]').forEach(b=>b.disabled=false);}}
  function playOpening(id,options={}){if(!BY[id])return false;preview=id;memorySource=options.memoryId||null;replay=options.mode==='replay'||options.allowEnter===false;open('opening');return true;}
- function click(e){const b=e.target.closest('[data-action]');if(!b||!(root.contains(b)||b.closest('.dl-intro')))return;const a=b.dataset.action,id=b.dataset.id;
+ function click(e){const b=e.target.closest('[data-action]');if(!b||!(root.contains(b)||b.closest('.dl-intro')||b.matches('.dl-mini[data-action="open"]')))return;const a=b.dataset.action,id=b.dataset.id;
   if(a==='open')open('doors');else if(a==='close')close();else if(a==='doors'){open('doors');}else if(a==='era'){const locked=b.dataset.era==='ancient'&&!!state()._现代锁定;if(b.classList.contains('dl-door')){if(!mediaLayer.previewEra(b,locked))return;if(locked)return;}era=b.dataset.era;page='chapters';render();}else if(['chapters','memories','music','home'].includes(a)){page=a;if(a==='chapters')era=state()._时代==='现代'?'modern':era;render();}
   else if(a==='preview')playOpening(id,{mode:'enter',allowEnter:controller.canEnter(id)});
   else if(a==='enter')void enter(id);
@@ -374,7 +374,7 @@ function createDreamController(env, chapters) {
   D.querySelectorAll('.dl-mini').forEach(e=>e.remove());const s=state();if(!BY[s._当前篇章])return;
   let id;try{id=getLastMessageId();}catch{return;}if(id===0)return;
   let m;try{m=getChatMessages(id)?.[0];}catch{}if(m?.role!=='assistant')return;
-  const box=D.querySelector(`#chat > .mes[mesid="${Number(id)}"] .mes_text`);if(!box)return;const bar=D.createElement('div');bar.className='dl-mini';bar.textContent='✧ 梦灯笼 · '+s._时代+' / '+BY[s._当前篇章].title;box.append(bar);
+  const box=D.querySelector(`#chat > .mes[mesid="${Number(id)}"] .mes_text`);if(!box)return;const bar=D.createElement('button');bar.type='button';bar.className='dl-mini';bar.dataset.action='open';bar.setAttribute('aria-haspopup','dialog');bar.style.cssText='display:block;width:100%;text-align:left;font-family:inherit;background:transparent;border:0;border-top:1px solid #d8b36b44;border-radius:0;min-height:44px;cursor:pointer;touch-action:manipulation';bar.textContent='✧ 梦灯笼 · '+s._时代+' / '+BY[s._当前篇章].title;box.append(bar);
  }
  function schedule(){if(disposed)return;clearTimeout(refreshTimer);refreshTimer=later(()=>{mountIntro();mountMini();if(!shade.hidden)render();void controller.heal().catch(e=>notify(e.message));},100);}
  function on(name,fn){if(!name||typeof eventOn!=='function')return;const handle=eventOn(name,fn);disposers.push(()=>{if(handle?.stop)handle.stop();else if(typeof eventRemoveListener==='function')eventRemoveListener(name,fn);});}

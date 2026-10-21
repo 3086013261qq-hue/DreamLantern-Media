@@ -1,0 +1,24 @@
+{
+  "environment": "Chromium mobile viewport + mocked SillyTavern helper APIs; NOT Android device",
+  "tests": [
+    {
+      "name": "blocked intro audible attempt keeps visible playback",
+      "ok": true
+    },
+    {
+      "name": "blocked intro sound button offers retry",
+      "ok": true
+    },
+    {
+      "name": "one sound retry restores sound without opening era page",
+      "ok": true
+    },
+    {
+      "name": "zero JS page errors",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "route": "CDN URLs fulfilled from exact repository bytes for deterministic UI QA"
+}

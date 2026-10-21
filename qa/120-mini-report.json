@@ -1,0 +1,250 @@
+{
+  "environment": "Chromium mobile touch emulation; mocked SillyTavern APIs; NOT Android/SillyTavern device",
+  "tests": [
+    {
+      "name": "zero-floor entrance retained without added full MVU",
+      "ok": true
+    },
+    {
+      "name": "assistant 1 one latest mini",
+      "ok": true
+    },
+    {
+      "name": "assistant 1 exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "assistant 1 same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "assistant 1 same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "assistant 1 focus restored",
+      "ok": true
+    },
+    {
+      "name": "assistant 1 no business writes",
+      "ok": true
+    },
+    {
+      "name": "assistant 2 one latest mini",
+      "ok": true
+    },
+    {
+      "name": "assistant 2 exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "assistant 2 same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "assistant 2 same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "assistant 2 focus restored",
+      "ok": true
+    },
+    {
+      "name": "assistant 2 no business writes",
+      "ok": true
+    },
+    {
+      "name": "assistant 3 one latest mini",
+      "ok": true
+    },
+    {
+      "name": "assistant 3 exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "assistant 3 same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "assistant 3 same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "assistant 3 focus restored",
+      "ok": true
+    },
+    {
+      "name": "assistant 3 no business writes",
+      "ok": true
+    },
+    {
+      "name": "reopen one latest mini",
+      "ok": true
+    },
+    {
+      "name": "reopen exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "reopen same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "reopen same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "reopen focus restored",
+      "ok": true
+    },
+    {
+      "name": "reopen no business writes",
+      "ok": true
+    },
+    {
+      "name": "regenerate one latest mini",
+      "ok": true
+    },
+    {
+      "name": "regenerate exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "regenerate same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "regenerate same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "regenerate focus restored",
+      "ok": true
+    },
+    {
+      "name": "regenerate no business writes",
+      "ok": true
+    },
+    {
+      "name": "swipe via statusbar refresh one latest mini",
+      "ok": true
+    },
+    {
+      "name": "swipe via statusbar refresh exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "swipe via statusbar refresh same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "swipe via statusbar refresh same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "swipe via statusbar refresh focus restored",
+      "ok": true
+    },
+    {
+      "name": "swipe via statusbar refresh no business writes",
+      "ok": true
+    },
+    {
+      "name": "edit rerender one latest mini",
+      "ok": true
+    },
+    {
+      "name": "edit rerender exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "edit rerender same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "edit rerender same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "edit rerender focus restored",
+      "ok": true
+    },
+    {
+      "name": "edit rerender no business writes",
+      "ok": true
+    },
+    {
+      "name": "20 refreshes one latest mini",
+      "ok": true
+    },
+    {
+      "name": "20 refreshes exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "20 refreshes same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "20 refreshes same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "20 refreshes focus restored",
+      "ok": true
+    },
+    {
+      "name": "20 refreshes no business writes",
+      "ok": true
+    },
+    {
+      "name": "event subscriptions do not multiply",
+      "ok": true
+    },
+    {
+      "name": "keyboard Enter opens",
+      "ok": true
+    },
+    {
+      "name": "keyboard Space opens",
+      "ok": true
+    },
+    {
+      "name": "chat return one latest mini",
+      "ok": true
+    },
+    {
+      "name": "chat return exact title and native button",
+      "ok": true
+    },
+    {
+      "name": "chat return same single root/shade",
+      "ok": true
+    },
+    {
+      "name": "chat return same view as original open button",
+      "ok": true
+    },
+    {
+      "name": "chat return focus restored",
+      "ok": true
+    },
+    {
+      "name": "chat return no business writes",
+      "ok": true
+    },
+    {
+      "name": "all click and refresh rounds preserve business",
+      "ok": true
+    },
+    {
+      "name": "document still scrolls after close",
+      "ok": true
+    },
+    {
+      "name": "zero JavaScript errors",
+      "ok": true
+    }
+  ],
+  "errors": []
+}

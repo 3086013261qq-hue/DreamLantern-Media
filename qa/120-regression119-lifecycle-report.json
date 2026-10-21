@@ -1,0 +1,240 @@
+{
+  "environment": "Chromium mobile viewport + mocked SillyTavern helper APIs; NOT Android device",
+  "tests": [
+    {
+      "name": "initial single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "initial visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "stale entrance paused muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "era page excludes every rukou URL and keeps two cards",
+      "ok": true
+    },
+    {
+      "name": "first era only audible preview",
+      "ok": true
+    },
+    {
+      "name": "entered chapter keeps entrance absent until close",
+      "ok": true
+    },
+    {
+      "name": "ancient A02 after entry single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "ancient A02 after entry visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "stale entrance paused muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "era page excludes every rukou URL and keeps two cards",
+      "ok": true
+    },
+    {
+      "name": "first era only audible preview",
+      "ok": true
+    },
+    {
+      "name": "entered chapter keeps entrance absent until close",
+      "ok": true
+    },
+    {
+      "name": "modern M03 after entry single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "modern M03 after entry visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "stale entrance paused muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "era page excludes every rukou URL and keeps two cards",
+      "ok": true
+    },
+    {
+      "name": "round 0 era close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 0 era close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "replay opening excludes entrance",
+      "ok": true
+    },
+    {
+      "name": "round 0 replay close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 0 replay close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "round 0 idempotent close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 0 idempotent close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "replay and remount leave business exact",
+      "ok": true
+    },
+    {
+      "name": "stale entrance paused muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "era page excludes every rukou URL and keeps two cards",
+      "ok": true
+    },
+    {
+      "name": "round 1 era close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 1 era close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "replay opening excludes entrance",
+      "ok": true
+    },
+    {
+      "name": "round 1 replay close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 1 replay close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "round 1 idempotent close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 1 idempotent close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "replay and remount leave business exact",
+      "ok": true
+    },
+    {
+      "name": "stale entrance paused muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "era page excludes every rukou URL and keeps two cards",
+      "ok": true
+    },
+    {
+      "name": "round 2 era close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 2 era close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "replay opening excludes entrance",
+      "ok": true
+    },
+    {
+      "name": "round 2 replay close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 2 replay close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "round 2 idempotent close single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "round 2 idempotent close visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "replay and remount leave business exact",
+      "ok": true
+    },
+    {
+      "name": "stale entrance paused muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "era page excludes every rukou URL and keeps two cards",
+      "ok": true
+    },
+    {
+      "name": "hidden document does not prematurely remount",
+      "ok": true
+    },
+    {
+      "name": "visibility return single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "visibility return visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "stale entrance paused muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "era page excludes every rukou URL and keeps two cards",
+      "ok": true
+    },
+    {
+      "name": "failed remount exposes fallback",
+      "ok": true
+    },
+    {
+      "name": "stale entrance paused muted unloaded detached",
+      "ok": true
+    },
+    {
+      "name": "era page excludes every rukou URL and keeps two cards",
+      "ok": true
+    },
+    {
+      "name": "recovered after media failure single exact entrance and sound",
+      "ok": true
+    },
+    {
+      "name": "recovered after media failure visible video above current chapter scene",
+      "ok": true
+    },
+    {
+      "name": "modern lock survives every return",
+      "ok": true
+    },
+    {
+      "name": "zero JS page errors",
+      "ok": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "route": "CDN URLs fulfilled from exact repository bytes for deterministic UI QA"
+}
